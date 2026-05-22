@@ -1,6 +1,6 @@
-# VLM-Transportation
+# VLM-Mobility
 
-A hands-on learning project that explores **six distinct roles** Vision-Language Models (VLMs) can play in transportation engineering. Each use case uses a real public dataset, working Python code, and output examples — making this a self-contained reference for researchers and practitioners who want to understand how VLMs fit into visual transportation problems.
+A hands-on learning project that explores **six distinct roles** Vision-Language Models (VLMs) can play in mobility and transportation-related studies. Each use case uses a real public dataset, working Python code, and output examples — making this a self-contained reference for researchers and practitioners who want to understand how VLMs fit into visual transportation problems.
 
 **Core capability explored:** Given an image — traffic camera frame, work zone photo, satellite image — can a VLM understand the scene, answer structured questions about it, and produce actionable outputs for transportation operations?
 
