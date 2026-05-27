@@ -27,7 +27,7 @@ DATA_DIR      = "/home/xzh5180/Research/vlm-mobility/datasets/bdd100k_hf/data/"
 SAMPLES_JSON  = "/home/xzh5180/Research/vlm-mobility/datasets/bdd100k_hf/samples.json"
 OUTPUT_DIR    = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1_zeroshot/"
 N_IMAGES      = 50          # 前50张（按文件名字母排序，保证跨模型一致）
-MAX_NEW_TOKENS = 128
+MAX_NEW_TOKENS = 512
 
 # ============================================================
 # QUANTIZATION CONFIG
