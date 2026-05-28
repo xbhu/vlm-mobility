@@ -1,11 +1,18 @@
 """
-Use Case 1B: Fine-tuning LLaMA 3.2 Vision 11B on BDD100K
-Script: usecase1B_finetune-Llama3.2-Vision-11B.py
+Use Case 1C: Fine-tuning LLaMA 3.2 Vision 11B on BDD100K
+Script: usecase1C_finetune-Llama3.2-Vision-11B.py
 
 训练集：与 1A 完全一致（SEED=42, N_TRAIN=250, N_VAL=25, N_TEST=50）
+OOM 修复：
+  1. expandable_segments 减少显存碎片
+  2. 图像 resize 到 560x560（单 tile），减少视觉编码器显存
+  3. LoRA 只作用于语言模型层，跳过视觉编码器
 """
 
-import torch, json, os, re, random
+import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
+import torch, json, re, random
 from pathlib import Path
 from PIL import Image
 from transformers import (
@@ -22,7 +29,6 @@ SAMPLES_JSON = "/home/xzh5180/Research/vlm-mobility/datasets/bdd100k_hf/samples.
 OUTPUT_DIR   = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1_finetune/Llama3.2-Vision-11B/"
 ADAPTER_DIR  = OUTPUT_DIR + "adapter/"
 
-# 与 1A 完全一致，保证训练集相同
 N_TEST       = 50
 N_TRAIN      = 250
 N_VAL        = 25
@@ -36,8 +42,12 @@ LORA_R       = 8
 LORA_ALPHA   = 16
 LORA_DROPOUT = 0.05
 
+# LLaMA 3.2 Vision 使用 560x560 tile 处理图像
+# resize 到这个尺寸保证只生成 1 个 tile，大幅减少视觉编码器显存
+IMAGE_SIZE   = 560
+
 # ============================================================
-# PROMPT（与 Exp-A 完全一致）
+# PROMPT
 # ============================================================
 SYSTEM_PROMPT = (
     "You are a traffic scene analysis assistant. "
@@ -50,7 +60,7 @@ SYSTEM_PROMPT = (
 USER_PROMPT = "Analyze this image and output the JSON only."
 
 # ============================================================
-# 数据准备（与 1A 完全相同的划分逻辑）
+# 数据准备
 # ============================================================
 def load_annotations(samples_json):
     with open(samples_json) as f:
@@ -78,13 +88,12 @@ def prepare_splits(data_dir, annotations):
 
 # ============================================================
 # Label masking
-# LLaMA 与 Qwen 的区别：
-#   - 直接传 PIL Image，不需要 process_vision_info
-#   - 没有 image_grid_thw
-#   - messages 里用 {"type": "image"}（无路径）
 # ============================================================
 def build_inputs_with_labels(processor, image_path, gt_json, device):
-    image = Image.open(image_path).convert("RGB")
+    # resize 到单 tile 尺寸，减少视觉编码器显存
+    image = Image.open(image_path).convert("RGB").resize(
+        (IMAGE_SIZE, IMAGE_SIZE), Image.LANCZOS
+    )
 
     full_msgs = [
         {"role": "system", "content": SYSTEM_PROMPT},
@@ -111,7 +120,6 @@ def build_inputs_with_labels(processor, image_path, gt_json, device):
         "attention_mask": full_enc["attention_mask"].to(device),
         "labels":         labels.to(device),
     }
-    # LLaMA 的图像 tensor 键名
     for key in ["pixel_values", "aspect_ratio_ids", "aspect_ratio_mask",
                 "cross_attention_mask"]:
         if key in full_enc:
@@ -157,7 +165,7 @@ def run_epoch(model, processor, samples, optimizer, device, is_train):
     return total_loss / steps if steps > 0 else 0.0
 
 # ============================================================
-# 评估（测试 50 张）
+# 评估
 # ============================================================
 def parse_json(text):
     try:
@@ -177,9 +185,10 @@ def evaluate(model, processor, annotations, device):
 
     for fname in test_imgs:
         img_path = os.path.join(DATA_DIR, fname)
-        gt = annotations.get(fname, {})
-        image = Image.open(img_path).convert("RGB")
-
+        gt    = annotations.get(fname, {})
+        image = Image.open(img_path).convert("RGB").resize(
+            (IMAGE_SIZE, IMAGE_SIZE), Image.LANCZOS
+        )
         msgs = [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": [
@@ -235,11 +244,12 @@ def main():
     )
     processor = AutoProcessor.from_pretrained(MODEL_ID)
 
+    # LoRA 只作用于语言模型的 self-attention 和 cross-attention 层
+    # 跳过视觉编码器（vision_model），减少显存占用
     lora_config = LoraConfig(
         r=LORA_R, lora_alpha=LORA_ALPHA, lora_dropout=LORA_DROPOUT,
         bias="none", task_type=TaskType.CAUSAL_LM,
-        target_modules=["q_proj","k_proj","v_proj","o_proj",
-                        "gate_proj","up_proj","down_proj"],
+        target_modules=r"language_model.*\.(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)$",   # 跳过视觉编码器
     )
     model = get_peft_model(model, lora_config)
     model.enable_input_require_grads()
