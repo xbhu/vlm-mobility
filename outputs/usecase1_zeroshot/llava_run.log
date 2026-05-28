@@ -1,0 +1,115 @@
+nohup: ignoring input
+Selected 50 images
+First: b1c66a42-6f7d68ca.jpg  Last: b1d9e136-9ab25cb3.jpg
+
+Loading model...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 24929.00it/s]
+Loading weights:   0%|          | 0/765 [00:00<?, ?it/s]Loading weights:   0%|          | 3/765 [00:00<00:49, 15.29it/s]Loading weights:   2%|▏         | 18/765 [00:00<00:10, 69.09it/s]Loading weights:   5%|▌         | 42/765 [00:00<00:05, 126.73it/s]Loading weights:   9%|▊         | 66/765 [00:00<00:04, 160.00it/s]Loading weights:  12%|█▏        | 90/765 [00:00<00:03, 180.25it/s]Loading weights:  15%|█▍        | 114/765 [00:00<00:03, 194.63it/s]Loading weights:  18%|█▊        | 138/765 [00:00<00:03, 204.67it/s]Loading weights:  21%|██        | 162/765 [00:00<00:02, 213.78it/s]Loading weights:  24%|██▍       | 187/765 [00:01<00:02, 215.00it/s]Loading weights:  28%|██▊       | 211/765 [00:01<00:02, 218.50it/s]Loading weights:  31%|███       | 235/765 [00:01<00:02, 223.28it/s]Loading weights:  34%|███▍      | 259/765 [00:01<00:02, 227.90it/s]Loading weights:  37%|███▋      | 283/765 [00:01<00:02, 228.96it/s]Loading weights:  40%|████      | 307/765 [00:01<00:01, 230.35it/s]Loading weights:  43%|████▎     | 331/765 [00:01<00:01, 230.44it/s]Loading weights:  80%|████████  | 612/765 [00:01<00:00, 985.63it/s]Loading weights: 100%|██████████| 765/765 [00:01<00:00, 417.51it/s]
+Model loaded  |  VRAM used: 5.8 GB
+
+[01/50] b1c66a42-6f7d68ca.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'dusk', 'scene': 'city street'}  |  B: {'weather': 'Partly cloudy with some sunlight', 'timeofday': 'Evening or early morning', 'scene': 'Urban street with moderate traffic and buildings on both sides'}  |  GT: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}
+[02/50] b1c81faa-3df17267.jpg
+  A: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Roadway'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'highway'}
+[03/50] b1c81faa-c80764c5.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'highway'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Highway'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'highway'}
+[04/50] b1c9c847-3bda4659.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Overcast', 'timeofday': 'Morning', 'scene': 'Urban street with vehicles and buildings'}  |  GT: {'weather': 'undefined', 'timeofday': 'daytime', 'scene': 'city street'}
+[05/50] b1ca2e5d-84cf9134.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Cityscape'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[06/50] b1ca8418-84a133a0.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Roadway'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[07/50] b1cac6a7-04e33135.jpg
+  A: {'weather': 'rainy', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Rainy', 'timeofday': 'Morning', 'scene': 'Urban street with vehicles under an elevated train track'}  |  GT: {'weather': 'rainy', 'timeofday': 'daytime', 'scene': 'city street'}
+[08/50] b1cd1e94-26dd524f.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Road with traffic'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[09/50] b1cd1e94-549d0bfe.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Sunny with some clouds', 'timeofday': 'Morning', 'scene': 'Urban street with vehicles and buildings'}  |  GT: {'weather': 'undefined', 'timeofday': 'daytime', 'scene': 'city street'}
+[10/50] b1ceb32e-3f481b43.jpg
+  A: {'scene': 'parking lot'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Underpass'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[11/50] b1ceb32e-51852abe.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'dusk', 'scene': 'city street'}  |  B: {'weather': 'Clear skies with no visible clouds', 'timeofday': 'Evening, possibly dusk', 'scene': 'City street with moderate traffic and parked cars on the side'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'city street'}
+[12/50] b1ceb32e-813f84b2.jpg
+  A: {'scene': 'parking lot', 'timeofday': 'night', 'weather': 'clear'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Parking garage'}  |  GT: {'weather': 'undefined', 'timeofday': 'night', 'scene': 'tunnel'}
+[13/50] b1ceb32e-a106591d.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Overcast', 'timeofday': 'Morning', 'scene': 'City street with moderate traffic'}  |  GT: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}
+[14/50] b1cebfb7-284f5117.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'highway'}  |  B: {'weather': 'Sunny with some clouds', 'timeofday': 'Morning', 'scene': 'Urban highway with light traffic'}  |  GT: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'highway'}
+[15/50] b1d0091f-75824d0d.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'highway'}  |  B: {'weather': 'Overcast with dark clouds, suggesting potential rain', 'timeofday': 'Evening or early morning, based on the lighting', 'scene': 'Multi-lane highway with moderate traffic, under an elevated road structure with trees and buildings in the background'}  |  GT: {'weather': 'rainy', 'timeofday': 'daytime', 'scene': 'highway'}
+[16/50] b1d0091f-f2c2d2ae.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Overcast with dark clouds, suggesting potential rain', 'timeofday': 'Evening, possibly late afternoon or early evening', 'scene': 'Traffic congestion with a police van and a red pickup truck in the foreground, surrounded by other vehicles and trees lining the road'}  |  GT: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'highway'}
+[17/50] b1d0a191-03dcecc2.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Overcast with snow on the ground', 'timeofday': 'Morning or late afternoon', 'scene': 'Urban street with moderate traffic and pedestrians'}  |  GT: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'city street'}
+[18/50] b1d0a191-06deb55d.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Overcast with rain', 'timeofday': 'Morning', 'scene': 'City street with traffic and pedestrians'}  |  GT: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'city street'}
+[19/50] b1d0a191-28f0e779.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Snowy', 'timeofday': 'Morning', 'scene': 'Roadway'}  |  GT: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'city street'}
+[20/50] b1d0a191-2ed2269e.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Overcast with light snowfall', 'timeofday': 'Morning', 'scene': 'City street with heavy traffic and taxis'}  |  GT: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'city street'}
+[21/50] b1d0a191-5490450b.jpg
+  A: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Snowy', 'timeofday': 'Daytime', 'scene': 'City street with crosswalk and buildings'}  |  GT: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'residential'}
+[22/50] b1d0a191-65deaeef.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Snowy', 'timeofday': 'Daytime', 'scene': 'Traffic congestion'}  |  GT: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'city street'}
+[23/50] b1d0a191-de8948f6.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Rainy', 'timeofday': 'Morning', 'scene': 'City street traffic'}  |  GT: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'highway'}
+[24/50] b1d10d08-5b108225.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'dusk', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Evening', 'scene': 'Urban street with moderate traffic'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'city street'}
+[25/50] b1d10d08-743fd86c.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'highway'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Highway'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[26/50] b1d10d08-c35503b8.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Sunny with clear blue sky', 'timeofday': 'Morning with bright sunlight', 'scene': 'Urban street with moderate traffic and overpass bridge'}  |  GT: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'city street'}
+[27/50] b1d10d08-da110fcb.jpg
+  A: {'weather': 'clear', 'timeofday': 'dusk', 'scene': 'city street'}  |  B: {'weather': 'Clear skies with no visible clouds', 'timeofday': 'Dusk, with the sun setting in the background', 'scene': 'A busy urban street with multiple lanes of traffic and buildings on both sides'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'city street'}
+[28/50] b1d10d08-ec660956.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'residential'}  |  B: {'weather': 'Sunny with clear blue sky', 'timeofday': 'Afternoon', 'scene': 'Residential street with vehicles and houses'}  |  GT: {'weather': 'snowy', 'timeofday': 'daytime', 'scene': 'residential'}
+[29/50] b1d22449-117aa773.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'highway'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Road construction'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'highway'}
+[30/50] b1d22449-15fb948f.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Roadway'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[31/50] b1d22ed6-f1cac061.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Sunny with clear blue sky', 'timeofday': 'Morning with bright sunlight', 'scene': 'Busy city street with vehicles and buildings'}  |  GT: {'weather': 'undefined', 'timeofday': 'daytime', 'scene': 'city street'}
+[32/50] b1d3907b-2278601b.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Urban street at night with moderate traffic and illuminated buildings.'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[33/50] b1d4b62c-60aab822.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'dawn/dusk', 'scene': 'city street'}  |  B: {'weather': 'sunny', 'timeofday': 'dusk', 'scene': 'traffic congestion'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'residential'}
+[34/50] b1d4b62c-89eeb5d3.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Intersection'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'residential'}
+[35/50] b1d4b62c-d9805029.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Urban street with vehicles and buildings'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[36/50] b1d59b1f-a38aec79.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'residential'}  |  B: {'weather': 'Sunny with clear blue sky', 'timeofday': 'Afternoon', 'scene': 'Tree-lined street with vehicles and parking meters'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'city street'}
+[37/50] b1d7b3ac-0bdb47dc.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'dusk', 'scene': 'city street'}  |  B: {'weather': 'Clear skies with no visible clouds', 'timeofday': 'Dusk, with the sun setting in the background', 'scene': 'A busy urban street with moderate traffic and clear road conditions'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'city street'}
+[38/50] b1d7b3ac-2a92e19f.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'sunny with some haze', 'timeofday': 'late afternoon', 'scene': 'street view from a car window'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'residential'}
+[39/50] b1d7b3ac-36f2d3b7.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'residential'}  |  B: {'weather': 'Sunny with clear blue sky', 'timeofday': 'Afternoon', 'scene': 'Residential street with parked cars and a bamboo fence'}  |  GT: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'residential'}
+[40/50] b1d7b3ac-5744370e.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Sunny with clear blue sky', 'timeofday': 'Afternoon', 'scene': 'Urban street with vehicles and buildings'}  |  GT: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'city street'}
+[41/50] b1d7b3ac-5af8623b.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'highway'}  |  B: {'weather': 'sunny with some clouds', 'timeofday': 'daytime', 'scene': 'road with vehicles and infrastructure'}  |  GT: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'highway'}
+[42/50] b1d7b3ac-995f9d8a.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'residential'}  |  B: {'weather': 'sunny', 'timeofday': 'daytime', 'scene': 'residential street'}  |  GT: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'residential'}
+[43/50] b1d7b3ac-9e14f05f.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'residential'}  |  B: {'weather': 'Sunny with clear blue sky', 'timeofday': 'Late afternoon or early evening', 'scene': 'Residential street with parked cars and houses'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'residential'}
+[44/50] b1d7b3ac-afa57f22.jpg
+  A: {'weather': 'clear', 'timeofday': 'dusk', 'scene': 'residential'}  |  B: {'weather': 'Clear skies with no visible clouds', 'timeofday': 'Dusk, with the sun setting in the background', 'scene': 'Residential street with vehicles and streetlights, palm trees, and buildings on both sides'}  |  GT: {'weather': 'clear', 'timeofday': 'dawn/dusk', 'scene': 'residential'}
+[45/50] b1d8735d-eee9f184.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'night', 'scene': 'city street'}  |  B: {'weather': 'Clear', 'timeofday': 'Night', 'scene': 'Urban street at night with vehicles and buildings illuminated by streetlights and building lights.'}  |  GT: {'weather': 'clear', 'timeofday': 'night', 'scene': 'city street'}
+[46/50] b1d968b9-563405f4.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Overcast', 'timeofday': 'Morning', 'scene': 'Traffic congestion at an intersection'}  |  GT: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}
+[47/50] b1d968b9-ce42734f.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Overcast with gray clouds', 'timeofday': 'Daytime', 'scene': 'City street with moderate traffic'}  |  GT: {'weather': 'overcast', 'timeofday': 'dawn/dusk', 'scene': 'highway'}
+[48/50] b1d971b4-ac67ca0d.jpg
+  A: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'residential'}  |  B: {'weather': 'Overcast', 'timeofday': 'Morning', 'scene': 'Residential street with parked cars and moving traffic'}  |  GT: {'weather': 'overcast', 'timeofday': 'daytime', 'scene': 'residential'}
+[49/50] b1d9e136-6c94ea3f.jpg
+  A: {'weather': 'partly cloudy', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Clear and sunny', 'timeofday': 'Afternoon', 'scene': 'City street with traffic'}  |  GT: {'weather': 'undefined', 'timeofday': 'daytime', 'scene': 'city street'}
+[50/50] b1d9e136-9ab25cb3.jpg
+  A: {'weather': 'clear', 'timeofday': 'daytime', 'scene': 'city street'}  |  B: {'weather': 'Sunny with some clouds', 'timeofday': 'Afternoon', 'scene': 'City street with moderate traffic'}  |  GT: {'weather': 'undefined', 'timeofday': 'daytime', 'scene': 'city street'}
+
+Saved → /home/xzh5180/Research/vlm-mobility/outputs/usecase1_zeroshot/expA_LLaVA-OneVision-7B_results.json
+
+Saved → /home/xzh5180/Research/vlm-mobility/outputs/usecase1_zeroshot/expB_LLaVA-OneVision-7B_results.json
+Exp-A parse success: 50/50 (100%)
+Exp-B parse success: 50/50 (100%)

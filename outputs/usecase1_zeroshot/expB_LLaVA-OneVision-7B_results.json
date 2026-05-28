@@ -1,0 +1,752 @@
+[
+  {
+    "image": "b1c66a42-6f7d68ca.jpg",
+    "ground_truth": {
+      "weather": "overcast",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Partly cloudy with some sunlight\", \"timeofday\": \"Evening or early morning\", \"scene\": \"Urban street with moderate traffic and buildings on both sides\"}",
+    "parsed": {
+      "weather": "Partly cloudy with some sunlight",
+      "timeofday": "Evening or early morning",
+      "scene": "Urban street with moderate traffic and buildings on both sides"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1c81faa-3df17267.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Roadway\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Roadway"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1c81faa-c80764c5.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Highway\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Highway"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1c9c847-3bda4659.jpg",
+    "ground_truth": {
+      "weather": "undefined",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Overcast\", \"timeofday\": \"Morning\", \"scene\": \"Urban street with vehicles and buildings\"}",
+    "parsed": {
+      "weather": "Overcast",
+      "timeofday": "Morning",
+      "scene": "Urban street with vehicles and buildings"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1ca2e5d-84cf9134.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Cityscape\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Cityscape"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1ca8418-84a133a0.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Roadway\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Roadway"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1cac6a7-04e33135.jpg",
+    "ground_truth": {
+      "weather": "rainy",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Rainy\", \"timeofday\": \"Morning\", \"scene\": \"Urban street with vehicles under an elevated train track\"}",
+    "parsed": {
+      "weather": "Rainy",
+      "timeofday": "Morning",
+      "scene": "Urban street with vehicles under an elevated train track"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1cd1e94-26dd524f.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Road with traffic\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Road with traffic"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1cd1e94-549d0bfe.jpg",
+    "ground_truth": {
+      "weather": "undefined",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Sunny with some clouds\", \"timeofday\": \"Morning\", \"scene\": \"Urban street with vehicles and buildings\"}",
+    "parsed": {
+      "weather": "Sunny with some clouds",
+      "timeofday": "Morning",
+      "scene": "Urban street with vehicles and buildings"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1ceb32e-3f481b43.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Underpass\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Underpass"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1ceb32e-51852abe.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear skies with no visible clouds\", \"timeofday\": \"Evening, possibly dusk\", \"scene\": \"City street with moderate traffic and parked cars on the side\"}",
+    "parsed": {
+      "weather": "Clear skies with no visible clouds",
+      "timeofday": "Evening, possibly dusk",
+      "scene": "City street with moderate traffic and parked cars on the side"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1ceb32e-813f84b2.jpg",
+    "ground_truth": {
+      "weather": "undefined",
+      "timeofday": "night",
+      "scene": "tunnel"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Parking garage\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Parking garage"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1ceb32e-a106591d.jpg",
+    "ground_truth": {
+      "weather": "overcast",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Overcast\", \"timeofday\": \"Morning\", \"scene\": \"City street with moderate traffic\"}",
+    "parsed": {
+      "weather": "Overcast",
+      "timeofday": "Morning",
+      "scene": "City street with moderate traffic"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1cebfb7-284f5117.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "daytime",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"Sunny with some clouds\", \"timeofday\": \"Morning\", \"scene\": \"Urban highway with light traffic\"}",
+    "parsed": {
+      "weather": "Sunny with some clouds",
+      "timeofday": "Morning",
+      "scene": "Urban highway with light traffic"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0091f-75824d0d.jpg",
+    "ground_truth": {
+      "weather": "rainy",
+      "timeofday": "daytime",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"Overcast with dark clouds, suggesting potential rain\", \"timeofday\": \"Evening or early morning, based on the lighting\", \"scene\": \"Multi-lane highway with moderate traffic, under an elevated road structure with trees and buildings in the background\"}",
+    "parsed": {
+      "weather": "Overcast with dark clouds, suggesting potential rain",
+      "timeofday": "Evening or early morning, based on the lighting",
+      "scene": "Multi-lane highway with moderate traffic, under an elevated road structure with trees and buildings in the background"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0091f-f2c2d2ae.jpg",
+    "ground_truth": {
+      "weather": "overcast",
+      "timeofday": "daytime",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"Overcast with dark clouds, suggesting potential rain\", \"timeofday\": \"Evening, possibly late afternoon or early evening\", \"scene\": \"Traffic congestion with a police van and a red pickup truck in the foreground, surrounded by other vehicles and trees lining the road\"}",
+    "parsed": {
+      "weather": "Overcast with dark clouds, suggesting potential rain",
+      "timeofday": "Evening, possibly late afternoon or early evening",
+      "scene": "Traffic congestion with a police van and a red pickup truck in the foreground, surrounded by other vehicles and trees lining the road"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0a191-03dcecc2.jpg",
+    "ground_truth": {
+      "weather": "snowy",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Overcast with snow on the ground\", \"timeofday\": \"Morning or late afternoon\", \"scene\": \"Urban street with moderate traffic and pedestrians\"}",
+    "parsed": {
+      "weather": "Overcast with snow on the ground",
+      "timeofday": "Morning or late afternoon",
+      "scene": "Urban street with moderate traffic and pedestrians"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0a191-06deb55d.jpg",
+    "ground_truth": {
+      "weather": "snowy",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Overcast with rain\", \"timeofday\": \"Morning\", \"scene\": \"City street with traffic and pedestrians\"}",
+    "parsed": {
+      "weather": "Overcast with rain",
+      "timeofday": "Morning",
+      "scene": "City street with traffic and pedestrians"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0a191-28f0e779.jpg",
+    "ground_truth": {
+      "weather": "snowy",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Snowy\", \"timeofday\": \"Morning\", \"scene\": \"Roadway\"}",
+    "parsed": {
+      "weather": "Snowy",
+      "timeofday": "Morning",
+      "scene": "Roadway"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0a191-2ed2269e.jpg",
+    "ground_truth": {
+      "weather": "snowy",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Overcast with light snowfall\", \"timeofday\": \"Morning\", \"scene\": \"City street with heavy traffic and taxis\"}",
+    "parsed": {
+      "weather": "Overcast with light snowfall",
+      "timeofday": "Morning",
+      "scene": "City street with heavy traffic and taxis"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0a191-5490450b.jpg",
+    "ground_truth": {
+      "weather": "snowy",
+      "timeofday": "daytime",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"Snowy\", \"timeofday\": \"Daytime\", \"scene\": \"City street with crosswalk and buildings\"}",
+    "parsed": {
+      "weather": "Snowy",
+      "timeofday": "Daytime",
+      "scene": "City street with crosswalk and buildings"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0a191-65deaeef.jpg",
+    "ground_truth": {
+      "weather": "snowy",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Snowy\", \"timeofday\": \"Daytime\", \"scene\": \"Traffic congestion\"}",
+    "parsed": {
+      "weather": "Snowy",
+      "timeofday": "Daytime",
+      "scene": "Traffic congestion"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d0a191-de8948f6.jpg",
+    "ground_truth": {
+      "weather": "snowy",
+      "timeofday": "daytime",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"Rainy\", \"timeofday\": \"Morning\", \"scene\": \"City street traffic\"}",
+    "parsed": {
+      "weather": "Rainy",
+      "timeofday": "Morning",
+      "scene": "City street traffic"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d10d08-5b108225.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Evening\", \"scene\": \"Urban street with moderate traffic\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Evening",
+      "scene": "Urban street with moderate traffic"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d10d08-743fd86c.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Highway\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Highway"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d10d08-c35503b8.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Sunny with clear blue sky\", \"timeofday\": \"Morning with bright sunlight\", \"scene\": \"Urban street with moderate traffic and overpass bridge\"}",
+    "parsed": {
+      "weather": "Sunny with clear blue sky",
+      "timeofday": "Morning with bright sunlight",
+      "scene": "Urban street with moderate traffic and overpass bridge"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d10d08-da110fcb.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear skies with no visible clouds\", \"timeofday\": \"Dusk, with the sun setting in the background\", \"scene\": \"A busy urban street with multiple lanes of traffic and buildings on both sides\"}",
+    "parsed": {
+      "weather": "Clear skies with no visible clouds",
+      "timeofday": "Dusk, with the sun setting in the background",
+      "scene": "A busy urban street with multiple lanes of traffic and buildings on both sides"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d10d08-ec660956.jpg",
+    "ground_truth": {
+      "weather": "snowy",
+      "timeofday": "daytime",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"Sunny with clear blue sky\", \"timeofday\": \"Afternoon\", \"scene\": \"Residential street with vehicles and houses\"}",
+    "parsed": {
+      "weather": "Sunny with clear blue sky",
+      "timeofday": "Afternoon",
+      "scene": "Residential street with vehicles and houses"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d22449-117aa773.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Road construction\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Road construction"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d22449-15fb948f.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Roadway\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Roadway"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d22ed6-f1cac061.jpg",
+    "ground_truth": {
+      "weather": "undefined",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Sunny with clear blue sky\", \"timeofday\": \"Morning with bright sunlight\", \"scene\": \"Busy city street with vehicles and buildings\"}",
+    "parsed": {
+      "weather": "Sunny with clear blue sky",
+      "timeofday": "Morning with bright sunlight",
+      "scene": "Busy city street with vehicles and buildings"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d3907b-2278601b.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Urban street at night with moderate traffic and illuminated buildings.\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Urban street at night with moderate traffic and illuminated buildings."
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d4b62c-60aab822.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"sunny\", \"timeofday\": \"dusk\", \"scene\": \"traffic congestion\"}",
+    "parsed": {
+      "weather": "sunny",
+      "timeofday": "dusk",
+      "scene": "traffic congestion"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d4b62c-89eeb5d3.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Intersection\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Intersection"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d4b62c-d9805029.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Urban street with vehicles and buildings\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Urban street with vehicles and buildings"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d59b1f-a38aec79.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Sunny with clear blue sky\", \"timeofday\": \"Afternoon\", \"scene\": \"Tree-lined street with vehicles and parking meters\"}",
+    "parsed": {
+      "weather": "Sunny with clear blue sky",
+      "timeofday": "Afternoon",
+      "scene": "Tree-lined street with vehicles and parking meters"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d7b3ac-0bdb47dc.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear skies with no visible clouds\", \"timeofday\": \"Dusk, with the sun setting in the background\", \"scene\": \"A busy urban street with moderate traffic and clear road conditions\"}",
+    "parsed": {
+      "weather": "Clear skies with no visible clouds",
+      "timeofday": "Dusk, with the sun setting in the background",
+      "scene": "A busy urban street with moderate traffic and clear road conditions"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d7b3ac-2a92e19f.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"sunny with some haze\", \"timeofday\": \"late afternoon\", \"scene\": \"street view from a car window\"}",
+    "parsed": {
+      "weather": "sunny with some haze",
+      "timeofday": "late afternoon",
+      "scene": "street view from a car window"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d7b3ac-36f2d3b7.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "daytime",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"Sunny with clear blue sky\", \"timeofday\": \"Afternoon\", \"scene\": \"Residential street with parked cars and a bamboo fence\"}",
+    "parsed": {
+      "weather": "Sunny with clear blue sky",
+      "timeofday": "Afternoon",
+      "scene": "Residential street with parked cars and a bamboo fence"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d7b3ac-5744370e.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Sunny with clear blue sky\", \"timeofday\": \"Afternoon\", \"scene\": \"Urban street with vehicles and buildings\"}",
+    "parsed": {
+      "weather": "Sunny with clear blue sky",
+      "timeofday": "Afternoon",
+      "scene": "Urban street with vehicles and buildings"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d7b3ac-5af8623b.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "daytime",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"sunny with some clouds\", \"timeofday\": \"daytime\", \"scene\": \"road with vehicles and infrastructure\"}",
+    "parsed": {
+      "weather": "sunny with some clouds",
+      "timeofday": "daytime",
+      "scene": "road with vehicles and infrastructure"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d7b3ac-995f9d8a.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "daytime",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"sunny\", \"timeofday\": \"daytime\", \"scene\": \"residential street\"}",
+    "parsed": {
+      "weather": "sunny",
+      "timeofday": "daytime",
+      "scene": "residential street"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d7b3ac-9e14f05f.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"Sunny with clear blue sky\", \"timeofday\": \"Late afternoon or early evening\", \"scene\": \"Residential street with parked cars and houses\"}",
+    "parsed": {
+      "weather": "Sunny with clear blue sky",
+      "timeofday": "Late afternoon or early evening",
+      "scene": "Residential street with parked cars and houses"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d7b3ac-afa57f22.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "dawn/dusk",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"Clear skies with no visible clouds\", \"timeofday\": \"Dusk, with the sun setting in the background\", \"scene\": \"Residential street with vehicles and streetlights, palm trees, and buildings on both sides\"}",
+    "parsed": {
+      "weather": "Clear skies with no visible clouds",
+      "timeofday": "Dusk, with the sun setting in the background",
+      "scene": "Residential street with vehicles and streetlights, palm trees, and buildings on both sides"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d8735d-eee9f184.jpg",
+    "ground_truth": {
+      "weather": "clear",
+      "timeofday": "night",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear\", \"timeofday\": \"Night\", \"scene\": \"Urban street at night with vehicles and buildings illuminated by streetlights and building lights.\"}",
+    "parsed": {
+      "weather": "Clear",
+      "timeofday": "Night",
+      "scene": "Urban street at night with vehicles and buildings illuminated by streetlights and building lights."
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d968b9-563405f4.jpg",
+    "ground_truth": {
+      "weather": "overcast",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Overcast\", \"timeofday\": \"Morning\", \"scene\": \"Traffic congestion at an intersection\"}",
+    "parsed": {
+      "weather": "Overcast",
+      "timeofday": "Morning",
+      "scene": "Traffic congestion at an intersection"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d968b9-ce42734f.jpg",
+    "ground_truth": {
+      "weather": "overcast",
+      "timeofday": "dawn/dusk",
+      "scene": "highway"
+    },
+    "raw_output": "{\"weather\": \"Overcast with gray clouds\", \"timeofday\": \"Daytime\", \"scene\": \"City street with moderate traffic\"}",
+    "parsed": {
+      "weather": "Overcast with gray clouds",
+      "timeofday": "Daytime",
+      "scene": "City street with moderate traffic"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d971b4-ac67ca0d.jpg",
+    "ground_truth": {
+      "weather": "overcast",
+      "timeofday": "daytime",
+      "scene": "residential"
+    },
+    "raw_output": "{\"weather\": \"Overcast\", \"timeofday\": \"Morning\", \"scene\": \"Residential street with parked cars and moving traffic\"}",
+    "parsed": {
+      "weather": "Overcast",
+      "timeofday": "Morning",
+      "scene": "Residential street with parked cars and moving traffic"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d9e136-6c94ea3f.jpg",
+    "ground_truth": {
+      "weather": "undefined",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Clear and sunny\", \"timeofday\": \"Afternoon\", \"scene\": \"City street with traffic\" }",
+    "parsed": {
+      "weather": "Clear and sunny",
+      "timeofday": "Afternoon",
+      "scene": "City street with traffic"
+    },
+    "parse_success": true
+  },
+  {
+    "image": "b1d9e136-9ab25cb3.jpg",
+    "ground_truth": {
+      "weather": "undefined",
+      "timeofday": "daytime",
+      "scene": "city street"
+    },
+    "raw_output": "{\"weather\": \"Sunny with some clouds\", \"timeofday\": \"Afternoon\", \"scene\": \"City street with moderate traffic\"}",
+    "parsed": {
+      "weather": "Sunny with some clouds",
+      "timeofday": "Afternoon",
+      "scene": "City street with moderate traffic"
+    },
+    "parse_success": true
+  }
+]
