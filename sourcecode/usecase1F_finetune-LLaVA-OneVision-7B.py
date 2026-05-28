@@ -5,7 +5,9 @@ Script: usecase1C_finetune-LLaVA-OneVision-7B.py
 训练集：与 1A/1B 完全一致（SEED=42, N_TRAIN=250, N_VAL=25, N_TEST=50）
 """
 
-import torch, json, os, re, random
+import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+import torch, json, re, random
 from pathlib import Path
 from PIL import Image
 from transformers import (
@@ -85,7 +87,7 @@ def prepare_splits(data_dir, annotations):
 #   - 不需要 process_vision_info / image_grid_thw
 # ============================================================
 def build_inputs_with_labels(processor, image_path, gt_json, device):
-    image = Image.open(image_path).convert("RGB")
+    image = Image.open(image_path).convert("RGB").resize((384, 384), Image.LANCZOS)
 
     full_msgs = [
         {"role": "user", "content": [
