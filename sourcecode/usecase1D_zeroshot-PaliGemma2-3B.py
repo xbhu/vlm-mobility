@@ -49,7 +49,7 @@ bnb_config = BitsAndBytesConfig(
 # PaliGemma 2 没有 system/user 分离，把所有指令合并成一段文字
 # Exp-A 和 Exp-B 的区别仍然保留：有无固定选项
 # ============================================================
-PROMPT_A = (
+PROMPT_A = "<image>\n" + (
     "You are a traffic scene analysis assistant. "
     "Analyze the image and output ONLY a valid JSON object with no extra text.\n"
     "Output format:\n"
@@ -59,7 +59,7 @@ PROMPT_A = (
     "Analyze this image and output the JSON only."
 )
 
-PROMPT_B = (
+PROMPT_B = "<image>\n" + (
     "You are a traffic scene analysis assistant. "
     "Analyze the image and output ONLY a valid JSON object with no extra text.\n"
     "Output format:\n"
