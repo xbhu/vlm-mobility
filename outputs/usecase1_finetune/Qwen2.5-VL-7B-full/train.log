@@ -5,3 +5,162 @@ Loading model...
 Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 38764.36it/s]
 Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 2/729 [00:00<01:09, 10.39it/s]Loading weights:   2%|▏         | 17/729 [00:00<00:10, 67.49it/s]Loading weights:   6%|▌         | 41/729 [00:00<00:05, 126.65it/s]Loading weights:   9%|▉         | 65/729 [00:00<00:04, 159.89it/s]Loading weights:  12%|█▏        | 89/729 [00:00<00:03, 179.85it/s]Loading weights:  16%|█▌        | 113/729 [00:00<00:03, 193.54it/s]Loading weights:  19%|█▉        | 137/729 [00:00<00:02, 202.11it/s]Loading weights:  22%|██▏       | 161/729 [00:00<00:02, 209.24it/s]Loading weights:  25%|██▌       | 185/729 [00:01<00:02, 212.89it/s]Loading weights:  29%|██▊       | 209/729 [00:01<00:02, 216.82it/s]Loading weights:  32%|███▏      | 233/729 [00:01<00:02, 220.53it/s]Loading weights:  35%|███▌      | 257/729 [00:01<00:02, 222.70it/s]Loading weights:  39%|███▊      | 281/729 [00:01<00:01, 224.21it/s]Loading weights:  42%|████▏     | 305/729 [00:01<00:01, 224.68it/s]Loading weights:  45%|████▌     | 329/729 [00:01<00:01, 225.53it/s]Loading weights:  67%|██████▋   | 489/729 [00:01<00:00, 621.45it/s]Loading weights:  95%|█████████▍| 691/729 [00:01<00:00, 1027.40it/s]Loading weights: 100%|██████████| 729/729 [00:01<00:00, 379.12it/s] 
 [transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+trainable params: 23,794,688 || all params: 8,315,961,344 || trainable%: 0.2861
+
+==================================================
+Epoch 1/2
+==================================================
+  step 50/3495  loss=0.1224
+  step 100/3495  loss=0.1004
+  step 150/3495  loss=0.0949
+  step 200/3495  loss=0.0879
+  step 250/3495  loss=0.0862
+  step 300/3495  loss=0.0830
+  step 350/3495  loss=0.0804
+  step 400/3495  loss=0.0783
+  step 450/3495  loss=0.0776
+  step 500/3495  loss=0.0783
+  step 550/3495  loss=0.0762
+  step 600/3495  loss=0.0756
+  step 650/3495  loss=0.0739
+  step 700/3495  loss=0.0736
+  step 750/3495  loss=0.0733
+  step 800/3495  loss=0.0738
+  step 850/3495  loss=0.0736
+  step 900/3495  loss=0.0722
+  step 950/3495  loss=0.0721
+  step 1000/3495  loss=0.0708
+  step 1050/3495  loss=0.0706
+  step 1100/3495  loss=0.0702
+  step 1150/3495  loss=0.0695
+  step 1200/3495  loss=0.0695
+  step 1250/3495  loss=0.0691
+  step 1300/3495  loss=0.0693
+  step 1350/3495  loss=0.0697
+  step 1400/3495  loss=0.0695
+  step 1450/3495  loss=0.0689
+  step 1500/3495  loss=0.0685
+  step 1550/3495  loss=0.0681
+  step 1600/3495  loss=0.0676
+  step 1650/3495  loss=0.0680
+  step 1700/3495  loss=0.0675
+  step 1750/3495  loss=0.0667
+  step 1800/3495  loss=0.0663
+  step 1850/3495  loss=0.0658
+  step 1900/3495  loss=0.0660
+  step 1950/3495  loss=0.0656
+  step 2000/3495  loss=0.0658
+  step 2050/3495  loss=0.0654
+  step 2100/3495  loss=0.0648
+  step 2150/3495  loss=0.0642
+  step 2200/3495  loss=0.0642
+  step 2250/3495  loss=0.0643
+  step 2300/3495  loss=0.0642
+  step 2350/3495  loss=0.0639
+  step 2400/3495  loss=0.0639
+  step 2450/3495  loss=0.0641
+  step 2500/3495  loss=0.0640
+  step 2550/3495  loss=0.0639
+  step 2600/3495  loss=0.0636
+  step 2650/3495  loss=0.0635
+  step 2700/3495  loss=0.0637
+  step 2750/3495  loss=0.0639
+  step 2800/3495  loss=0.0640
+  step 2850/3495  loss=0.0640
+  step 2900/3495  loss=0.0637
+  step 2950/3495  loss=0.0639
+  step 3000/3495  loss=0.0635
+  step 3050/3495  loss=0.0632
+  step 3100/3495  loss=0.0633
+  step 3150/3495  loss=0.0631
+  step 3200/3495  loss=0.0631
+  step 3250/3495  loss=0.0631
+  step 3300/3495  loss=0.0631
+  step 3350/3495  loss=0.0628
+  step 3400/3495  loss=0.0628
+  step 3450/3495  loss=0.0626
+Epoch 1: train=0.0624  val=0.0687
+  ✓ Best adapter saved
+
+==================================================
+Epoch 2/2
+==================================================
+  step 50/3495  loss=0.0783
+  step 100/3495  loss=0.0617
+  step 150/3495  loss=0.0623
+  step 200/3495  loss=0.0591
+  step 250/3495  loss=0.0604
+  step 300/3495  loss=0.0602
+  step 350/3495  loss=0.0578
+  step 400/3495  loss=0.0571
+  step 450/3495  loss=0.0582
+  step 500/3495  loss=0.0582
+  step 550/3495  loss=0.0566
+  step 600/3495  loss=0.0569
+  step 650/3495  loss=0.0556
+  step 700/3495  loss=0.0552
+  step 750/3495  loss=0.0550
+  step 800/3495  loss=0.0559
+  step 850/3495  loss=0.0569
+  step 900/3495  loss=0.0561
+  step 950/3495  loss=0.0561
+  step 1000/3495  loss=0.0553
+  step 1050/3495  loss=0.0553
+  step 1100/3495  loss=0.0551
+  step 1150/3495  loss=0.0550
+  step 1200/3495  loss=0.0551
+  step 1250/3495  loss=0.0550
+  step 1300/3495  loss=0.0553
+  step 1350/3495  loss=0.0559
+  step 1400/3495  loss=0.0557
+  step 1450/3495  loss=0.0554
+  step 1500/3495  loss=0.0551
+  step 1550/3495  loss=0.0551
+  step 1600/3495  loss=0.0548
+  step 1650/3495  loss=0.0551
+  step 1700/3495  loss=0.0547
+  step 1750/3495  loss=0.0542
+  step 1800/3495  loss=0.0539
+  step 1850/3495  loss=0.0536
+  step 1900/3495  loss=0.0539
+  step 1950/3495  loss=0.0537
+  step 2000/3495  loss=0.0540
+  step 2050/3495  loss=0.0538
+  step 2100/3495  loss=0.0533
+  step 2150/3495  loss=0.0529
+  step 2200/3495  loss=0.0529
+  step 2250/3495  loss=0.0532
+  step 2300/3495  loss=0.0532
+  step 2350/3495  loss=0.0530
+  step 2400/3495  loss=0.0532
+  step 2450/3495  loss=0.0534
+  step 2500/3495  loss=0.0534
+  step 2550/3495  loss=0.0534
+  step 2600/3495  loss=0.0532
+  step 2650/3495  loss=0.0531
+  step 2700/3495  loss=0.0535
+  step 2750/3495  loss=0.0536
+  step 2800/3495  loss=0.0538
+  step 2850/3495  loss=0.0539
+  step 2900/3495  loss=0.0537
+  step 2950/3495  loss=0.0539
+  step 3000/3495  loss=0.0536
+  step 3050/3495  loss=0.0534
+  step 3100/3495  loss=0.0536
+  step 3150/3495  loss=0.0535
+  step 3200/3495  loss=0.0535
+  step 3250/3495  loss=0.0536
+  step 3300/3495  loss=0.0535
+  step 3350/3495  loss=0.0534
+  step 3400/3495  loss=0.0533
+  step 3450/3495  loss=0.0532
+Epoch 2: train=0.0531  val=0.0675
+  ✓ Best adapter saved
+
+Evaluating on test set...
+
+=== Post-finetune Eval (parsed 50/50) ===
+  weather: 38/50 = 76%
+  timeofday: 39/50 = 78%
+  scene: 35/50 = 70%
+Saved → /home/xzh5180/Research/vlm-mobility/outputs/usecase1_finetune/Qwen2.5-VL-7B-full/eval_post_finetune.json
