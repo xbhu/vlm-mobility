@@ -1,0 +1,317 @@
+[
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What are objects to the front right of the ego car?",
+    "gt": "There are many barriers and one construction vehicle to the front right of the ego car.",
+    "pred": "To the front right of the ego car in the image, there is a sign that reads \"LOT FOR LEASE\" with additional text indicating \"18,000 SQ FT\" and \"JFL Real Estate.\" This suggests that the area might be a vacant lot or property available for lease by real estate company JFL. The sign is partially obscured by what appears to be fog or mist, which could affect visibility."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There is one truck and one barrier to the front left of the ego car.",
+    "pred": "The objects to the front left of the ego car in the image appear to be a series of buildings and structures, possibly part of an industrial or commercial area. There is also a sign visible that reads \"LOT FOR LEASE\" with additional text indicating \"18,000 SQ FT\" and \"JFL Real Estate.\" This suggests that there might be vacant land or property available for lease. The presence of these signs indicates that this area could be undergoing development or is currently being used for business purposes."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What is the status of the truck that is to the front left of the ego car?",
+    "gt": "One truck is moving.",
+    "pred": "The image shows a rainy street scene with traffic lights indicating green, allowing vehicles to proceed. There appears to be a vehicle in the distance on the road ahead, but it is not clear whether it is a truck or another type of vehicle due to the distance and the rain obscuring the view. The specific details about the truck's status (e.g., moving, stationary) cannot be determined from this image alone."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What are objects to the back left of the ego car?",
+    "gt": "There are two barriers, many trucks, two trailers, and one car to the back left of the ego car.",
+    "pred": "To the back left of the ego car in the image, there are several objects:\n\n1. **Buildings**: There are buildings visible in the background on the left side.\n2. **Street Signs**: There is a street sign with a \"No Parking\" symbol.\n3. **Trees**: There are trees along the sidewalk near the buildings.\n4. **Street Lamps**: There are street lamps lining the road.\n\nThese elements suggest an urban or suburban setting with infrastructure for traffic and pedestrian safety."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What is the status of the trucks that are to the back left of the ego car?",
+    "gt": "Many trucks are parked.",
+    "pred": "The image shows a rainy street scene with traffic lights and some buildings in the background. There are no trucks visible to the back left of the ego car in this image. The view is primarily focused on the road ahead, and there are no trucks in sight from that perspective."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What are objects to the back left of the ego car?",
+    "gt": "There are many trucks, one car, two barriers, and one traffic cone to the back left of the ego car.",
+    "pred": "The objects to the back left of the ego car appear to be traffic signals and possibly some industrial or utility buildings. The traffic signals are mounted on poles, and there is a structure that looks like it could be part of an industrial facility or a utility building in the background. The area also seems to have some trees or shrubs, indicating it might be near a landscaped area or a park."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What is the status of the trucks that are to the back left of the ego car?",
+    "gt": "Many trucks are parked, and one is moving.",
+    "pred": "The image shows a view from inside a vehicle, likely through the windshield, looking out onto a wet road with traffic lights and railroad crossings. There are no trucks visible in the immediate foreground or background to the left of the ego car (the vehicle from which the photo is taken). The area to the back left appears to be clear of vehicles, showing only the wet road surface and some buildings in the distance."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There is one car, three barriers, one trailer, and three trucks to the front left of the ego car.",
+    "pred": "The objects to the front left of the ego car in the image appear to be traffic lights and a railroad crossing signal. The traffic lights are mounted on poles, and there is a railroad crossing sign with the characteristic \"X\" symbol indicating a level crossing. The wet road surface reflects these objects, suggesting it has recently rained."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What is the status of the car that is to the front left of the ego car?",
+    "gt": "One car is parked.",
+    "pred": "The image shows a view from inside a vehicle, likely through the windshield, looking out onto a wet road with traffic lights and railroad crossing signals. There is no car visible in the immediate foreground or directly in front of the vehicle (the \"ego car\"). The road appears to be clear ahead, and there are no cars immediately in front of the vehicle based on this perspective. However, it's important to note that the image does not provide a full 360-degree view, so there could be vehicles obscured by the angle of the photo or outside the frame."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What is the status of the car that is to the back left of the ego car?",
+    "gt": "One car is parked.",
+    "pred": "The image shows a view from inside a vehicle, likely through the windshield, looking out onto a wet road with traffic lights and railroad crossing signals. There is no visible car directly to the back left of the ego car in this image. The area immediately around the ego car appears clear, without any vehicles immediately behind it. However, there might be cars further ahead or to the sides that are not visible in this particular frame."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What are objects to the back left of the ego car?",
+    "gt": "There are many trucks, two cars, and many barriers to the back left of the ego car.",
+    "pred": "The objects to the back left of the ego car in the image appear to be traffic signals and a railroad crossing sign. The traffic signals are mounted on poles, and there is a railroad crossing sign with the characteristic X-shaped symbol indicating a level crossing. These are typically used to warn drivers about potential train crossings and to control traffic flow at such intersections."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What is the status of the trucks that are to the back left of the ego car?",
+    "gt": "Many trucks are parked, and one is moving.",
+    "pred": "The image does not show any trucks to the back left of the ego car. The view appears to be from the perspective of a vehicle at a railroad crossing, and there are no visible trucks in the immediate vicinity. The focus is on the railroad crossing signals and the wet road surface due to rain."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are three barriers in front of the ego car.",
+    "pred": "The image shows a view from inside a vehicle, likely the \"ego\" car, looking out through a windshield at a wet road. In front of the vehicle, there are several traffic lights and railroad crossing signals. The traffic lights are showing green, indicating that it is safe to proceed. The railroad crossing signals are also visible, with their characteristic X-shaped arms raised, suggesting that the railroad tracks are clear for vehicles to pass. The wet road reflects the lights, indicating recent or ongoing rain. There are no other vehicles in sight ahead of the ego car."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What is the status of the cars that are to the back left of the ego car?",
+    "gt": "Two cars are parked.",
+    "pred": "The image shows a view from inside a vehicle, likely the \"ego car,\" looking out onto a wet road with traffic lights and railroad crossing signals. There are no cars visible to the back left of the ego car in this image. The area appears to be clear of vehicles at that moment."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What are objects to the back of the ego car?",
+    "gt": "There is one pedestrian, one bus, and two cars behind the ego car.",
+    "pred": "The image shows a view from inside a vehicle, likely through the windshield, looking out onto a wet road with traffic lights and railroad crossing signals. The objects visible in the background include:\n\n1. **Traffic Lights**: There are multiple traffic lights visible, indicating this is an intersection.\n2. **Railroad Crossing Signals**: There are railroad crossing signals on both sides of the road, which are typically used to warn vehicles about approaching trains.\n3. **Buildings and Structures**: There are some buildings and structures visible in the distance, suggesting this might be near an industrial or urban area.\n4. **Trees and Vegetation**: There are trees"
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many barriers, one pedestrian, one car, and one traffic cone to the front left of the ego car.",
+    "pred": "In the image, to the front left of the ego car (which appears to be the white car on the right side of the intersection), there is a traffic light and a pedestrian crossing signal. There are also some trees and a grassy area in the background. The traffic light is showing a red signal, indicating that vehicles should stop."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are many cars in front of the ego car.",
+    "pred": "In the image, the \"ego car\" appears to be the white car on the right side of the intersection. The objects directly in front of it include:\n\n1. A red sedan.\n2. A black sedan.\n3. A white sedan.\n\nThese vehicles are positioned at the intersection, waiting for the traffic light to change or for their turn to proceed through the intersection."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What is the status of the cars that are to the front of the ego car?",
+    "gt": "Many cars are moving, and one is parked.",
+    "pred": "The cars in front of the ego car appear to be stopped at a red traffic light. The traffic light is illuminated with a red signal, indicating that vehicles must stop. The cars are positioned behind the ego car, which suggests they are waiting for their turn to proceed when the light turns green."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What are objects to the back of the ego car?",
+    "gt": "There are two trucks and two cars behind the ego car.",
+    "pred": "In the image, there is an intersection with traffic lights and vehicles. To the back of the ego car (which appears to be the white car on the right side of the image), you can see:\n\n1. A black sedan.\n2. A white SUV.\n3. Another white car partially visible behind the white SUV.\n\nThese vehicles are waiting at the intersection, likely stopped due to the red traffic light signal. The scene also includes trees, a road sign indicating \"Medio Circle,\" and a large building structure in the background."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What is the status of the trucks that are to the back of the ego car?",
+    "gt": "Two trucks are moving.",
+    "pred": "The image shows a traffic intersection with several vehicles. The truck that is to the back of the ego car (which appears to be a white sedan) is stopped at the red light. The truck's brake lights are illuminated, indicating that it is stationary and waiting for the light to turn green before proceeding."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many barriers, three cars, and one pedestrian to the front left of the ego car.",
+    "pred": "To the front left of the ego car in the image, there is a white van and some trees. The trees appear to be part of a landscaped area, possibly along the side of the road or within a park-like setting. The white van is partially visible on the left side of the image, indicating it is in the same lane as the ego car but further ahead."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What is the status of the cars that are to the front left of the ego car?",
+    "gt": "Three cars are moving.",
+    "pred": "The cars to the front left of the ego car appear to be stopped at a red traffic light. The traffic light in the foreground is red, indicating that vehicles must stop. The car directly in front of the ego car is also stopped, as indicated by its position relative to the traffic light and the lack of motion blur."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What are objects to the back of the ego car?",
+    "gt": "There are two trucks and one car behind the ego car.",
+    "pred": "In the image, there are several objects visible to the back of the ego car:\n\n1. **Trees**: There are trees on the left side of the road.\n2. **Buildings**: There is a large building with a modern design on the right side of the road.\n3. **Traffic Lights**: There are traffic lights at the intersection.\n4. **Other Vehicles**: There are other vehicles visible in the distance, including a white car and a van.\n\nThese objects are part of the urban environment and contribute to the context of the scene."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What is the status of the trucks that are to the back of the ego car?",
+    "gt": "Two trucks are moving.",
+    "pred": "The image shows a street intersection with traffic lights and vehicles. The truck in the background appears to be stopped at the red light, as indicated by the red signal light above it. There are no other trucks visible behind the ego car (the white car in the foreground) in this image."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What are objects to the front right of the ego car?",
+    "gt": "There is one truck and many cars to the front right of the ego car.",
+    "pred": "To the front right of the ego car in the image, there is a traffic light and a pedestrian crossing signal. The traffic light is red, indicating that vehicles should stop. There are also some trees and a building in the background to the right side of the road."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many barriers, two cars, and one pedestrian to the front left of the ego car.",
+    "pred": "In the image, to the front left of the ego car (the car from whose perspective the photo is taken), there are several objects:\n\n1. **Traffic Lights**: There are traffic lights visible on the left side of the intersection.\n2. **Street Signs**: There are street signs attached to the traffic light poles.\n3. **Trees**: There are trees in the background to the left side of the intersection.\n4. **Buildings**: There are buildings further in the background, partially obscured by the trees and the large structure on the right.\n\nThese objects are part of the urban infrastructure and landscape surrounding the intersection."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What is the status of the cars that are to the front left of the ego car?",
+    "gt": "One of the cars is moving, and one is parked.",
+    "pred": "The cars to the front left of the ego car appear to be stopped at a traffic light. The traffic light is red, indicating that vehicles must stop and wait for the light to turn green before proceeding. The car in the immediate lane ahead of the ego car is stationary, and there are no visible signs of movement or acceleration from it."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What are objects to the back left of the ego car?",
+    "gt": "There is one truck, one car, and one traffic cone to the back left of the ego car.",
+    "pred": "To the back left of the ego car in the image, there is a white van and some trees. The trees appear to be part of a landscaped area, possibly a park or a green space within an urban setting. The white van is parked or stationary near the curb."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What is the status of the truck that is to the back left of the ego car?",
+    "gt": "One truck is moving.",
+    "pred": "The truck to the back left of the ego car appears to be stationary. It is positioned on the side of the road, and there are no visible signs of motion such as blurred wheels or changes in position relative to other vehicles. The truck's brake lights are not illuminated, which suggests it is not currently braking. Therefore, based on the image alone, it seems the truck is at a standstill."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What are objects to the front right of the ego car?",
+    "gt": "There is one truck and one car to the front right of the ego car.",
+    "pred": "To the front right of the ego car in the image, there is a pedestrian crossing with white lines marking the crosswalk. There are also traffic lights visible, indicating the intersection's control signals. Additionally, there is a building structure on the far right side of the image, which appears to be a modern architectural design. The road itself has lane markings and a yellow dividing line."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are many pedestrians, one trailer, one motorcycle, three cars, and two trucks in front of the ego car.",
+    "pred": "In the image, there is a large white truck in the foreground on the left side of the street. There are also several other vehicles visible further down the road, including what appears to be a red van and another truck. The street is lined with buildings on both sides, and there are pedestrians on the sidewalk. The sky is partly cloudy, and the overall setting appears to be an urban area."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What is the status of the pedestrians that are to the front of the ego car?",
+    "gt": "Many pedestrians are standing, and many are moving.",
+    "pred": "The pedestrians in the image appear to be standing on the sidewalk near the curb, facing the street. One pedestrian is holding what looks like a camera or a similar device, possibly taking a photo or recording something. The other pedestrian is standing nearby, looking in the same direction as the first pedestrian. Both seem to be observing something happening on the street, possibly related to the large truck that is visible in the foreground. There is no indication that they are actively crossing the street at this moment."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many pedestrians and one car to the front left of the ego car.",
+    "pred": "In the image, to the front left of the ego car (the white truck), there is another large white truck. This truck appears to be a semi-trailer truck, commonly used for long-distance freight transport. The presence of this truck suggests that it might be part of the same fleet or involved in similar activities as the ego car."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What is the status of the pedestrians that are to the front left of the ego car?",
+    "gt": "Many pedestrians are moving, and two are standing.",
+    "pred": "The pedestrians to the front left of the ego car appear to be standing on the sidewalk, facing away from the camera. One of them seems to be holding an object in their hand, possibly a phone or a small device, and appears to be looking at it. The other pedestrian is standing nearby, also facing away from the camera. Both individuals seem to be engaged in some activity that does not involve immediate interaction with the traffic or the ego vehicle."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What is the status of the trailer that is to the front of the ego car?",
+    "gt": "The trailer in front of the ego car is moving.",
+    "pred": "The trailer in the image appears to be a semi-trailer, which is a type of truck trailer used for transporting goods over long distances. The specific status of this particular trailer cannot be determined from the image alone without additional context or information about its current load and destination. However, it seems to be in motion on a city street, possibly delivering or transporting goods. The presence of other vehicles and pedestrians suggests it is operating within an urban environment."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are many pedestrians, one motorcycle, three cars, and two trucks in front of the ego car.",
+    "pred": "In the image, there are several objects and elements visible in front of the ego car:\n\n1. **Truck**: A large white truck is driving on the left side of the road.\n2. **Sidewalk**: There is a sidewalk where two people are standing.\n3. **Pedestrians**: Two individuals are standing on the sidewalk, one appears to be holding a phone.\n4. **Street Signs**: There are street signs visible on the right side of the image, including a parking sign and a \"T\" sign which likely indicates a transit or subway stop.\n5. **Buildings**: Tall buildings line both sides of"
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What is the status of the pedestrians that are to the front of the ego car?",
+    "gt": "Many pedestrians are standing, and many are moving.",
+    "pred": "The pedestrians in the image appear to be standing on the sidewalk near the curb, facing each other. One pedestrian seems to be gesturing with their hand, possibly indicating something or engaging in conversation. The other pedestrian appears to be listening attentively. There are no visible signs of movement or interaction with the vehicles on the street, suggesting they are stationary and not crossing the street at this moment."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many pedestrians, one trailer, and one car to the front left of the ego car.",
+    "pred": "In the image, to the front left of the ego car (the white truck), there is another large white truck. This truck appears to be a semi-trailer truck, commonly used for long-distance freight transport. The truck is partially visible, with its side and part of the trailer visible in the frame. The truck's license plate number is partially obscured by the angle of the photo."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What is the status of the pedestrians that are to the front left of the ego car?",
+    "gt": "Many pedestrians are moving, and one is standing.",
+    "pred": "The pedestrians in the image appear to be standing on the sidewalk near the curb, facing each other. One pedestrian seems to be gesturing with their hand, possibly indicating something or engaging in conversation. The other pedestrian appears to be listening attentively. They are not crossing the street and seem to be engaged in a discussion or interaction."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What is the status of the trailer that is to the front left of the ego car?",
+    "gt": "The trailer to the front left of the ego car is moving.",
+    "pred": "The trailer in the image appears to be a semi-trailer truck, which is a type of trailer that is towed by a tractor unit (the cab and engine). The trailer itself does not have any visible cargo or load attached to it; it seems to be empty or without a load. This could mean that it is either being transported to a loading area, has just delivered its load, or is waiting for a load to be loaded onto it. The absence of a load also suggests that it might be a specialized trailer used for transporting goods rather than a standard cargo trailer."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are many pedestrians, one trailer, one motorcycle, many cars, and one truck in front of the ego car.",
+    "pred": "In the image, there are several objects and elements visible in front of the ego car:\n\n1. **Pedestrians**: There are two pedestrians crossing the street in front of the ego car.\n2. **Crosswalk**: The pedestrians are crossing a crosswalk.\n3. **Sidewalk**: The sidewalk is on the right side of the street.\n4. **Street Signs**: There are street signs visible, including one that appears to indicate parking restrictions.\n5. **Buildings**: Tall buildings line both sides of the street.\n6. **Vehicles**: There are vehicles parked along the street, including a truck with the number \""
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What is the status of the pedestrians that are to the front of the ego car?",
+    "gt": "Many pedestrians are moving, and many are standing.",
+    "pred": "The pedestrians in the image appear to be crossing the street at a crosswalk. The pedestrian in the foreground is actively crossing, while the pedestrian behind them seems to be waiting or observing before crossing. Both individuals are on the same side of the street as the camera's perspective, which suggests they are pedestrians in the same direction of travel relative to the camera's viewpoint."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many pedestrians and one car to the front left of the ego car.",
+    "pred": "To the front left of the ego car in the image, there is a large truck with the number \"02148MD003\" on its side. The truck appears to be parked or stationary, and it is partially obscured by the sidewalk and the pedestrians crossing the street."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What is the status of the pedestrians that are to the front left of the ego car?",
+    "gt": "Many pedestrians are moving, and one is standing.",
+    "pred": "The pedestrians in the image appear to be crossing the street at a crosswalk. They are positioned within the white lines of the crosswalk, which indicates they are actively crossing the street. The pedestrian on the left is closer to the camera and appears to be in the process of crossing, while the pedestrian on the right is further away and also seems to be crossing. Both pedestrians are facing the direction of the street, suggesting they are moving forward across the road."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What are objects to the back of the ego car?",
+    "gt": "There are many cars, pedestrians, three bicycles, and two trucks to the back of the ego car.",
+    "pred": "In the image, there is a truck with the identification number \"02148MD003\" visible in the background behind the ego car. Additionally, there are other vehicles and pedestrians further down the street, but they are not directly behind the ego car. The focus appears to be on the pedestrian crossing in the foreground."
+  }
+]
