@@ -1,0 +1,3 @@
+PDM_Lite_Carla_LB2/Town01/data/DynamicObjectCrossing/Route0_Rep0/rgb/0010.jpg
+PDM_Lite_Carla_LB2/Town01/data/DynamicObjectCrossing/Route0_Rep0/rgb/0011.jpg
+PDM_Lite_Carla_LB2/Town01/data/DynamicObjectCrossing/Route0_Rep0/rgb/0012.jpg

@@ -1,0 +1,8 @@
+v1_0_train_nus.json filter=lfs diff=lfs merge=lfs -text
+drivelm_nus_imgs.zip filter=lfs diff=lfs merge=lfs -text
+drivelm_nus_imgs_train.zip filter=lfs diff=lfs merge=lfs -text
+v1_1_train_nus.json filter=lfs diff=lfs merge=lfs -text
+drivelm_nus_imgs_val.zip filter=lfs diff=lfs merge=lfs -text
+drivelm_carla_vqas.zip filter=lfs diff=lfs merge=lfs -text
+keyframes_all_towns.txt filter=lfs diff=lfs merge=lfs -text
+drivelm_carla_keyframes.txt filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,3542 @@
+{
+  "b789de07180846cc972118ee6d1fb027": {
+    "key_frames": {
+      "b0e6fd5561454b2789c853e5350557a8": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c1,CAM_BACK,384.2,477.5>? Please select the correct answer from the following options: A. Turn right. B. Drive backward. C. Going ahead. D. Turn left.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_BACK,384.2,477.5> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_BACK,1517.8,571.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT_RIGHT,391.7,535.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK,384.2,477.5> be in the moving direction of <c2,CAM_BACK,1517.8,571.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK,384.2,477.5> change its motion state based on <c2,CAM_BACK,1517.8,571.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_BACK,1517.8,571.7> be in the moving direction of <c1,CAM_BACK,384.2,477.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_BACK,1517.8,571.7> change its motion state based on <c1,CAM_BACK,384.2,477.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK,384.2,477.5>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_BACK,1517.8,571.7>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c2,CAM_BACK,1517.8,571.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT_RIGHT,391.7,535.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,384.2,477.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c3,CAM_FRONT_RIGHT,391.7,535.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is steering to the right. The ego vehicle is driving with normal speed. B. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly. C. The ego vehicle is steering to the left. The ego vehicle is driving fast. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537295990612404.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_LEFT__1537295990604799.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_RIGHT__1537295990620482.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n008-2018-09-18-14-35-12-0400__CAM_BACK__1537295990637558.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-35-12-0400__CAM_BACK_LEFT__1537295990647405.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_BACK_RIGHT__1537295990628113.jpg"
+        }
+      },
+      "690c4ddabc7845f48f4831ac73129154": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "Would <c1,CAM_BACK,827.5,484.2> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_BACK,681.7,510.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT,689.2,527.5> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c4,CAM_FRONT,740.8,504.2> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK,827.5,484.2> be in the moving direction of <c2,CAM_BACK,681.7,510.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK,827.5,484.2> change its motion state based on <c2,CAM_BACK,681.7,510.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_BACK,681.7,510.0> be in the moving direction of <c3,CAM_FRONT,689.2,527.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_BACK,681.7,510.0> change its motion state based on <c3,CAM_FRONT,689.2,527.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK,827.5,484.2>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_BACK,681.7,510.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT,689.2,527.5>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c3,CAM_FRONT,689.2,527.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c4,CAM_FRONT,740.8,504.2>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c4,CAM_FRONT,740.8,504.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,827.5,484.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c2,CAM_BACK,681.7,510.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving fast. B. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed. C. The ego vehicle is slightly steering to the left. The ego vehicle is driving very fast. D. The ego vehicle is going straight. The ego vehicle is driving fast.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537295995612404.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_LEFT__1537295995604799.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_RIGHT__1537295995620482.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n008-2018-09-18-14-35-12-0400__CAM_BACK__1537295995637558.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-35-12-0400__CAM_BACK_LEFT__1537295995647405.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_BACK_RIGHT__1537295995628113.jpg"
+        }
+      },
+      "13ade121714c46d6a028516ecb5bff60": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_BACK,1070.8,505.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT_LEFT,1280.0,482.5> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT_LEFT,1130.0,466.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_LEFT,1130.0,466.7> be in the moving direction of <c1,CAM_BACK,1070.8,505.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_LEFT,1130.0,466.7> change its motion state based on <c1,CAM_BACK,1070.8,505.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK,1070.8,505.0> be in the moving direction of <c3,CAM_FRONT_LEFT,1130.0,466.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK,1070.8,505.0> change its motion state based on <c3,CAM_FRONT_LEFT,1130.0,466.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK,1070.8,505.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT_LEFT,1280.0,482.5>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT_LEFT,1130.0,466.7>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1070.8,505.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is driving with normal speed. B. The ego vehicle is going straight. The ego vehicle is driving slowly. C. The ego vehicle is steering to the left. The ego vehicle is driving very fast. D. The ego vehicle is slightly steering to the left. The ego vehicle is driving fast.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296003612404.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_LEFT__1537296003604799.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_RIGHT__1537296003620482.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n008-2018-09-18-14-35-12-0400__CAM_BACK__1537296003637558.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-35-12-0400__CAM_BACK_LEFT__1537296003647405.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_BACK_RIGHT__1537296003628113.jpg"
+        }
+      },
+      "39961df49391439fbca612a8efe1c531": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c2,CAM_FRONT_LEFT,1127.5,545.0>? Please select the correct answer from the following options: A. Going ahead. B. Drive backward. C. Turn right. D. Reverse parking.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_BACK_RIGHT,1255.0,538.3> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT_LEFT,1127.5,545.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT_RIGHT,1233.3,561.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK_RIGHT,1255.0,538.3> be in the moving direction of <c2,CAM_FRONT_LEFT,1127.5,545.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK_RIGHT,1255.0,538.3> change its motion state based on <c2,CAM_FRONT_LEFT,1127.5,545.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_RIGHT,1233.3,561.7> be in the moving direction of <c1,CAM_BACK_RIGHT,1255.0,538.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_RIGHT,1233.3,561.7> change its motion state based on <c1,CAM_BACK_RIGHT,1255.0,538.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK_RIGHT,1255.0,538.3>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT_LEFT,1127.5,545.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT_RIGHT,1233.3,561.7>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK_RIGHT,1255.0,538.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is steering to the left. The ego vehicle is driving slowly. B. The ego vehicle is going straight. The ego vehicle is driving very fast. C. The ego vehicle is steering to the right. The ego vehicle is driving with normal speed. D. The ego vehicle is going straight. The ego vehicle is driving slowly.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537295988012404.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_LEFT__1537295988004799.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_RIGHT__1537295988020482.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n008-2018-09-18-14-35-12-0400__CAM_BACK__1537295988037558.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-35-12-0400__CAM_BACK_LEFT__1537295988047405.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_BACK_RIGHT__1537295988028113.jpg"
+        }
+      },
+      "02c431d3d810472d9307d91e77fe495f": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_FRONT_RIGHT,694.5,556.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT_LEFT,839.2,454.2> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT,1591.1,441.8> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT,1591.1,441.8> be in the moving direction of <c2,CAM_FRONT_LEFT,839.2,454.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT_LEFT,839.2,454.2> take <c3,CAM_FRONT,1591.1,441.8> into account?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT,1591.1,441.8> be in the moving direction of <c2,CAM_FRONT_LEFT,839.2,454.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT_LEFT,839.2,454.2> take <c3,CAM_FRONT,1591.1,441.8> into account?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,694.5,556.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT_LEFT,839.2,454.2>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "Based on <c3,CAM_FRONT,1591.1,441.8> in this scene, what is the most possible action of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_RIGHT,694.5,556.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is driving with normal speed. B. The ego vehicle is steering to the left. The ego vehicle is driving with normal speed. C. The ego vehicle is steering to the left. The ego vehicle is driving fast. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296005612404.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_LEFT__1537296005604799.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_RIGHT__1537296005620482.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n008-2018-09-18-14-35-12-0400__CAM_BACK__1537296005637558.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-35-12-0400__CAM_BACK_LEFT__1537296005647405.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_BACK_RIGHT__1537296005628113.jpg"
+        }
+      },
+      "c4b8c55ceed44c7e95c36e61b8a99ffe": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_FRONT_LEFT,672.5,445.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_BACK,192.5,521.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT_LEFT,525.0,480.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_FRONT_LEFT,672.5,445.0> be in the moving direction of <c3,CAM_FRONT_LEFT,525.0,480.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_FRONT_LEFT,672.5,445.0> change its motion state based on <c3,CAM_FRONT_LEFT,525.0,480.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_LEFT,525.0,480.0> be in the moving direction of <c2,CAM_BACK,192.5,521.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_LEFT,525.0,480.0> change its motion state based on <c2,CAM_BACK,192.5,521.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,672.5,445.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_BACK,192.5,521.7>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT_LEFT,525.0,480.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_LEFT,672.5,445.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c2,CAM_BACK,192.5,521.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed. B. The ego vehicle is steering to the right. The ego vehicle is driving slowly. C. The ego vehicle is steering to the right. The ego vehicle is driving very fast. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving fast.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537295999112404.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_LEFT__1537295999104799.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_RIGHT__1537295999120482.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n008-2018-09-18-14-35-12-0400__CAM_BACK__1537295999137558.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-35-12-0400__CAM_BACK_LEFT__1537295999147405.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_BACK_RIGHT__1537295999128113.jpg"
+        }
+      }
+    }
+  },
+  "41fde20fedcd4d22ab26811688612870": {
+    "key_frames": {
+      "4de7963785f34de7afb9e5aae3ce6f9f": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c1,CAM_FRONT,707.5,472.5>? Please select the correct answer from the following options: A. Reverse parking. B. Back up. C. Stopped. D. Going ahead.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_FRONT,707.5,472.5> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,514.7,462.2> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT,950.3,613.1> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT,950.3,613.1> be in the moving direction of <c1,CAM_FRONT,707.5,472.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_FRONT,707.5,472.5> take <c3,CAM_FRONT,950.3,613.1> into account?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_FRONT,707.5,472.5>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "Based on <c2,CAM_FRONT,514.7,462.2> in this scene, what is the most possible action of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "Based on <c3,CAM_FRONT,950.3,613.1> in this scene, what is the most possible action of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,707.5,472.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is driving with normal speed. B. The ego vehicle is slightly steering to the left. The ego vehicle is driving very fast. C. The ego vehicle is going straight. The ego vehicle is not moving. D. The ego vehicle is going straight. The ego vehicle is driving slowly.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-18-11-41-49+0800__CAM_FRONT__1531885341012469.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_LEFT__1531885341004844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_RIGHT__1531885341020339.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-18-11-41-49+0800__CAM_BACK__1531885341037525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-18-11-41-49+0800__CAM_BACK_LEFT__1531885341047423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-18-11-41-49+0800__CAM_BACK_RIGHT__1531885341027893.jpg"
+        }
+      },
+      "a32eb5c0d8514895af2af5889c1f5199": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c2,CAM_FRONT,820.8,473.3>? Please select the correct answer from the following options: A. Turn right. B. Going ahead. C. Drive backward. D. Turn left.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_FRONT,1031.7,499.2> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,820.8,473.3> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT,1299.2,516.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT,1299.2,516.7> be in the moving direction of <c1,CAM_FRONT,1031.7,499.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT,1299.2,516.7> change its motion state based on <c1,CAM_FRONT,1031.7,499.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT,1299.2,516.7> be in the moving direction of <c2,CAM_FRONT,820.8,473.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT,1299.2,516.7> change its motion state based on <c2,CAM_FRONT,820.8,473.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1031.7,499.2>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1031.7,499.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT,820.8,473.3>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT,1299.2,516.7>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving with normal speed. B. The ego vehicle is going straight. The ego vehicle is driving fast. C. The ego vehicle is steering to the right. The ego vehicle is driving slowly. D. The ego vehicle is going straight. The ego vehicle is not moving.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-18-11-41-49+0800__CAM_FRONT__1531885346862460.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_LEFT__1531885346854844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_RIGHT__1531885346870339.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-18-11-41-49+0800__CAM_BACK__1531885346887525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-18-11-41-49+0800__CAM_BACK_LEFT__1531885346897423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-18-11-41-49+0800__CAM_BACK_RIGHT__1531885346877893.jpg"
+        }
+      },
+      "2c1f8867c60b44f09ee37b5df1d1ad24": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c2,CAM_FRONT,773.3,451.7>? Please select the correct answer from the following options: A. Stopped. B. Turn right. C. Going ahead. D. Drive backward.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "Would <c1,CAM_BACK_RIGHT,159.4,713.3> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,773.3,451.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_BACK_RIGHT,588.3,742.5> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c4,CAM_FRONT,452.9,304.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c4,CAM_FRONT,452.9,304.7> be in the moving direction of <c2,CAM_FRONT,773.3,451.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,773.3,451.7> take <c4,CAM_FRONT,452.9,304.7> into account?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_BACK_RIGHT,588.3,742.5> be in the moving direction of <c2,CAM_FRONT,773.3,451.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_BACK_RIGHT,588.3,742.5> change its motion state based on <c2,CAM_FRONT,773.3,451.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK_RIGHT,159.4,713.3>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT,773.3,451.7>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_BACK_RIGHT,588.3,742.5>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK_RIGHT,159.4,713.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is driving slowly. B. The ego vehicle is going straight. The ego vehicle is driving fast. C. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving very fast.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-18-11-41-49+0800__CAM_FRONT__1531885354662530.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_LEFT__1531885354654844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_RIGHT__1531885354670339.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-18-11-41-49+0800__CAM_BACK__1531885354687525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-18-11-41-49+0800__CAM_BACK_LEFT__1531885354697423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-18-11-41-49+0800__CAM_BACK_RIGHT__1531885354677900.jpg"
+        }
+      },
+      "23e7d17b256348638af3b2739b80a5ca": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c2,CAM_FRONT,203.3,368.3>? Please select the correct answer from the following options: A. Going ahead. B. Turn left. C. Reverse parking. D. Drive backward.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_FRONT,1333.3,544.2> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,203.3,368.3> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT_RIGHT,1004.2,558.3> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_RIGHT,1004.2,558.3> be in the moving direction of <c1,CAM_FRONT,1333.3,544.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_RIGHT,1004.2,558.3> change its motion state based on <c1,CAM_FRONT,1333.3,544.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,203.3,368.3> be in the moving direction of <c1,CAM_FRONT,1333.3,544.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,203.3,368.3> change its motion state based on <c1,CAM_FRONT,1333.3,544.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1333.3,544.2>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT,203.3,368.3>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT_RIGHT,1004.2,558.3>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1333.3,544.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is going straight. The ego vehicle is driving fast. B. The ego vehicle is slightly steering to the left. The ego vehicle is driving very fast. C. The ego vehicle is steering to the right. The ego vehicle is driving very fast. D. The ego vehicle is slightly steering to the left. The ego vehicle is driving fast.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-18-11-41-49+0800__CAM_FRONT__1531885358162460.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_LEFT__1531885358154844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-18-11-41-49+0800__CAM_FRONT_RIGHT__1531885358170339.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-18-11-41-49+0800__CAM_BACK__1531885358187525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-18-11-41-49+0800__CAM_BACK_LEFT__1531885358197423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-18-11-41-49+0800__CAM_BACK_RIGHT__1531885358177893.jpg"
+        }
+      }
+    }
+  },
+  "1aa633b683174280b243e0a9a7ad9171": {
+    "key_frames": {
+      "c0ac3dc491e7414184f44c2b32d24ad8": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c1,CAM_BACK_RIGHT,1149.2,537.5>? Please select the correct answer from the following options: A. Turn right. B. Reverse parking. C. Going ahead. D. Back up.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_BACK_RIGHT,1149.2,537.5> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT_RIGHT,1191.7,518.3> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_BACK,1231.7,559.2> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT_RIGHT,1191.7,518.3> be in the moving direction of <c3,CAM_BACK,1231.7,559.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT_RIGHT,1191.7,518.3> change its motion state based on <c3,CAM_BACK,1231.7,559.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK_RIGHT,1149.2,537.5> be in the moving direction of <c3,CAM_BACK,1231.7,559.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK_RIGHT,1149.2,537.5> change its motion state based on <c3,CAM_BACK,1231.7,559.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK_RIGHT,1149.2,537.5>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT_RIGHT,1191.7,518.3>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_BACK,1231.7,559.2>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK_RIGHT,1149.2,537.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c2,CAM_FRONT_RIGHT,1191.7,518.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What is the traffic signal that the ego vehicle should pay attention to?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving fast. B. The ego vehicle is slightly steering to the left. The ego vehicle is driving fast. C. The ego vehicle is going straight. The ego vehicle is driving fast. D. The ego vehicle is going straight. The ego vehicle is driving slowly.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281688012460.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_LEFT__1531281688004844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_RIGHT__1531281688020339.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-11-11-54-16+0800__CAM_BACK__1531281688037525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-11-11-54-16+0800__CAM_BACK_LEFT__1531281688047423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_BACK_RIGHT__1531281688027893.jpg"
+        }
+      },
+      "d21bdffbca9f4edaa4bf4f54fffa6f4b": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c3,CAM_BACK_LEFT,578.3,558.3>? Please select the correct answer from the following options: A. Reverse parking. B. Going ahead. C. Turn right. D. Drive backward.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_FRONT,883.3,510.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,694.2,522.5> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_BACK_LEFT,578.3,558.3> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,694.2,522.5> be in the moving direction of <c3,CAM_BACK_LEFT,578.3,558.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,694.2,522.5> change its motion state based on <c3,CAM_BACK_LEFT,578.3,558.3>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,694.2,522.5> be in the moving direction of <c1,CAM_FRONT,883.3,510.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,694.2,522.5> change its motion state based on <c1,CAM_FRONT,883.3,510.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_FRONT,883.3,510.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,883.3,510.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT,694.2,522.5>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_BACK_LEFT,578.3,558.3>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c2,CAM_FRONT,694.2,522.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is steering to the left. The ego vehicle is driving very fast. B. The ego vehicle is slightly steering to the right. The ego vehicle is driving fast. C. The ego vehicle is going straight. The ego vehicle is not moving. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving with normal speed.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281695612460.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_LEFT__1531281695604844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_RIGHT__1531281695620339.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-11-11-54-16+0800__CAM_BACK__1531281695637525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-11-11-54-16+0800__CAM_BACK_LEFT__1531281695647423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_BACK_RIGHT__1531281695627893.jpg"
+        }
+      },
+      "e42c40288fba48e993507ce35215a7d5": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c2,CAM_FRONT,1510.0,506.7>? Please select the correct answer from the following options: A. Turn left. B. Back up. C. Stopped. D. Going ahead.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "Would <c1,CAM_BACK_LEFT,355.0,630.8> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,1510.0,506.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT_LEFT,624.5,654.7> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK_LEFT,355.0,630.8> be in the moving direction of <c3,CAM_FRONT_LEFT,624.5,654.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK_LEFT,355.0,630.8> change its motion state based on <c3,CAM_FRONT_LEFT,624.5,654.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK_LEFT,355.0,630.8> be in the moving direction of <c2,CAM_FRONT,1510.0,506.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK_LEFT,355.0,630.8> change its motion state based on <c2,CAM_FRONT,1510.0,506.7>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK_LEFT,355.0,630.8>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK_LEFT,355.0,630.8>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT,1510.0,506.7>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT_LEFT,624.5,654.7>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the right. The ego vehicle is driving slowly. B. The ego vehicle is steering to the left. The ego vehicle is driving very fast. C. The ego vehicle is steering to the left. The ego vehicle is driving fast. D. The ego vehicle is going straight. The ego vehicle is driving fast.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281685912460.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_LEFT__1531281685904844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_RIGHT__1531281685920339.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-11-11-54-16+0800__CAM_BACK__1531281685937525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-11-11-54-16+0800__CAM_BACK_LEFT__1531281685947423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_BACK_RIGHT__1531281685927893.jpg"
+        }
+      },
+      "0791e7e86b98473795eeffe238d6c13b": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c1,CAM_BACK,706.7,505.8>? Please select the correct answer from the following options: A. Reverse parking. B. Back up. C. Drive backward. D. Going ahead.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_BACK,706.7,505.8> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,1080.8,497.5> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT,737.5,500.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK,706.7,505.8> be in the moving direction of <c3,CAM_FRONT,737.5,500.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c1,CAM_BACK,706.7,505.8> change its motion state based on <c3,CAM_FRONT,737.5,500.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,1080.8,497.5> be in the moving direction of <c1,CAM_BACK,706.7,505.8>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,1080.8,497.5> change its motion state based on <c1,CAM_BACK,706.7,505.8>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_BACK,706.7,505.8>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,706.7,505.8>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT,1080.8,497.5>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c2,CAM_FRONT,1080.8,497.5>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT,737.5,500.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is slightly steering to the left. The ego vehicle is driving slowly. B. The ego vehicle is steering to the left. The ego vehicle is driving fast. C. The ego vehicle is going straight. The ego vehicle is driving fast. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving very fast.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281691512460.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_LEFT__1531281691504844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_RIGHT__1531281691520339.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-11-11-54-16+0800__CAM_BACK__1531281691537525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-11-11-54-16+0800__CAM_BACK_LEFT__1531281691547423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_BACK_RIGHT__1531281691527893.jpg"
+        }
+      },
+      "a82c0acb18dd4c3a99731b7a06a63fb7": {
+        "QA": {
+          "perception": [
+            {
+              "Q": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                2
+              ]
+            },
+            {
+              "Q": "What is the moving status of object <c3,CAM_FRONT_RIGHT,679.2,579.2>? Please select the correct answer from the following options: A. Back up. B. Drive backward. C. Stopped. D. Going ahead.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "prediction": [
+            {
+              "Q": "What object should the ego vehicle notice first when the ego vehicle is getting to the next possible location? What is the state of the object that is first noticed by the ego vehicle and what action should the ego vehicle take? What object should the ego vehicle notice second when the ego vehicle is getting to the next possible location? What is the state of the object perceived by the ego vehicle as second and what action should the ego vehicle take? What object should the ego vehicle notice third? What is the state of the object perceived by the ego vehicle as third and what action should the ego vehicle take?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                3
+              ]
+            },
+            {
+              "Q": "Would <c1,CAM_FRONT,595.8,550.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c2,CAM_FRONT,620.8,530.0> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Would <c3,CAM_FRONT_RIGHT,679.2,579.2> be in the moving direction of the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,620.8,530.0> be in the moving direction of <c3,CAM_FRONT_RIGHT,679.2,579.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c2,CAM_FRONT,620.8,530.0> change its motion state based on <c3,CAM_FRONT_RIGHT,679.2,579.2>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_RIGHT,679.2,579.2> be in the moving direction of <c2,CAM_FRONT,620.8,530.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            },
+            {
+              "Q": "Will <c3,CAM_FRONT_RIGHT,679.2,579.2> change its motion state based on <c2,CAM_FRONT,620.8,530.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ],
+          "planning": [
+            {
+              "Q": "What actions could the ego vehicle take based on <c1,CAM_FRONT,595.8,550.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c2,CAM_FRONT,620.8,530.0>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions could the ego vehicle take based on <c3,CAM_FRONT_RIGHT,679.2,579.2>? Why take this action and what's the probability?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are safe actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,595.8,550.0>?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            },
+            {
+              "Q": "What's your comment on this scene?",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                1
+              ]
+            }
+          ],
+          "behavior": [
+            {
+              "Q": "Predict the behavior of the ego vehicle. Please select the correct answer from the following options: A. The ego vehicle is steering to the right. The ego vehicle is driving very fast. B. The ego vehicle is steering to the left. The ego vehicle is driving very fast. C. The ego vehicle is going straight. The ego vehicle is driving with normal speed. D. The ego vehicle is slightly steering to the right. The ego vehicle is driving fast.",
+              "A": "",
+              "C": null,
+              "con_up": null,
+              "con_down": null,
+              "cluster": null,
+              "layer": null,
+              "tag": [
+                0
+              ]
+            }
+          ]
+        },
+        "image_paths": {
+          "CAM_FRONT": "../nuscenes/samples/CAM_FRONT/n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281682912460.jpg",
+          "CAM_FRONT_LEFT": "../nuscenes/samples/CAM_FRONT_LEFT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_LEFT__1531281682904844.jpg",
+          "CAM_FRONT_RIGHT": "../nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_FRONT_RIGHT__1531281682920366.jpg",
+          "CAM_BACK": "../nuscenes/samples/CAM_BACK/n015-2018-07-11-11-54-16+0800__CAM_BACK__1531281682937525.jpg",
+          "CAM_BACK_LEFT": "../nuscenes/samples/CAM_BACK_LEFT/n015-2018-07-11-11-54-16+0800__CAM_BACK_LEFT__1531281682947423.jpg",
+          "CAM_BACK_RIGHT": "../nuscenes/samples/CAM_BACK_RIGHT/n015-2018-07-11-11-54-16+0800__CAM_BACK_RIGHT__1531281682927893.jpg"
+        }
+      }
+    }
+  }
+}
