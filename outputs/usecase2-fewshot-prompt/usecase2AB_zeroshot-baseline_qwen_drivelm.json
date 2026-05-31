@@ -1,0 +1,916 @@
+{
+  "prediction": {
+    "avg_recall": 0.12222222222222222,
+    "avg_halluc": 0.8885668276972625,
+    "n_valid": 45,
+    "results": [
+      {
+        "index": 0,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "Is <c1,CAM_BACK,1088.3,497.5> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "road barrier",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 1,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "gt_answer": "None, no, none.",
+        "prediction": "The object most likely to be occluded by the traffic light is the fog or mist in the air. This could potentially obscure the view of the traffic signal for the ego vehicle.\n\nBased on this image, the action that would be considered dangerous for the ego vehicle is driving without reducing speed due to the reduced visibility caused by the fog or mist. The green light does not indicate any immediate danger, but the lack of clear visibility could lead to accidents if the driver fails to adjust their speed and distance from other vehicles.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 2,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "Would <c1,CAM_BACK,1088.3,497.5> be in the moving direction of the ego vehicle?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 3,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "What is the future state of <c1,CAM_BACK,1088.3,497.5>?",
+        "gt_answer": "Turn left.",
+        "prediction": "The traffic light at <c1,CAM_BACK,1088.3,497.5> is green, indicating that vehicles have the right of way to proceed through the intersection.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 4,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "Is <c2,CAM_BACK,864.2,468.3> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "road barrier",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 5,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "Is <c1,CAM_BACK,991.7,603.0> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "road barrier",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 6,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "Would <c1,CAM_BACK,991.7,603.0> be in the moving direction of the ego vehicle?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 7,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "What is the future state of <c1,CAM_BACK,991.7,603.0>?",
+        "gt_answer": "Keep going straight.",
+        "prediction": "The future state of the railroad crossing at <c1,CAM_BACK,991.7,603.0> appears to be open, as there are no visible barriers or gates raised.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 8,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "Is <c2,CAM_FRONT,836.3,398.3> a traffic sign or a road barrier?",
+        "gt_answer": "Yes.",
+        "prediction": "Traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 9,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "Would <c2,CAM_FRONT,836.3,398.3> be in the moving direction of the ego vehicle?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 10,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "Is <c1,CAM_FRONT_LEFT,231.5,472.1> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "road barrier",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 11,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "Which object is most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "gt_answer": "None, no, none.",
+        "prediction": "The object most likely to be occluded by the left rail crossing sign is another rail crossing sign. This could potentially cause confusion for the ego vehicle, leading to a failure to recognize the correct signal.\n\nBased on this image, the action that would be considered dangerous for the ego vehicle is not stopping at the correct rail crossing signal due to potential occlusion.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 12,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "Would <c1,CAM_FRONT_LEFT,231.5,472.1> be in the moving direction of the ego vehicle?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 13,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "What is the future state of <c1,CAM_FRONT_LEFT,231.5,472.1>?",
+        "gt_answer": "Keep going straight.",
+        "prediction": "The future state of the railroad crossing at <c1,CAM_FRONT_LEFT,231.5,472.1> appears to be clear and open, as there are no trains or barriers visible in the image.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 14,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "Is <c2,CAM_BACK,966.7,580.0> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "road barrier",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 15,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "Is <c1,CAM_FRONT,714.3,503.6> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 16,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,714.3,503.6>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "gt_answer": "None, no, none.",
+        "prediction": "The object most likely to be occluded by the traffic light (at coordinates <c1,CAM_FRONT,714.3,503.6>) is another vehicle or part of the road infrastructure that might not be visible due to the angle and distance.\n\nThis object could potentially affect the ego vehicle if it is obscured by the traffic light itself, making it difficult for the driver to see other vehicles or pedestrians in the intersection.\n\nBased on this observation, the action of the ego vehicle that appears dangerous is not stopping at the red light as there is no clear indication that the traffic light is red from the perspective shown. The",
+        "recall": 0.5,
+        "halluc": 0.9855072463768116
+      },
+      {
+        "index": 17,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "Would <c1,CAM_FRONT,714.3,503.6> be in the moving direction of the ego vehicle?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 18,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "What is the future state of <c1,CAM_FRONT,714.3,503.6>?",
+        "gt_answer": "Keep going straight.",
+        "prediction": "The car at coordinates <c1,CAM_FRONT,714.3,503.6> will likely stop because the traffic light is red.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 19,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "Is <c2,CAM_FRONT,993.3,503.3> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 20,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "Is <c1,CAM_FRONT,767.5,513.3> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "road barrier",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 21,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,767.5,513.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "gt_answer": "None, no, none.",
+        "prediction": "The object most likely to be occluded by the white car in the intersection is another vehicle or pedestrian that might be obscured by the white car's size and position. This could potentially affect the ego vehicle if it is not aware of the presence of this object.\n\nBased on this image, the action of the ego vehicle that appears dangerous is turning right without checking for oncoming traffic or pedestrians who may be obscured by the white car. The ego vehicle should ensure it has clearance from all directions before proceeding with its turn.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 22,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "Would <c1,CAM_FRONT,767.5,513.3> be in the moving direction of the ego vehicle?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 23,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "What is the future state of <c1,CAM_FRONT,767.5,513.3>?",
+        "gt_answer": "Turn right.",
+        "prediction": "The car at coordinates <c1,CAM_FRONT,767.5,513.3> will likely stop due to the red traffic light ahead.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 24,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "Is <c2,CAM_FRONT_RIGHT,420.0,540.0> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "road barrier",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 25,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "Is <c1,CAM_FRONT_RIGHT,850.0,484.2> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 26,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "Which object is most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "gt_answer": "None, no, none.",
+        "prediction": "The object most likely to be occluded by the ego vehicle is another car or a large vehicle approaching from the right side of the image. This could potentially affect the ego vehicle if it is not visible due to the angle and distance.\n\nBased on the image, the action that appears dangerous for the ego vehicle is turning right without checking for oncoming traffic or pedestrians who might be obscured by the large building or other structures in the area.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 27,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "Would <c1,CAM_FRONT_RIGHT,850.0,484.2> be in the moving direction of the ego vehicle?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 28,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "What is the future state of <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
+        "gt_answer": "Keep going straight.",
+        "prediction": "The future state of the car at coordinates <c1,CAM_FRONT_RIGHT,850.0,484.2> appears to be moving forward through the intersection, as it is positioned in the lane with a clear path ahead and no immediate obstacles or traffic signals indicating a stop.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 29,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "Is <c2,CAM_FRONT,684.2,500.0> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 30,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "Is <c1,CAM_FRONT,1035.0,586.7> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 31,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "Would <c1,CAM_FRONT,1035.0,586.7> be in the moving direction of the ego vehicle?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 32,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "What is the future state of <c1,CAM_FRONT,1035.0,586.7>?",
+        "gt_answer": "Stationary.",
+        "prediction": "standing",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 33,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "Is <c2,CAM_FRONT_LEFT,1431.7,404.2> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 34,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "Which object is most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "gt_answer": "None, no, none.",
+        "prediction": "The object most likely to be occluded by the person in the foreground (C2, CAM_FRONT_LEFT) is another pedestrian or a smaller vehicle behind them. This could potentially block the view of the road ahead for the ego vehicle.\n\nBased on this image, the action that would be considered dangerous for the ego vehicle is not braking or turning, but rather failing to notice the pedestrian or smaller vehicle behind the person in the foreground. The person's presence partially obscures the view, which could lead to a collision if the driver does not anticipate the pedestrian's movement.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 35,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "Is <c1,CAM_FRONT,1035.8,587.5> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 36,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "gt_answer": "None, no, none.",
+        "prediction": "The object most likely to be occluded by the person in the image is another pedestrian or a smaller vehicle behind them. This could potentially affect the ego vehicle if they are not visible due to the person's position.\n\nBased on this observation, the action that appears dangerous for the ego vehicle is not yielding to pedestrians who might be crossing the street or turning into the intersection. The person standing near the crosswalk could obstruct the view of other pedestrians or vehicles, making it difficult for the ego vehicle to anticipate their movements safely.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 37,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "Would <c1,CAM_FRONT,1035.8,587.5> be in the moving direction of the ego vehicle?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 38,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "What is the future state of <c1,CAM_FRONT,1035.8,587.5>?",
+        "gt_answer": "Keep going straight.",
+        "prediction": "The future state of the person at coordinates <c1,CAM_FRONT,1035.8,587.5> appears to be standing on the sidewalk, possibly waiting or observing something.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 39,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "Is <c2,CAM_FRONT,746.7,468.3> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 40,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "Is <c1,CAM_FRONT,915.0,597.5> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "traffic sign",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 41,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "Would <c1,CAM_FRONT,915.0,597.5> be in the moving direction of the ego vehicle?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 42,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "What is the future state of <c1,CAM_FRONT,915.0,597.5>?",
+        "gt_answer": "Keep going straight.",
+        "prediction": "The future state of the pedestrian at coordinates <c1,CAM_FRONT,915.0,597.5> appears to be crossing the street.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 43,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "Is <c2,CAM_BACK,1366.0,705.3> a traffic sign or a road barrier?",
+        "gt_answer": "No.",
+        "prediction": "road barrier",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 44,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "Which object is most likely to be occluded by <c2,CAM_BACK,1366.0,705.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "gt_answer": "None, no, none.",
+        "prediction": "The object most likely to be occluded by the signpost (on the right side) is the pedestrian crossing signal. This object could potentially affect the ego vehicle if it is not visible or if its signals are obscured.\n\nBased on this object, the action of the ego vehicle that is dangerous would be failing to stop at the pedestrian crossing when the signal indicates it should, due to the potential obstruction of the signal by the signpost.",
+        "recall": 0.0,
+        "halluc": 1.0
+      }
+    ]
+  },
+  "planning": {
+    "avg_recall": 0.329236682268158,
+    "avg_halluc": 0.7892076901082657,
+    "n_valid": 45,
+    "results": [
+      {
+        "index": 0,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "Is <c1,CAM_BACK,1088.3,497.5> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 1,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,1088.3,497.5>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to keep going at the same speed. The reason is to follow the traffic rules, which has a high probability.",
+        "prediction": "The ego vehicle should proceed with caution due to the wet road conditions indicated by the rain and the green traffic light. The probability of needing to brake or adjust speed is high due to the reduced visibility and potential for hydroplaning.\n\nAction: Proceed slowly and cautiously.\nProbability: High (due to wet roads).",
+        "recall": 0.4444444444444444,
+        "halluc": 0.7837837837837838
+      },
+      {
+        "index": 2,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "What is the probability of colliding with <c1,CAM_BACK,1088.3,497.5> after the ego vehicle goes straight and keeps the same speed?",
+        "gt_answer": "Low.",
+        "prediction": "The probability of colliding with the object at the specified location cannot be determined from this image alone. The image shows a road intersection with traffic lights, but there is no visible vehicle or object in the path of the ego vehicle that would indicate a collision risk. The green light suggests it's safe to proceed, assuming no hidden hazards are present.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 3,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1088.3,497.5>?",
+        "gt_answer": "No such action will lead to a collision.",
+        "prediction": "The ego vehicle should avoid turning right at the intersection as it may collide with the vehicle approaching from the right side.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 4,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "4a0798f849ca477ab18009c3a20b7df2",
+        "question": "Is <c2,CAM_BACK,864.2,468.3> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 5,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "Is <c1,CAM_BACK,991.7,603.0> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 6,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,991.7,603.0>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to keep stationary, the reason is to follow the traffic rules, high.",
+        "prediction": "The ego vehicle should proceed with caution because there is a railroad crossing ahead, as indicated by the crossing signals. The probability of an action depends on the traffic rules and the presence of any trains or pedestrians at the crossing.\n\nAction: Stop at the railroad crossing.\nProbability: High due to the presence of crossing signals indicating it is safe to stop.",
+        "recall": 0.6363636363636364,
+        "halluc": 0.825
+      },
+      {
+        "index": 7,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "What is the probability of colliding with <c1,CAM_BACK,991.7,603.0> after the ego vehicle goes straight and keeps the same speed?",
+        "gt_answer": "Low.",
+        "prediction": "The probability of colliding with the object at the specified location after the ego vehicle goes straight and maintains its speed cannot be determined from this image alone. The image shows a road intersection with traffic lights and railings, but it does not provide information about other vehicles or pedestrians that might be present. Additionally, the image lacks context such as the speed of the ego vehicle relative to the speed limit, the presence of other vehicles, or any indication of the behavior of other road users. Therefore, a precise probability cannot be calculated without more data.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 8,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+        "gt_answer": "Back up.",
+        "prediction": "The ego vehicle should avoid crossing the railroad tracks when the signal is red or approaching a train, as this could lead to a collision with the train crossing.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 9,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "ffd1bdf020d145759224c629b501d2b2",
+        "question": "Is it necessary for the ego vehicle to take <c2,CAM_FRONT,836.3,398.3> into account?",
+        "gt_answer": "Yes.",
+        "prediction": "No, it is not necessary for the ego vehicle to take the traffic light at <c2,CAM_FRONT,836.3,398.3> into account because the traffic light is green, indicating that the ego vehicle can proceed.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 10,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "Is <c1,CAM_FRONT_LEFT,231.5,472.1> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 11,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,231.5,472.1>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to keep going at the same speed, the reason is that there is no safety issue. The probability of this action is high.",
+        "prediction": "The ego vehicle should proceed with caution due to the presence of railroad crossing signals and the wet road conditions. The probability of an accident increases in such conditions.\n\nAction: Stop at the railroad crossing until the train has passed.\nProbability: High due to the wet conditions and railroad crossing signals.",
+        "recall": 0.3684210526315789,
+        "halluc": 0.78125
+      },
+      {
+        "index": 12,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "What is the probability of colliding with <c1,CAM_FRONT_LEFT,231.5,472.1> after the ego vehicle goes straight and keeps the same speed?",
+        "gt_answer": "Low.",
+        "prediction": "0%",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 13,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_LEFT,231.5,472.1>?",
+        "gt_answer": "No such action will lead to a collision.",
+        "prediction": "The ego vehicle should stop at the railroad crossing as there is a train approaching from the left side, indicated by the flashing lights and gates.",
+        "recall": 0.125,
+        "halluc": 0.9565217391304348
+      },
+      {
+        "index": 14,
+        "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+        "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+        "question": "Is <c2,CAM_BACK,966.7,580.0> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 15,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "Is <c1,CAM_FRONT,714.3,503.6> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 16,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,714.3,503.6>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to brake gently to a stop. The reason is to follow the traffic rules, and the probability is high.",
+        "prediction": "The ego vehicle should stop at the red traffic light. This is because the traffic signal is red, indicating that vehicles must come to a complete stop before proceeding. The probability of this action being necessary is high since the red light is clearly visible.\n\nAction: Stop.\nProbability: High.",
+        "recall": 0.6,
+        "halluc": 0.71875
+      },
+      {
+        "index": 17,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "What is the probability of colliding with <c1,CAM_FRONT,714.3,503.6> after the ego vehicle steps on the brakes?",
+        "gt_answer": "Low.",
+        "prediction": "The probability of colliding with the red car after the ego vehicle steps on the brakes depends on the distance between them and the reaction time of the driver. Given that the red car appears to be stopped at the intersection and there's no indication of any immediate threat from other directions, the probability might be low if the ego vehicle stops in time. However, without more specific information about the distances and speeds involved, it's difficult to provide an exact probability.",
+        "recall": 1.0,
+        "halluc": 0.9827586206896551
+      },
+      {
+        "index": 18,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,714.3,503.6>?",
+        "gt_answer": "Accelerate and go straight.",
+        "prediction": "The ego vehicle should stop at the red traffic light and wait for the signal to change before proceeding. If it moves forward without stopping, it could collide with the car approaching from the left.",
+        "recall": 0.25,
+        "halluc": 0.9666666666666667
+      },
+      {
+        "index": 19,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+        "question": "Is <c2,CAM_FRONT,993.3,503.3> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 20,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "Is <c1,CAM_FRONT,767.5,513.3> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "No.",
+        "prediction": "No",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 21,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,767.5,513.3>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to remain stationary. The reason for this action is to follow the traffic rules. The probability of this action is high.",
+        "prediction": "The ego vehicle should stop at the intersection because the traffic light is red for the direction it is facing. This action is mandatory to ensure safety and adhere to traffic rules. The probability of this action being necessary is high due to the clear red signal.\n\nAction: Stop.\nProbability: High.",
+        "recall": 0.7333333333333333,
+        "halluc": 0.6666666666666666
+      },
+      {
+        "index": 22,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "What is the probability of colliding with <c1,CAM_FRONT,767.5,513.3> after the ego vehicle steps on the brakes?",
+        "gt_answer": "Low.",
+        "prediction": "The probability of colliding with the white car in the adjacent lane depends on the distance between the vehicles and the speed of both cars. Given that the white car appears to be moving at a moderate speed and there's a clear space between them, the probability of collision is low if the ego vehicle brakes appropriately. However, without specific speeds or braking distances, it's difficult to provide an exact probability.",
+        "recall": 1.0,
+        "halluc": 0.9811320754716981
+      },
+      {
+        "index": 23,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,767.5,513.3>?",
+        "gt_answer": "Accelerating and going straight.",
+        "prediction": "The ego vehicle should stop at the red traffic light to avoid a collision with the white car approaching from the intersection.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 24,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+        "question": "Is <c2,CAM_FRONT_RIGHT,420.0,540.0> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 25,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "Is <c1,CAM_FRONT_RIGHT,850.0,484.2> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 26,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,850.0,484.2>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to remain stationary. The reason for taking this action is to follow traffic rules. The probability of this action is high.",
+        "prediction": "The ego vehicle should stop at the intersection because the traffic light is red for the direction it is facing. This action ensures safety and adherence to traffic rules. The probability of this being the correct action is high given the clear red signal.\n\nAction: Stop.\nProbability: High.",
+        "recall": 0.6875,
+        "halluc": 0.65625
+      },
+      {
+        "index": 27,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "What is the probability of colliding with <c1,CAM_FRONT_RIGHT,850.0,484.2> after the ego vehicle turns left at a constant speed?",
+        "gt_answer": "Low.",
+        "prediction": "Low",
+        "recall": 1.0,
+        "halluc": 0.0
+      },
+      {
+        "index": 28,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
+        "gt_answer": "Turning right and accelerating.",
+        "prediction": "The ego vehicle should stop at the traffic light and wait for the green signal to proceed. If it moves forward without stopping, it could collide with the car approaching from the right.",
+        "recall": 0.5,
+        "halluc": 0.9285714285714286
+      },
+      {
+        "index": 29,
+        "scene": "54cdaaae372d421fa4734d66f51a8c48",
+        "frame": "d5e16062410f4e329d31a881b28e5c1c",
+        "question": "Is <c2,CAM_FRONT,684.2,500.0> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 30,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "Is <c1,CAM_FRONT,1035.0,586.7> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 31,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1035.0,586.7>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to remain stationary. The reason for this action is to follow the traffic rules, which is considered to be high probability.",
+        "prediction": "The ego vehicle should stop at the intersection because there is a pedestrian crossing the street in front of it. This action is necessary to ensure safety for both pedestrians and vehicles. The probability of this action being taken is high due to the clear indication that the pedestrian has the right of way.\n\nAction: Stop.\nProbability: High.",
+        "recall": 0.47058823529411764,
+        "halluc": 0.8
+      },
+      {
+        "index": 32,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "What is the probability of colliding with <c1,CAM_FRONT,1035.0,586.7> after the ego vehicle steps on the brakes?",
+        "gt_answer": "Low.",
+        "prediction": "The probability of colliding with the pedestrian after the ego vehicle steps on the brakes cannot be determined from this image alone. Factors such as the distance to the pedestrian, the speed of the ego vehicle, and the reaction time of the pedestrian would need to be considered for an accurate assessment.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 33,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1035.0,586.7>?",
+        "gt_answer": "Accelerating and going straight.",
+        "prediction": "The ego vehicle should stop at the crosswalk to avoid colliding with the pedestrian crossing in front of it.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 34,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+        "question": "Is <c2,CAM_FRONT_LEFT,1431.7,404.2> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 35,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "Is <c1,CAM_FRONT,1035.8,587.5> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 36,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1035.8,587.5>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to keep going at the same speed. The reason is that there is no safety issue. The probability is medium.",
+        "prediction": "The ego vehicle should stop at the crosswalk because there is a pedestrian crossing the street. This action is necessary to ensure pedestrian safety. The probability of this action being taken is high due to the clear indication of the pedestrian crossing signal.\n\nAction: Stop.\nProbability: High.",
+        "recall": 0.47058823529411764,
+        "halluc": 0.7241379310344828
+      },
+      {
+        "index": 37,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "What is the probability of colliding with <c1,CAM_FRONT,1035.8,587.5> after the ego vehicle goes straight and keeps the same speed?",
+        "gt_answer": "Medium.",
+        "prediction": "Low",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 38,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1035.8,587.5>?",
+        "gt_answer": "Accelerating and going straight.",
+        "prediction": "The ego vehicle should stop at the crosswalk to avoid colliding with the pedestrian crossing in front of it.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 39,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "7903e67446c64958b0a660f10bdadf19",
+        "question": "Is <c2,CAM_FRONT,746.7,468.3> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 40,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "Is <c1,CAM_FRONT,915.0,597.5> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 41,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,915.0,597.5>? Why take this action and what's the probability?",
+        "gt_answer": "The action is to remain stationary. The reason for this action is to follow the traffic rules, which has a high probability.",
+        "prediction": "The ego vehicle should stop at the pedestrian crosswalk because there is a pedestrian crossing the street in front of it. This action ensures safety for both pedestrians and drivers. The probability of this action being necessary is high due to the clear presence of the pedestrian in the crosswalk.\n\nAction: Stop.\nProbability: High.",
+        "recall": 0.5294117647058824,
+        "halluc": 0.7428571428571429
+      },
+      {
+        "index": 42,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "What is the probability of colliding with <c1,CAM_FRONT,915.0,597.5> after the ego vehicle steps on the brakes?",
+        "gt_answer": "Low.",
+        "prediction": "The probability of colliding with the pedestrian crossing the street in front of the ego vehicle depends on the speed and reaction time of the ego vehicle driver. If the driver reacts quickly and safely stops, there would be no collision. However, if the driver does not react in time or drives at a higher speed, there could be a risk of collision. The exact probability cannot be determined without knowing the specific circumstances and actions of the driver.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 43,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,915.0,597.5>?",
+        "gt_answer": "Accelerating and going straight.",
+        "prediction": "The ego vehicle should stop at the crosswalk to avoid colliding with the pedestrian crossing in front of it.",
+        "recall": 0.0,
+        "halluc": 1.0
+      },
+      {
+        "index": 44,
+        "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+        "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+        "question": "Is <c2,CAM_BACK,1366.0,705.3> an object that the ego vehicle should consider in the current scene?",
+        "gt_answer": "Yes.",
+        "prediction": "No",
+        "recall": 0.0,
+        "halluc": 1.0
+      }
+    ]
+  }
+}

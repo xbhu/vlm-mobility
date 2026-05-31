@@ -1,0 +1,1944 @@
+{
+  "prediction": {
+    "1": {
+      "avg_recall": 0.13333333333333333,
+      "avg_halluc": 0.887037037037037,
+      "n_valid": 45,
+      "oom": 0,
+      "detail": [
+        {
+          "question": "Is <c1,CAM_BACK,1088.3,497.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "road barrier",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_BACK,1088.3,497.5> is another vehicle. This could potentially affect the ego vehicle if it is not visible due to the foggy conditions. The action that would be considered dangerous in this situation is driving without proper visibility, as it increases the risk of accidents due to reduced reaction time and increased difficulty in detecting other vehicles or obstacles.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_BACK,1088.3,497.5> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No, it would not be in the moving direction of the ego vehicle.",
+          "recall": 1.0,
+          "halluc": 0.9166666666666666
+        },
+        {
+          "question": "What is the future state of <c1,CAM_BACK,1088.3,497.5>?",
+          "gt": "Turn left.",
+          "pred": "The future state of <c1,CAM_BACK,1088.3,497.5> is likely to remain the same, as there are no indications of a change in traffic or environmental conditions.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,864.2,468.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_BACK,991.7,603.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "road barrier",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_BACK,991.7,603.0> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_BACK,991.7,603.0>?",
+          "gt": "Keep going straight.",
+          "pred": "The future state of <c1,CAM_BACK,991.7,603.0> is likely to remain in its current position, as there are no indications of movement or change in the image.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,836.3,398.3> a traffic sign or a road barrier?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c2,CAM_FRONT,836.3,398.3> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_LEFT,231.5,472.1> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Road barrier.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1> is another vehicle or an obstacle that might be partially hidden from view due to the angle and distance. This could potentially affect the ego vehicle's visibility and reaction time if it is not detected in time. The action of the ego vehicle that would be considered dangerous in this situation is not braking or turning sharply without checking for potential obstacles or other vehicles that may be obscured.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT_LEFT,231.5,472.1> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT_LEFT,231.5,472.1>?",
+          "gt": "Keep going straight.",
+          "pred": "The future state of <c1,CAM_FRONT_LEFT,231.5,472.1> appears to be a continuation of the current state, as there are no significant changes in the image that suggest a change in the object's state or position.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,966.7,580.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,714.3,503.6> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "It is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,714.3,503.6>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT,714.3,503.6> is another vehicle. This could potentially affect the ego vehicle if the other vehicle suddenly moves into its path without signaling. The action that appears dangerous based on this object is not signaling before turning or changing lanes, as it could lead to a collision with the other vehicle.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,714.3,503.6> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,714.3,503.6>?",
+          "gt": "Keep going straight.",
+          "pred": "Stopped.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,993.3,503.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "The object is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,767.5,513.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "It is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,767.5,513.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT,767.5,513.3> is another vehicle or an obstacle in the intersection. This could potentially block the view of the traffic lights or other important information for the ego vehicle. Based on this, the action that might be considered dangerous is not yielding to the right-of-way when it's clear that the traffic light indicates otherwise, as there may be a risk of collision with the occluding object.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,767.5,513.3> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,767.5,513.3>?",
+          "gt": "Turn right.",
+          "pred": "The future state of <c1,CAM_FRONT,767.5,513.3> appears to be a vehicle stopped at an intersection, likely waiting for the traffic light to change.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_RIGHT,420.0,540.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_RIGHT,850.0,484.2> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2> is another vehicle or a pedestrian. If this object is occluded, it could potentially affect the ego vehicle's perception and reaction time, leading to a risk of collision if the driver cannot see the object in time.\n\nBased on this object, the action that might be considered dangerous for the ego vehicle is not stopping at a red light or not yielding to other vehicles or pedestrians who have the right of way.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT_RIGHT,850.0,484.2> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "no",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
+          "gt": "Keep going straight.",
+          "pred": "Stopped",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,684.2,500.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "It is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.0,586.7> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "The object at <c1,CAM_FRONT,1035.0,586.7> appears to be a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,1035.0,586.7> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No, they would not be in the moving direction of the ego vehicle.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,1035.0,586.7>?",
+          "gt": "Stationary.",
+          "pred": "The future state of <c1,CAM_FRONT,1035.0,586.7> appears to be standing still or moving very slowly, as they are not in motion relative to the camera's perspective.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_LEFT,1431.7,404.2> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2> is another vehicle or part of the street infrastructure. This could potentially affect the ego vehicle if it is not visible due to the obstruction. The action that appears dangerous based on this object is not being cautious about potential blind spots or obstacles that might be hidden from view.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.8,587.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "It is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5> is another vehicle or pedestrian. This could potentially block the view of the road ahead, making it difficult for the ego vehicle to see other vehicles or pedestrians that might be in its path. The action of the ego vehicle that would be considered dangerous in this situation is not braking or turning sharply, but rather failing to notice the occlusion and continuing at a high speed or without paying attention to the surroundings.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,1035.8,587.5> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,1035.8,587.5>?",
+          "gt": "Keep going straight.",
+          "pred": "The future state of `<c1,CAM_FRONT,1035.8,587.5>` cannot be determined from the image alone; it appears to be a person standing near the sidewalk.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,746.7,468.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "The object is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,915.0,597.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "It is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,915.0,597.5> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,915.0,597.5>?",
+          "gt": "Keep going straight.",
+          "pred": "The future state of <c1,CAM_FRONT,915.0,597.5> appears to be walking across the street.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,1366.0,705.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c2,CAM_BACK,1366.0,705.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c2,CAM_BACK,1366.0,705.3> is another pedestrian or a vehicle. This could potentially block the view of the road ahead, making it difficult for the ego vehicle to see other vehicles or pedestrians crossing the street. The action that would be considered dangerous in this situation is not yielding to pedestrians who have the right of way to cross the street, especially if they are crossing at a designated crosswalk.",
+          "recall": 0.0,
+          "halluc": 1.0
+        }
+      ]
+    },
+    "2": {
+      "avg_recall": 0.25555555555555554,
+      "avg_halluc": 0.7547325102880659,
+      "n_valid": 45,
+      "oom": 0,
+      "detail": [
+        {
+          "question": "Is <c1,CAM_BACK,1088.3,497.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "None, no, none.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Would <c1,CAM_BACK,1088.3,497.5> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "no",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_BACK,1088.3,497.5>?",
+          "gt": "Turn left.",
+          "pred": "The future state of <c1,CAM_BACK,1088.3,497.5> is unknown as it is not specified in the image.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,864.2,468.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "A road barrier.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_BACK,991.7,603.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Road barrier.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_BACK,991.7,603.0> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_BACK,991.7,603.0>?",
+          "gt": "Keep going straight.",
+          "pred": "Stop.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,836.3,398.3> a traffic sign or a road barrier?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c2,CAM_FRONT,836.3,398.3> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_LEFT,231.5,472.1> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "It is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "None, no, none.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT_LEFT,231.5,472.1> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT_LEFT,231.5,472.1>?",
+          "gt": "Keep going straight.",
+          "pred": "The future state of <c1,CAM_FRONT_LEFT,231.5,472.1> is likely to remain stationary or move forward, depending on the traffic signals and road conditions.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,966.7,580.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "The object <c2,CAM_BACK,966.7,580.0> appears to be a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,714.3,503.6> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "road barrier",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,714.3,503.6>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "No, there is no object that would be occluded by <c1,CAM_FRONT,714.3,503.6>. The action of the ego vehicle that could be considered dangerous is not specified in the image.",
+          "recall": 0.5,
+          "halluc": 0.9629629629629629
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,714.3,503.6> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,714.3,503.6>?",
+          "gt": "Keep going straight.",
+          "pred": "Stopped",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,993.3,503.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "road barrier",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,767.5,513.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,767.5,513.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT,767.5,513.3> is another vehicle. This could potentially affect the ego vehicle if it is not visible due to the occlusion. The action that would be considered dangerous in this situation is not braking or turning sharply without checking for the occluded vehicle first.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,767.5,513.3> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,767.5,513.3>?",
+          "gt": "Turn right.",
+          "pred": "The future state of <c1,CAM_FRONT,767.5,513.3> is likely to be stopped at the intersection due to the red light signal.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_RIGHT,420.0,540.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Road barrier.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_RIGHT,850.0,484.2> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The white van is most likely to be occluded by the large building on the right side of the image. This could potentially block the view for the ego vehicle, making it difficult to see other vehicles or pedestrians that might be obscured by the building. The action of the ego vehicle that would be considered dangerous in this situation is not turning right at the intersection, as there may not be enough visibility to safely merge into traffic.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT_RIGHT,850.0,484.2> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
+          "gt": "Keep going straight.",
+          "pred": "Stopped.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,684.2,500.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "road barrier",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.0,586.7> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,1035.0,586.7> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,1035.0,586.7>?",
+          "gt": "Stationary.",
+          "pred": "standing",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_LEFT,1431.7,404.2> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "None, no, none.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.8,587.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5> is another vehicle or pedestrian. This could potentially affect the ego vehicle if the other entity suddenly appears in the path of the ego vehicle without being visible. The action that might be considered dangerous is not braking or turning sharply without checking for potential obstacles or pedestrians first.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,1035.8,587.5> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,1035.8,587.5>?",
+          "gt": "Keep going straight.",
+          "pred": "Stationary.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,746.7,468.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,915.0,597.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "A traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,915.0,597.5> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "no",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,915.0,597.5>?",
+          "gt": "Keep going straight.",
+          "pred": "The future state of <c1,CAM_FRONT,915.0,597.5> is crossing the street.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,1366.0,705.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c2,CAM_BACK,1366.0,705.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c2,CAM_BACK,1366.0,705.3> is another vehicle or pedestrian. If this object is occluded, it could potentially cause the ego vehicle to lose sight of it, leading to a collision if the driver is not paying attention. The action that might be considered dangerous in this context is not braking or turning sharply without checking the surroundings first, as there may be an unseen obstacle or person nearby.",
+          "recall": 0.0,
+          "halluc": 1.0
+        }
+      ]
+    },
+    "3": {
+      "avg_recall": 0.2111111111111111,
+      "avg_halluc": 0.7992063492063493,
+      "n_valid": 45,
+      "oom": 0,
+      "detail": [
+        {
+          "question": "Is <c1,CAM_BACK,1088.3,497.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Road barrier.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_BACK,1088.3,497.5> is the street sign. This could potentially make it difficult for the ego vehicle to read important information such as speed limits or traffic rules. The action that might be considered dangerous due to this occlusion is not being able to see the traffic sign clearly, which could lead to misinterpreting the road conditions or traffic signals, potentially causing an accident.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_BACK,1088.3,497.5> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_BACK,1088.3,497.5>?",
+          "gt": "Turn left.",
+          "pred": "The future state of <c1,CAM_BACK,1088.3,497.5> cannot be determined from the image provided.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,864.2,468.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "A traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_BACK,991.7,603.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_BACK,991.7,603.0> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_BACK,991.7,603.0>?",
+          "gt": "Keep going straight.",
+          "pred": "Stop.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,836.3,398.3> a traffic sign or a road barrier?",
+          "gt": "Yes.",
+          "pred": "road barrier",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c2,CAM_FRONT,836.3,398.3> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_LEFT,231.5,472.1> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "No, the object is not occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>. The object does not appear to affect the ego vehicle. There is no indication that the action of the ego vehicle is dangerous based on this object.",
+          "recall": 0.5,
+          "halluc": 0.9642857142857143
+        },
+        {
+          "question": "Would <c1,CAM_FRONT_LEFT,231.5,472.1> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT_LEFT,231.5,472.1>?",
+          "gt": "Keep going straight.",
+          "pred": "The future state of <c1,CAM_FRONT_LEFT,231.5,472.1> cannot be determined from the image provided.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,966.7,580.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,714.3,503.6> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "A traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,714.3,503.6>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT,714.3,503.6> is another vehicle. This could potentially affect the ego vehicle if it is not visible due to the occlusion. The action of the ego vehicle that would be dangerous in this situation is driving without being aware of the other vehicle's presence.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,714.3,503.6> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,714.3,503.6>?",
+          "gt": "Keep going straight.",
+          "pred": "Stationary.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,993.3,503.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "A traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,767.5,513.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "The object is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,767.5,513.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c1,CAM_FRONT,767.5,513.3> is another vehicle. This could potentially affect the ego vehicle if it is not visible due to the occlusion. The action that might be considered dangerous is driving without being aware of the other vehicle's presence, which could lead to a collision.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,767.5,513.3> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,767.5,513.3>?",
+          "gt": "Turn right.",
+          "pred": "The future state of <c1,CAM_FRONT,767.5,513.3> cannot be determined from the image alone; it depends on the context and the actions of other vehicles and pedestrians.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_RIGHT,420.0,540.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_RIGHT,850.0,484.2> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "None, no, none.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT_RIGHT,850.0,484.2> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
+          "gt": "Keep going straight.",
+          "pred": "Stop.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,684.2,500.0> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Road barrier.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.0,586.7> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "A traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,1035.0,586.7> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,1035.0,586.7>?",
+          "gt": "Stationary.",
+          "pred": "Stopped.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_LEFT,1431.7,404.2> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Road barrier",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2> is another vehicle. This could potentially affect the ego vehicle if it is not visible due to the obstruction. The action that would be considered dangerous in this situation is not yielding to the obscured vehicle or not being cautious enough when approaching the intersection.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.8,587.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The truck is most likely to be occluded by the pedestrian. This could potentially block the view of the pedestrian from the ego vehicle, making it difficult to see them clearly. If the pedestrian suddenly steps into the road, the ego vehicle might not have enough time to stop safely, which could lead to a collision. The action that appears dangerous in this situation is the pedestrian crossing the street without using a crosswalk or signal.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,1035.8,587.5> be in the moving direction of the ego vehicle?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,1035.8,587.5>?",
+          "gt": "Keep going straight.",
+          "pred": "Stopped.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,746.7,468.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "It is a traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,915.0,597.5> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Would <c1,CAM_FRONT,915.0,597.5> be in the moving direction of the ego vehicle?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What is the future state of <c1,CAM_FRONT,915.0,597.5>?",
+          "gt": "Keep going straight.",
+          "pred": "The future state of <c1,CAM_FRONT,915.0,597.5> is not specified in the image; it appears to be a pedestrian crossing the street.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,1366.0,705.3> a traffic sign or a road barrier?",
+          "gt": "No.",
+          "pred": "Traffic sign.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Which object is most likely to be occluded by <c2,CAM_BACK,1366.0,705.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "gt": "None, no, none.",
+          "pred": "The object most likely to be occluded by <c2,CAM_BACK,1366.0,705.3> is another pedestrian or a vehicle. This could potentially block the view of the ego vehicle's path, making it difficult to see other vehicles or pedestrians crossing the street. The action that might be considered dangerous in this situation is not yielding to pedestrians who have the right of way to cross the street, especially if they are crossing at a designated crosswalk.",
+          "recall": 0.0,
+          "halluc": 1.0
+        }
+      ]
+    }
+  },
+  "planning": {
+    "1": {
+      "avg_recall": 0.42886080446709957,
+      "avg_halluc": 0.7452058796812917,
+      "n_valid": 45,
+      "oom": 0,
+      "detail": [
+        {
+          "question": "Is <c1,CAM_BACK,1088.3,497.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,1088.3,497.5>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed. The reason is to follow the traffic rules, which has a high probability.",
+          "pred": "The ego vehicle should slow down and maintain a safe distance from the vehicle ahead because of the foggy conditions, which reduce visibility. This action helps ensure safety for both the ego vehicle and other road users. The probability of a collision increases in such conditions due to reduced visibility, making it crucial to drive cautiously.\n\nAction: Slow down and maintain a safe following distance.\nProbability: High",
+          "recall": 0.3888888888888889,
+          "halluc": 0.8444444444444444
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_BACK,1088.3,497.5> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "Low",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1088.3,497.5>?",
+          "gt": "No such action will lead to a collision.",
+          "pred": "The ego vehicle should not drive forward to avoid a collision with <c1, CAM_BACK, 1088.3, 497.5>.",
+          "recall": 0.375,
+          "halluc": 0.8333333333333334
+        },
+        {
+          "question": "Is <c2,CAM_BACK,864.2,468.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No, it is not necessary for the ego vehicle to consider <c2,CAM_BACK,864.2,468.3> as an object in the current scene.",
+          "recall": 1.0,
+          "halluc": 0.9565217391304348
+        },
+        {
+          "question": "Is <c1,CAM_BACK,991.7,603.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,991.7,603.0>? Why take this action and what's the probability?",
+          "gt": "The action is to keep stationary, the reason is to follow the traffic rules, high.",
+          "pred": "The ego vehicle should stop at the railroad crossing because the traffic light is red, indicating that vehicles must stop. The probability of this action leading to a collision depends on whether there are any trains approaching or other vehicles waiting to cross. Given the lack of visible activity in the image, it seems unlikely that a train is imminent, but the probability cannot be determined without more context.",
+          "recall": 0.45454545454545453,
+          "halluc": 0.9090909090909091
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_BACK,991.7,603.0> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+          "gt": "Back up.",
+          "pred": "The ego vehicle should not turn right at this intersection as there is a railway crossing ahead, which could obstruct the path.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is it necessary for the ego vehicle to take <c2,CAM_FRONT,836.3,398.3> into account?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_LEFT,231.5,472.1> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,231.5,472.1>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed, the reason is that there is no safety issue. The probability of this action is high.",
+          "pred": "The ego vehicle should stop at the railroad crossing because there is a train signal indicating it is red, which means the train is approaching. The probability of taking this action is high since the signal clearly indicates a stop.\n\nAction: Stop.\nProbability: High.",
+          "recall": 0.47368421052631576,
+          "halluc": 0.6896551724137931
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT_LEFT,231.5,472.1> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "The probability of colliding with the object in the left front corner after the ego vehicle goes straight and maintains the same speed is low.",
+          "recall": 1.0,
+          "halluc": 0.9523809523809523
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_LEFT,231.5,472.1>?",
+          "gt": "No such action will lead to a collision.",
+          "pred": "Drive forward.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,966.7,580.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,714.3,503.6> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, it is not necessary for the ego vehicle to consider <c1,CAM_FRONT,714.3,503.6> as an obstacle; it appears to be a stationary object (likely a car) and does not pose a threat to the ego vehicle's path or safety.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,714.3,503.6>? Why take this action and what's the probability?",
+          "gt": "The action is to brake gently to a stop. The reason is to follow the traffic rules, and the probability is high.",
+          "pred": "The ego vehicle can proceed through the intersection because the traffic light is red for other directions but green for the ego vehicle's direction. This allows the ego vehicle to move forward without stopping. The probability of taking this action is high since the traffic signal indicates it's safe to proceed.\n\nAction: Proceed through the intersection.\nProbability: High.",
+          "recall": 0.4666666666666667,
+          "halluc": 0.8055555555555556
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,714.3,503.6> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "The probability of colliding with the vehicle in front depends on the distance between the vehicles and the speed of the ego vehicle. If there's a significant gap or if the vehicle ahead is moving slowly, the risk might be low. However, without specific measurements, it's hard to give an exact probability.",
+          "recall": 1.0,
+          "halluc": 0.975609756097561
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,714.3,503.6>?",
+          "gt": "Accelerate and go straight.",
+          "pred": "The ego vehicle should not turn right at this intersection as there is a red traffic light for the right-turning lane.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,993.3,503.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,767.5,513.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,767.5,513.3>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules. The probability of this action is high.",
+          "pred": "The ego vehicle can proceed straight through the intersection as there are no immediate obstacles or traffic signals indicating otherwise. The probability of taking this action is high since the road appears clear ahead.\n\n**Action:** Proceed straight.\n**Probability:** High.",
+          "recall": 0.5333333333333333,
+          "halluc": 0.7419354838709677
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,767.5,513.3> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "Low",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,767.5,513.3>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should not turn right at the intersection because there is a car approaching from the opposite direction.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_RIGHT,420.0,540.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, it is not necessary to consider <c2,CAM_FRONT_RIGHT,420.0,540.0> as an object in the current scene.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_RIGHT,850.0,484.2> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,850.0,484.2>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for taking this action is to follow traffic rules. The probability of this action is high.",
+          "pred": "The ego vehicle should stop at the intersection because there is a red traffic light ahead. This action ensures safety by adhering to traffic signals. The probability of this action being necessary is high due to the clear red signal.\n\nProbability: High (likely to stop).",
+          "recall": 0.5625,
+          "halluc": 0.71875
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT_RIGHT,850.0,484.2> after the ego vehicle turns left at a constant speed?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
+          "gt": "Turning right and accelerating.",
+          "pred": "The ego vehicle should stop at the traffic light to avoid a collision with the car approaching from the right. The probability of this action leading to a collision is low if the ego vehicle follows traffic rules.",
+          "recall": 0.25,
+          "halluc": 0.9629629629629629
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,684.2,500.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, <c2,CAM_FRONT,684.2,500.0> does not appear to be an object that the ego vehicle needs to consider in the current scene. It seems to be a stationary object or part of the environment rather than a moving obstacle.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.0,586.7> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, <c1,CAM_FRONT,1035.0,586.7> is not an object that the ego vehicle should consider in the current scene.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1035.0,586.7>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules, which is considered to be high probability.",
+          "pred": "The ego vehicle should stop at the intersection because there is a pedestrian crossing the street. This action is necessary to ensure the safety of the pedestrian. The probability of this action being taken is high due to the presence of the pedestrian in the crosswalk.\n\nProbability: High (90%)",
+          "recall": 0.4117647058823529,
+          "halluc": 0.7666666666666667
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,1035.0,586.7> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "The probability of colliding with the pedestrian in the crosswalk is low because there is a significant distance between the pedestrian and the ego vehicle. However, it's always important to be cautious and check for any potential hazards or changes in traffic conditions.",
+          "recall": 1.0,
+          "halluc": 0.9722222222222222
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1035.0,586.7>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should not make a turn at the intersection without checking for oncoming traffic and pedestrians.",
+          "recall": 0.25,
+          "halluc": 0.9411764705882353
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_LEFT,1431.7,404.2> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, there is no object at that location.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.8,587.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1035.8,587.5>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed. The reason is that there is no safety issue. The probability is medium.",
+          "pred": "The ego vehicle should slow down and prepare to stop if necessary, as there is a pedestrian in the crosswalk. This action is necessary to ensure the safety of the pedestrian and comply with traffic laws. The probability of needing to stop is high due to the pedestrian's proximity to the crosswalk.\n\nAction: Slow down and prepare to stop.\nProbability: High.",
+          "recall": 0.4117647058823529,
+          "halluc": 0.7941176470588235
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,1035.8,587.5> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Medium.",
+          "pred": "Low.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1035.8,587.5>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should not make any sudden movements that could lead to a collision with the pedestrian crossing the street. The probability of a collision occurring due to the ego vehicle's actions is low if it maintains a safe distance and stops when necessary.",
+          "recall": 0.25,
+          "halluc": 0.9722222222222222
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,746.7,468.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, it is not an object that the ego vehicle should consider in the current scene.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,915.0,597.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,915.0,597.5>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules, which has a high probability.",
+          "pred": "The ego vehicle can stop at the intersection to allow pedestrians to cross safely. This action ensures safety for both pedestrians and vehicles. The probability of taking this action is high due to the pedestrian crossing in the foreground.\n\n**Action:** Stop.\n**Probability:** High.",
+          "recall": 0.47058823529411764,
+          "halluc": 0.7333333333333333
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,915.0,597.5> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "The probability of colliding with the pedestrian after the ego vehicle steps on the brakes is low. The pedestrian is already crossing the street, and there is enough space for the ego vehicle to stop safely without hitting them.",
+          "recall": 1.0,
+          "halluc": 0.9642857142857143
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,915.0,597.5>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should avoid turning right at the intersection, as it may collide with the pedestrian crossing the street.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,1366.0,705.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        }
+      ]
+    },
+    "2": {
+      "avg_recall": 0.38355061624153475,
+      "avg_halluc": 0.7446137070836857,
+      "n_valid": 45,
+      "oom": 0,
+      "detail": [
+        {
+          "question": "Is <c1,CAM_BACK,1088.3,497.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,1088.3,497.5>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed. The reason is to follow the traffic rules, which has a high probability.",
+          "pred": "The ego vehicle could stop if there is a pedestrian crossing or a cyclist approaching, as indicated by the traffic lights showing green. The probability depends on the presence of other vehicles or pedestrians in the vicinity.",
+          "recall": 0.2777777777777778,
+          "halluc": 0.8387096774193549
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_BACK,1088.3,497.5> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "0.0",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1088.3,497.5>?",
+          "gt": "No such action will lead to a collision.",
+          "pred": "The ego vehicle should slow down or stop if there is a pedestrian crossing the road ahead, as indicated by the traffic light signal. The probability depends on the pedestrian's behavior and the visibility conditions.",
+          "recall": 0.125,
+          "halluc": 0.9666666666666667
+        },
+        {
+          "question": "Is <c2,CAM_BACK,864.2,468.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Is <c1,CAM_BACK,991.7,603.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,991.7,603.0>? Why take this action and what's the probability?",
+          "gt": "The action is to keep stationary, the reason is to follow the traffic rules, high.",
+          "pred": "The ego vehicle can proceed with caution because there is no traffic or pedestrians crossing the intersection. The probability of taking this action is high since the traffic lights are green, indicating it is safe to move forward.",
+          "recall": 0.5454545454545454,
+          "halluc": 0.8125
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_BACK,991.7,603.0> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "Low",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+          "gt": "Back up.",
+          "pred": "The action is to stop. The reason is to avoid a collision, which has a high probability.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is it necessary for the ego vehicle to take <c2,CAM_FRONT,836.3,398.3> into account?",
+          "gt": "Yes.",
+          "pred": "No, it is not necessary to take <c2,CAM_FRONT,836.3,398.3> into account because there is no indication that it affects the current situation or decision-making process.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_LEFT,231.5,472.1> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,231.5,472.1>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed, the reason is that there is no safety issue. The probability of this action is high.",
+          "pred": "The ego vehicle should stop at the railroad crossing because there is a train signal indicating it is red, which means the train is approaching or has already passed. This action ensures safety for both the vehicle and pedestrians. The probability of taking this action is high due to the clear indication from the signal.\n\nAction: Stop.\nProbability: High.",
+          "recall": 0.5789473684210527,
+          "halluc": 0.7317073170731707
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT_LEFT,231.5,472.1> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_LEFT,231.5,472.1>?",
+          "gt": "No such action will lead to a collision.",
+          "pred": "No action taken by the ego vehicle will lead to a collision with <c1,CAM_FRONT_LEFT,231.5,472.1>.",
+          "recall": 0.875,
+          "halluc": 0.631578947368421
+        },
+        {
+          "question": "Is <c2,CAM_BACK,966.7,580.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No, it is not necessary to consider <c2,CAM_BACK,966.7,580.0> as an object in the current scene.",
+          "recall": 1.0,
+          "halluc": 0.95
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,714.3,503.6> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,714.3,503.6>? Why take this action and what's the probability?",
+          "gt": "The action is to brake gently to a stop. The reason is to follow the traffic rules, and the probability is high.",
+          "pred": "The ego vehicle should likely stop or slow down because there is a red traffic light ahead, indicating it must yield to other vehicles. The probability of this action being necessary is high due to the clear indication of the traffic signal.",
+          "recall": 0.6,
+          "halluc": 0.7428571428571429
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,714.3,503.6> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "The probability of colliding with <c1,CAM_FRONT,714.3,503.6> after the ego vehicle steps on the brakes is low.",
+          "recall": 1.0,
+          "halluc": 0.9473684210526315
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,714.3,503.6>?",
+          "gt": "Accelerate and go straight.",
+          "pred": "Changing to the right lane.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,993.3,503.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,767.5,513.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No, <c1,CAM_FRONT,767.5,513.3> is not an object that the ego vehicle should consider in the current scene.",
+          "recall": 1.0,
+          "halluc": 0.95
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,767.5,513.3>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules. The probability of this action is high.",
+          "pred": "The action is to stop, the reason is that the traffic light is red, high probability.",
+          "recall": 0.5333333333333333,
+          "halluc": 0.3333333333333333
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,767.5,513.3> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,767.5,513.3>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle cannot collide with the white car because it is stopped at a red light and there is no indication of any immediate threat from the white car.",
+          "recall": 0.25,
+          "halluc": 0.96
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_RIGHT,420.0,540.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, it is not necessary to consider <c2,CAM_FRONT_RIGHT,420.0,540.0> as an object in the current scene.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_RIGHT,850.0,484.2> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,850.0,484.2>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for taking this action is to follow traffic rules. The probability of this action is high.",
+          "pred": "The ego vehicle could accelerate and proceed through the intersection, as there is no traffic in the immediate vicinity. The probability depends on the traffic conditions further ahead, but currently, it appears safe to proceed.",
+          "recall": 0.3125,
+          "halluc": 0.8275862068965517
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT_RIGHT,850.0,484.2> after the ego vehicle turns left at a constant speed?",
+          "gt": "Low.",
+          "pred": "0.0",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
+          "gt": "Turning right and accelerating.",
+          "pred": "The ego vehicle might drive too fast or fail to notice the red traffic light, leading to a potential collision with the car ahead.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,684.2,500.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.0,586.7> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1035.0,586.7>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules, which is considered to be high probability.",
+          "pred": "The action is to stop. The reason is to avoid a collision with the pedestrian crossing the street. The probability is high due to the pedestrian being in the crosswalk.",
+          "recall": 0.4117647058823529,
+          "halluc": 0.631578947368421
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,1035.0,586.7> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1035.0,586.7>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should slow down and stop if there is a pedestrian crossing in front of it.",
+          "recall": 0.25,
+          "halluc": 0.9444444444444444
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_LEFT,1431.7,404.2> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.8,587.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, <c1,CAM_FRONT,1035.8,587.5> is not an object that the ego vehicle should consider in the current scene.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1035.8,587.5>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed. The reason is that there is no safety issue. The probability is medium.",
+          "pred": "The ego vehicle should stop at the intersection because there are pedestrians crossing the street. This action is necessary to ensure pedestrian safety. The probability of this action being taken is high due to the presence of pedestrians in the crosswalk.\n\nProbability: High",
+          "recall": 0.47058823529411764,
+          "halluc": 0.7333333333333333
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,1035.8,587.5> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Medium.",
+          "pred": "Low.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1035.8,587.5>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "Accelerating forward and then turning left.",
+          "recall": 0.5,
+          "halluc": 0.6666666666666666
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,746.7,468.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,915.0,597.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,915.0,597.5>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules, which has a high probability.",
+          "pred": "The ego vehicle can proceed straight or turn right based on the traffic signals and road signs. Given the pedestrian crossing and the presence of other vehicles, it is important to ensure safety by yielding to pedestrians and checking for oncoming traffic. The probability of taking either action depends on the specific traffic rules and the driver's decision-making process.\n\nAction: Stop at the intersection to yield to pedestrians and check for oncoming traffic.\nProbability: High due to the pedestrian crossing and the need for caution.",
+          "recall": 0.5294117647058824,
+          "halluc": 0.8392857142857143
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,915.0,597.5> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "0.0",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,915.0,597.5>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should stop at the pedestrian crossing.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,1366.0,705.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        }
+      ]
+    },
+    "3": {
+      "avg_recall": 0.39261589927482593,
+      "avg_halluc": 0.6579886435946475,
+      "n_valid": 45,
+      "oom": 0,
+      "detail": [
+        {
+          "question": "Is <c1,CAM_BACK,1088.3,497.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,1088.3,497.5>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed. The reason is to follow the traffic rules, which has a high probability.",
+          "pred": "The ego vehicle can proceed forward because the traffic lights ahead are green. This allows the vehicle to move through the intersection without stopping. The probability of this action being taken is high since the lights indicate it is safe to proceed.",
+          "recall": 0.3888888888888889,
+          "halluc": 0.7741935483870968
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_BACK,1088.3,497.5> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,1088.3,497.5>?",
+          "gt": "No such action will lead to a collision.",
+          "pred": "The ego vehicle should decelerate and stop if it encounters <c1,CAM_BACK,1088.3,497.5>.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_BACK,864.2,468.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Is <c1,CAM_BACK,991.7,603.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_BACK,991.7,603.0>? Why take this action and what's the probability?",
+          "gt": "The action is to keep stationary, the reason is to follow the traffic rules, high.",
+          "pred": "The ego vehicle can proceed straight through the intersection as there are no red lights or stop signs visible ahead. The probability of this action being taken is high since the traffic signals are green, indicating it is safe to move forward.",
+          "recall": 0.5454545454545454,
+          "halluc": 0.8378378378378378
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_BACK,991.7,603.0> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+          "gt": "Back up.",
+          "pred": "The ego vehicle should slow down or stop if there is a train approaching the crossing, as indicated by the traffic lights and the railroad crossing signs. The probability of a collision increases if the ego vehicle does not follow these signals.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is it necessary for the ego vehicle to take <c2,CAM_FRONT,836.3,398.3> into account?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_LEFT,231.5,472.1> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_LEFT,231.5,472.1>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed, the reason is that there is no safety issue. The probability of this action is high.",
+          "pred": "The action is to drive forward. The reason is to continue the journey, and the probability is high.",
+          "recall": 0.3684210526315789,
+          "halluc": 0.4166666666666667
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT_LEFT,231.5,472.1> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_LEFT,231.5,472.1>?",
+          "gt": "No such action will lead to a collision.",
+          "pred": "The ego vehicle should slow down or stop if there is a pedestrian crossing the road ahead of it.",
+          "recall": 0.125,
+          "halluc": 0.9444444444444444
+        },
+        {
+          "question": "Is <c2,CAM_BACK,966.7,580.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,714.3,503.6> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No, it is not relevant to the ego vehicle's decision-making process.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,714.3,503.6>? Why take this action and what's the probability?",
+          "gt": "The action is to brake gently to a stop. The reason is to follow the traffic rules, and the probability is high.",
+          "pred": "The action is to stop. The reason is to obey the traffic light, which is red, indicating stop. The probability is high because the traffic light is clearly visible and the vehicle is approaching it.",
+          "recall": 0.6666666666666666,
+          "halluc": 0.5238095238095238
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,714.3,503.6> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,714.3,503.6>?",
+          "gt": "Accelerate and go straight.",
+          "pred": "The ego vehicle should stop or slow down to avoid a collision with the car ahead.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,993.3,503.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,767.5,513.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "No.",
+          "pred": "No.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,767.5,513.3>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules. The probability of this action is high.",
+          "pred": "The action is to stop. The reason is the red light, with a high probability.",
+          "recall": 0.4666666666666667,
+          "halluc": 0.4166666666666667
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,767.5,513.3> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,767.5,513.3>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should stop at the traffic light.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_RIGHT,420.0,540.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT_RIGHT,850.0,484.2> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT_RIGHT,850.0,484.2>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for taking this action is to follow traffic rules. The probability of this action is high.",
+          "pred": "The ego vehicle could stop at the traffic light based on the red signal. This action is necessary because the traffic light indicates that vehicles must stop. The probability of this action being taken is high since it aligns with standard traffic rules.",
+          "recall": 0.5625,
+          "halluc": 0.71875
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT_RIGHT,850.0,484.2> after the ego vehicle turns left at a constant speed?",
+          "gt": "Low.",
+          "pred": "The probability of colliding with <c1,CAM_FRONT_RIGHT,850.0,484.2> after the ego vehicle turns left at a constant speed is low.",
+          "recall": 1.0,
+          "halluc": 0.9545454545454546
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT_RIGHT,850.0,484.2>?",
+          "gt": "Turning right and accelerating.",
+          "pred": "No such action will lead to a collision.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,684.2,500.0> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.0,586.7> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1035.0,586.7>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules, which is considered to be high probability.",
+          "pred": "The ego vehicle should stop at the intersection due to the presence of pedestrians crossing the street. This action is necessary to ensure pedestrian safety. The probability of this action being taken is high, as it aligns with standard traffic rules and safety protocols.",
+          "recall": 0.5294117647058824,
+          "halluc": 0.7352941176470589
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,1035.0,586.7> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "Low.",
+          "recall": 1.0,
+          "halluc": 0.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1035.0,586.7>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "Drive too fast or turn without checking the surroundings.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT_LEFT,1431.7,404.2> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,1035.8,587.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,1035.8,587.5>? Why take this action and what's the probability?",
+          "gt": "The action is to keep going at the same speed. The reason is that there is no safety issue. The probability is medium.",
+          "pred": "The ego vehicle should stop at the intersection due to the pedestrian crossing in front of it. The probability of a collision is high if the ego vehicle continues without stopping.",
+          "recall": 0.29411764705882354,
+          "halluc": 0.7916666666666666
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,1035.8,587.5> after the ego vehicle goes straight and keeps the same speed?",
+          "gt": "Medium.",
+          "pred": "Low.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,1035.8,587.5>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should slow down or stop to avoid a collision with the pedestrian crossing the street. The probability of collision is high due to the pedestrian's proximity to the road.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c2,CAM_FRONT,746.7,468.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "Is <c1,CAM_FRONT,915.0,597.5> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions could the ego vehicle take based on <c1,CAM_FRONT,915.0,597.5>? Why take this action and what's the probability?",
+          "gt": "The action is to remain stationary. The reason for this action is to follow the traffic rules, which has a high probability.",
+          "pred": "The action is to stop. The reason is that there is a pedestrian crossing the street, and the probability is high due to the risk of collision.",
+          "recall": 0.47058823529411764,
+          "halluc": 0.5789473684210527
+        },
+        {
+          "question": "What is the probability of colliding with <c1,CAM_FRONT,915.0,597.5> after the ego vehicle steps on the brakes?",
+          "gt": "Low.",
+          "pred": "0.0",
+          "recall": 0.0,
+          "halluc": 1.0
+        },
+        {
+          "question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_FRONT,915.0,597.5>?",
+          "gt": "Accelerating and going straight.",
+          "pred": "The ego vehicle should slow down and yield to pedestrians crossing the street.",
+          "recall": 0.25,
+          "halluc": 0.9166666666666666
+        },
+        {
+          "question": "Is <c2,CAM_BACK,1366.0,705.3> an object that the ego vehicle should consider in the current scene?",
+          "gt": "Yes.",
+          "pred": "No.",
+          "recall": 0.0,
+          "halluc": 1.0
+        }
+      ]
+    }
+  }
+}
