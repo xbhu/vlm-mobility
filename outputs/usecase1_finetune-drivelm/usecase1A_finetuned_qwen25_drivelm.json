@@ -1,0 +1,317 @@
+[
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What are objects to the front right of the ego car?",
+    "gt": "There are many barriers and one construction vehicle to the front right of the ego car.",
+    "pred": "There is one barrier, one traffic cone, and one traffic light to the front right of the ego car."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There is one truck and one barrier to the front left of the ego car.",
+    "pred": "There is one barrier and many cars to the front left of the ego car."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What is the status of the truck that is to the front left of the ego car?",
+    "gt": "One truck is moving.",
+    "pred": "One truck is parked."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What are objects to the back left of the ego car?",
+    "gt": "There are two barriers, many trucks, two trailers, and one car to the back left of the ego car.",
+    "pred": "There is one barrier and one traffic cone to the back left of the ego car."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "4a0798f849ca477ab18009c3a20b7df2",
+    "question": "What is the status of the trucks that are to the back left of the ego car?",
+    "gt": "Many trucks are parked.",
+    "pred": "Two trucks are parked."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What are objects to the back left of the ego car?",
+    "gt": "There are many trucks, one car, two barriers, and one traffic cone to the back left of the ego car.",
+    "pred": "There is one barrier, one traffic cone, and one truck to the back left of the ego car."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What is the status of the trucks that are to the back left of the ego car?",
+    "gt": "Many trucks are parked, and one is moving.",
+    "pred": "Two trucks are parked."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There is one car, three barriers, one trailer, and three trucks to the front left of the ego car.",
+    "pred": "There is one barrier and one traffic cone to the front left of the ego car."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What is the status of the car that is to the front left of the ego car?",
+    "gt": "One car is parked.",
+    "pred": "One car is parked."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "ffd1bdf020d145759224c629b501d2b2",
+    "question": "What is the status of the car that is to the back left of the ego car?",
+    "gt": "One car is parked.",
+    "pred": "One car is parked."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What are objects to the back left of the ego car?",
+    "gt": "There are many trucks, two cars, and many barriers to the back left of the ego car.",
+    "pred": "There is one barrier and one traffic cone to the back left of the ego car."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What is the status of the trucks that are to the back left of the ego car?",
+    "gt": "Many trucks are parked, and one is moving.",
+    "pred": "Two trucks are parked."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are three barriers in front of the ego car.",
+    "pred": "There are many barriers, one traffic cone, and one truck in front of the ego car."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What is the status of the cars that are to the back left of the ego car?",
+    "gt": "Two cars are parked.",
+    "pred": "Two cars are parked."
+  },
+  {
+    "scene": "f0f120e4d4b0441da90ec53b16ee169d",
+    "frame": "d9075c2a5f864a2b8abf41e703f4cf1c",
+    "question": "What are objects to the back of the ego car?",
+    "gt": "There is one pedestrian, one bus, and two cars behind the ego car.",
+    "pred": "There are many barriers, one truck, and one traffic cone behind the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many barriers, one pedestrian, one car, and one traffic cone to the front left of the ego car.",
+    "pred": "There are two cars and one truck to the front left of the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are many cars in front of the ego car.",
+    "pred": "There are many cars, one truck, and one barrier in front of the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What is the status of the cars that are to the front of the ego car?",
+    "gt": "Many cars are moving, and one is parked.",
+    "pred": "Two cars are moving."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What are objects to the back of the ego car?",
+    "gt": "There are two trucks and two cars behind the ego car.",
+    "pred": "There are many cars, one truck, and one barrier behind the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "542eaf1fc9b34895a9e55fab57cb4cf4",
+    "question": "What is the status of the trucks that are to the back of the ego car?",
+    "gt": "Two trucks are moving.",
+    "pred": "Two trucks are parked."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many barriers, three cars, and one pedestrian to the front left of the ego car.",
+    "pred": "There is one barrier and one car to the front left of the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What is the status of the cars that are to the front left of the ego car?",
+    "gt": "Three cars are moving.",
+    "pred": "Two cars are moving."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What are objects to the back of the ego car?",
+    "gt": "There are two trucks and one car behind the ego car.",
+    "pred": "There are two cars, one barrier, and one truck behind the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What is the status of the trucks that are to the back of the ego car?",
+    "gt": "Two trucks are moving.",
+    "pred": "Two trucks are parked."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+    "question": "What are objects to the front right of the ego car?",
+    "gt": "There is one truck and many cars to the front right of the ego car.",
+    "pred": "There is one barrier, one traffic cone, and one car to the front right of the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many barriers, two cars, and one pedestrian to the front left of the ego car.",
+    "pred": "There is one car and one truck to the front left of the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What is the status of the cars that are to the front left of the ego car?",
+    "gt": "One of the cars is moving, and one is parked.",
+    "pred": "Two cars are moving."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What are objects to the back left of the ego car?",
+    "gt": "There is one truck, one car, and one traffic cone to the back left of the ego car.",
+    "pred": "There is one car and one truck to the back left of the ego car."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What is the status of the truck that is to the back left of the ego car?",
+    "gt": "One truck is moving.",
+    "pred": "One truck is parked."
+  },
+  {
+    "scene": "54cdaaae372d421fa4734d66f51a8c48",
+    "frame": "d5e16062410f4e329d31a881b28e5c1c",
+    "question": "What are objects to the front right of the ego car?",
+    "gt": "There is one truck and one car to the front right of the ego car.",
+    "pred": "There are many cars and one truck to the front right of the ego car."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are many pedestrians, one trailer, one motorcycle, three cars, and two trucks in front of the ego car.",
+    "pred": "There is one truck and many cars in front of the ego car."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What is the status of the pedestrians that are to the front of the ego car?",
+    "gt": "Many pedestrians are standing, and many are moving.",
+    "pred": "Two pedestrians are moving."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many pedestrians and one car to the front left of the ego car.",
+    "pred": "There is one truck and many cars to the front left of the ego car."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What is the status of the pedestrians that are to the front left of the ego car?",
+    "gt": "Many pedestrians are moving, and two are standing.",
+    "pred": "Two pedestrians are moving."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "bd8a5e326b804b069d497d29dbf19c2b",
+    "question": "What is the status of the trailer that is to the front of the ego car?",
+    "gt": "The trailer in front of the ego car is moving.",
+    "pred": "One trailer is parked."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are many pedestrians, one motorcycle, three cars, and two trucks in front of the ego car.",
+    "pred": "There is one truck and many cars in front of the ego car."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What is the status of the pedestrians that are to the front of the ego car?",
+    "gt": "Many pedestrians are standing, and many are moving.",
+    "pred": "Two pedestrians are moving."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many pedestrians, one trailer, and one car to the front left of the ego car.",
+    "pred": "There is one truck and many cars to the front left of the ego car."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What is the status of the pedestrians that are to the front left of the ego car?",
+    "gt": "Many pedestrians are moving, and one is standing.",
+    "pred": "Two pedestrians are moving."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "7903e67446c64958b0a660f10bdadf19",
+    "question": "What is the status of the trailer that is to the front left of the ego car?",
+    "gt": "The trailer to the front left of the ego car is moving.",
+    "pred": "One trailer is parked."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What are objects to the front of the ego car?",
+    "gt": "There are many pedestrians, one trailer, one motorcycle, many cars, and one truck in front of the ego car.",
+    "pred": "There are many pedestrians, cars, and two barriers in front of the ego car."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What is the status of the pedestrians that are to the front of the ego car?",
+    "gt": "Many pedestrians are moving, and many are standing.",
+    "pred": "One pedestrian is moving, and one is standing."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What are objects to the front left of the ego car?",
+    "gt": "There are many pedestrians and one car to the front left of the ego car.",
+    "pred": "There is one pedestrian and many cars to the front left of the ego car."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What is the status of the pedestrians that are to the front left of the ego car?",
+    "gt": "Many pedestrians are moving, and one is standing.",
+    "pred": "One pedestrian is moving, and one is standing."
+  },
+  {
+    "scene": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+    "frame": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+    "question": "What are objects to the back of the ego car?",
+    "gt": "There are many cars, pedestrians, three bicycles, and two trucks to the back of the ego car.",
+    "pred": "There are many cars, one truck, and one pedestrian behind the ego car."
+  }
+]
