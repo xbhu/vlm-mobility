@@ -1,0 +1,1588 @@
+{
+  "experiment": "UC7a",
+  "config": {
+    "top_k": 3,
+    "sbert_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "vlm_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "max_new_tokens": 256
+  },
+  "summary": {
+    "n_total": 27,
+    "overall": {
+      "zero_shot": {
+        "avg_rouge1": 0.0395,
+        "avg_rougeL": 0.0279
+      },
+      "rag": {
+        "avg_rouge1": 0.0731,
+        "avg_rougeL": 0.0551
+      },
+      "delta": {
+        "avg_rouge1": 0.0336,
+        "avg_rougeL": 0.0272
+      },
+      "avg_top1_similarity": 1.0
+    },
+    "by_type": {
+      "target_action": {
+        "n": 9,
+        "zero_shot": {
+          "avg_rouge1": 0.0018,
+          "avg_rougeL": 0.0018
+        },
+        "rag": {
+          "avg_rouge1": 0.0,
+          "avg_rougeL": 0.0
+        },
+        "delta": {
+          "avg_rouge1": -0.0018,
+          "avg_rougeL": -0.0018
+        }
+      },
+      "safe_actions": {
+        "n": 9,
+        "zero_shot": {
+          "avg_rouge1": 0.0467,
+          "avg_rougeL": 0.036
+        },
+        "rag": {
+          "avg_rouge1": 0.1072,
+          "avg_rougeL": 0.0928
+        },
+        "delta": {
+          "avg_rouge1": 0.0605,
+          "avg_rougeL": 0.0568
+        }
+      },
+      "dangerous_actions": {
+        "n": 9,
+        "zero_shot": {
+          "avg_rouge1": 0.0701,
+          "avg_rougeL": 0.0458
+        },
+        "rag": {
+          "avg_rouge1": 0.1122,
+          "avg_rougeL": 0.0725
+        },
+        "delta": {
+          "avg_rouge1": 0.0421,
+          "avg_rougeL": 0.0267
+        }
+      }
+    }
+  },
+  "frame_results": [
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Go straight.",
+      "zero_shot": {
+        "output": "The image shows a rainy street with traffic lights indicating green, suggesting that the ego vehicle (the vehicle from which the photo is taken) should proceed through the intersection. The presence of rain and the wet road surface indicate that driving conditions might be challenging, but there are no immediate signs of danger or obstacles in the immediate vicinity. The target action for the ego vehicle appears to be moving forward through the intersection, following the traffic signals.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.8
+      },
+      "rag": {
+        "output": "The target action of the ego vehicle appears to be stationary. The traffic lights are green, indicating that it is safe to proceed, but there are no visible vehicles approaching or turning, and the road ahead is clear. Additionally, the wet conditions suggest reduced visibility and caution, which might lead the ego vehicle to remain stationary until the situation clears up or until it receives further instructions.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.2,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Stationary.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Keep going at the same speed, decelerate gradually without braking.",
+      "zero_shot": {
+        "output": "Given the image, which shows a rainy and potentially hazardous driving condition, here are some safe actions the ego vehicle (the vehicle being controlled) should consider:\n\n1. **Reduce Speed**: Drive at a slower speed than usual to allow more time to react to any obstacles or changes in traffic conditions.\n\n2. **Maintain a Safe Distance**: Keep a greater distance from other vehicles ahead to allow for better stopping distances due to reduced visibility and braking efficiency on wet roads.\n\n3. **Use Low Beam Lights**: Ensure that the headlights are set to low beam to avoid glare for oncoming traffic and pedestrians while still providing enough light to see clearly.\n\n4. **Avoid Sudden Maneuvers**: Avoid sudden braking or sharp turns as these can cause hydroplaning or loss of control on wet surfaces.\n\n5. **Stay Alert**: Be extra vigilant and watch for any signs of flooding or standing water on the road, which could indicate deeper issues below the surface.\n\n6. **Check Traffic Signals**: The traffic lights appear to be green, but it's important to check if there are any other vehicles or pedestrians that might not be visible due to the weather conditions.\n\n7. **Use Turn Signals**: If turning, use the turn signals well in advance to alert other drivers of your intentions.",
+        "rouge": {
+          "rouge1": 0.0448,
+          "rouge2": 0.0,
+          "rougeL": 0.0269
+        },
+        "time_s": 12.2
+      },
+      "rag": {
+        "output": "Given the current image, which shows a rainy and foggy environment with reduced visibility, the following safe actions can be taken by the ego vehicle:\n\n1. **Reduce Speed**: Drive at a lower speed than usual to allow more time to react to any potential hazards.\n2. **Maintain a Safe Distance**: Keep a greater distance from other vehicles to ensure there is enough space to stop if needed.\n3. **Use Low Beam Lights**: Ensure that the headlights are set to low beam to avoid glare while still providing sufficient illumination for the road ahead.\n4. **Avoid Sudden Maneuvers**: Avoid sudden turns or lane changes as visibility is reduced.\n5. **Stay Alert**: Be extra vigilant due to the weather conditions and potential for reduced visibility.\n\nBased on these observations, the safest course of action would be to reduce speed, maintain a safe distance, use low beam lights, and stay alert.",
+        "rouge": {
+          "rouge1": 0.0506,
+          "rouge2": 0.0,
+          "rougeL": 0.038
+        },
+        "time_s": 9.5,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0058,
+        "rougeL": 0.0111
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Back up, turn right.",
+      "zero_shot": {
+        "output": "In the scenario depicted in the image, there are several dangerous actions that the ego vehicle (the vehicle from which the photo is taken) could take:\n\n1. **Speeding**: The road appears to be wet, which increases the risk of hydroplaning. Speeding can make it more difficult to control the vehicle and increase the likelihood of losing traction.\n\n2. **Rushing Through Red Lights**: The traffic lights are showing green, but rushing through them without checking for oncoming traffic or pedestrians could lead to accidents.\n\n3. **Driving Without Wipers**: If the vehicle's wipers are not functioning, it could be difficult to see clearly, especially if it continues to rain.\n\n4. **Driving Without Headlights**: In low visibility conditions like rain, headlights help other drivers see you, reducing the risk of collisions.\n\n5. **Driving Too Close to Other Vehicles**: Given the wet conditions, maintaining a safe distance from other vehicles is crucial to allow for extra stopping distance in case of sudden braking.\n\n6. **Driving Without Caution**: The road appears to have some debris or water accumulation, which could indicate potential hazards. Driving cautiously is important to avoid accidents.\n\n7. **Driving Without Using Turn Signals**: If turning, using turn signals helps other drivers anticipate your movement,",
+        "rouge": {
+          "rouge1": 0.0097,
+          "rouge2": 0.0,
+          "rougeL": 0.0097
+        },
+        "time_s": 12.3
+      },
+      "rag": {
+        "output": "In the current image, the road is wet, there are traffic lights indicating green, and the visibility appears to be reduced due to fog or mist. Given these conditions, here are some dangerous actions that the ego vehicle should avoid:\n\n- **Accelerate**: Accelerating could lead to loss of control due to the wet road surface.\n- **Brake Suddenly**: Sudden braking can cause skidding and loss of control, especially on a wet road.\n- **Turn Left**: Turning left might not be safe if there are no clear signals or if the road conditions make it difficult to navigate safely.\n\nInstead, the ego vehicle should:\n- **Decelerate Gradually**: Reduce speed cautiously to maintain better control over the vehicle.\n- **Maintain Speed**: Maintain a steady speed but be prepared to adjust as needed.\n- **Use Turn Signals**: Use turn signals if turning is necessary to alert other drivers.\n- **Stay Alert**: Stay vigilant and be ready to react to any changes in the environment.\n\nThese actions will help ensure safety while navigating through the potentially hazardous conditions.",
+        "rouge": {
+          "rouge1": 0.0117,
+          "rouge2": 0.0,
+          "rougeL": 0.0117
+        },
+        "time_s": 10.9,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.002,
+        "rougeL": 0.002
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "ffd1bdf020d145759224c629b501d2b2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Go straight.",
+      "zero_shot": {
+        "output": "The image shows a rainy scene at a railroad crossing with traffic lights indicating it's safe to proceed. The target action for the ego vehicle, based on the image, would be to drive through the railroad crossing once the train has passed and the crossing signals indicate it is safe to do so. However, it's important to note that the actual decision-making process would depend on the specific context and the vehicle's autonomous system, which might include factors like speed limits, traffic regulations, and safety protocols.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 6.2
+      },
+      "rag": {
+        "output": "The target action of the ego vehicle appears to be stationary. The image shows a wet road with traffic lights indicating green, but there is no visible movement or activity from the ego vehicle itself. The environment suggests it might be raining, and the road conditions could be slippery, which might discourage driving. However, without additional context or motion data, it's reasonable to infer that the ego vehicle is likely waiting at the intersection due to the wet conditions and potential for reduced visibility.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 6.2,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Stationary.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "ffd1bdf020d145759224c629b501d2b2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Keep going at the same speed, decelerate gradually without braking.",
+      "zero_shot": {
+        "output": "Given the image, which shows a rainy day with wet roads and traffic lights indicating it is safe to proceed (green lights), here are some safe actions for the ego vehicle:\n\n1. **Drive Slowly**: Reduce speed due to the wet road conditions to ensure better control of the vehicle.\n2. **Maintain a Safe Distance**: Keep a greater distance from other vehicles to allow more time to react to any sudden stops or changes in traffic signals.\n3. **Use Your Lights**: Ensure your headlights are on to improve visibility for both you and others around you.\n4. **Avoid Sudden Maneuvers**: Avoid sharp turns or sudden braking as these can cause hydroplaning or loss of control on wet surfaces.\n5. **Be Aware of Traffic Signals**: Continue to monitor the traffic signals and be prepared to stop if necessary.\n6. **Check for Water Accumulation**: Be cautious of any water accumulation that could indicate deeper issues like potholes or flooding.\n\nBy following these precautions, the ego vehicle can safely navigate through the intersection under rainy conditions.",
+        "rouge": {
+          "rouge1": 0.044,
+          "rouge2": 0.0,
+          "rougeL": 0.033
+        },
+        "time_s": 10.8
+      },
+      "rag": {
+        "output": "In the current image, the road appears to be wet and reflective, indicating recent or ongoing rain. The traffic lights are visible, but there is no oncoming traffic or pedestrians crossing the intersection. Here are some safe actions for the ego vehicle:\n\n1. **Reduce Speed**: Given the wet conditions, reduce your speed to ensure better control of the vehicle.\n2. **Maintain a Safe Distance**: Keep a safe distance from the traffic lights and any potential obstacles that might appear due to reduced visibility.\n3. **Be Alert for Changes in Conditions**: Be prepared for sudden changes in road conditions or other vehicles that may need to stop suddenly due to the wet roads.\n4. **Use Turn Signals**: If turning, use turn signals to alert other drivers of your intentions.\n5. **Avoid\u6025\u505c (j\u00ed d\u012bng) - Abrupt Stops**: Avoid abrupt stops unless absolutely necessary, as they can be more dangerous on wet roads.\n\nGiven the lack of immediate threats, the most straightforward action would be to **reduce speed** and **maintain a safe distance**, ensuring you have enough time to react to any changes in the environment.",
+        "rouge": {
+          "rouge1": 0.0311,
+          "rouge2": 0.0,
+          "rougeL": 0.0311
+        },
+        "time_s": 11.8,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": -0.0129,
+        "rougeL": -0.0019
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "ffd1bdf020d145759224c629b501d2b2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Backing up, turning left, turning right, and changing to the right lane are dangerous actions for the ego vehicle in this scenario.",
+      "zero_shot": {
+        "output": "In the scenario depicted in the image, there are several dangerous actions that the ego vehicle (the vehicle from which the photo is taken) could take:\n\n1. **Speeding**: The road appears to be wet, which increases the risk of hydroplaning. Speeding can lead to loss of control and increased stopping distance.\n\n2. **Driving Without Wipers**: The windshield appears to have some water on it, which could obstruct the driver's view. Using wipers is crucial to maintain visibility.\n\n3. **Driving Without Lights**: If it is raining heavily, headlights should be turned on to improve visibility for other drivers and pedestrians.\n\n4. **Driving Without Caution at Railings**: The presence of railings suggests that the road might intersect with railway tracks. Approaching such intersections without caution can be dangerous if a train is approaching.\n\n5. **Driving Without Checking Surroundings**: The image shows traffic lights and railings, but the driver should always check for other vehicles, pedestrians, and potential hazards before proceeding.\n\n6. **Driving Without Considering Traffic Signals**: The traffic signals are visible, indicating that the driver should follow the signals to ensure safety and avoid accidents.\n\n7. **Driving Without Considering Wet Conditions**: Wet roads increase the risk of skidding and braking distances. The",
+        "rouge": {
+          "rouge1": 0.1166,
+          "rouge2": 0.0271,
+          "rougeL": 0.0628
+        },
+        "time_s": 12.8
+      },
+      "rag": {
+        "output": "In the current image, the scene depicts a rainy day with wet roads, traffic lights indicating green, and no visible pedestrians or vehicles crossing the intersection. The road appears clear of obstacles, but the wet conditions suggest potential hazards such as reduced traction and increased stopping distance.\n\nGiven these observations, here are some dangerous actions that the ego vehicle should avoid:\n\n- **Accelerate and go ahead**: This could lead to losing control due to reduced traction.\n- **Back up**: This is generally not advisable unless there is an immediate threat behind the vehicle.\n- **Decelerate gradually without braking**: This might be necessary if the vehicle needs to slow down, but it should be done cautiously to ensure safety.\n- **Turn left**: This action should be taken with caution, especially in wet conditions where turning might cause hydroplaning.\n\nThe safest actions would be to maintain a safe speed, keep a safe distance from other vehicles, and be prepared to brake if needed due to the wet road conditions. \n\nTherefore, the dangerous actions to avoid include accelerating and going ahead, backing up unnecessarily, and turning left without assessing the road conditions carefully.",
+        "rouge": {
+          "rouge1": 0.1538,
+          "rouge2": 0.0583,
+          "rougeL": 0.1058
+        },
+        "time_s": 11.8,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0372,
+        "rougeL": 0.043
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Go straight.",
+      "zero_shot": {
+        "output": "The image shows a wet road with traffic lights and railroad crossing signals. The traffic lights are green, indicating that the ego vehicle (the vehicle from which this photo is taken) should proceed through the intersection. However, there are no visible pedestrians or vehicles in the immediate vicinity, suggesting that the ego vehicle has the right of way to move forward. The railroad crossing signals are not active, so there is no train approaching at the moment. Therefore, the target action for the ego vehicle appears to be moving forward through the intersection.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 6.7
+      },
+      "rag": {
+        "output": "The target action of the ego vehicle appears to be stationary. The traffic lights are green, indicating that it is safe to proceed, but the road ahead is clear and there are no other vehicles or pedestrians visible. Given this information, the most likely action for the ego vehicle is to remain stationary until it is safe to move forward.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.2,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Stationary.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Keep going at the same speed and brake suddenly.",
+      "zero_shot": {
+        "output": "Given the image, it appears to be a rainy day with wet roads and traffic lights indicating that the road is clear for the ego vehicle to proceed. Here are some safe actions the ego vehicle should consider:\n\n1. **Reduce Speed**: Drive at a slower speed due to the wet conditions to ensure better control of the vehicle.\n2. **Maintain a Safe Distance**: Keep a safe distance from the vehicle in front to allow for more reaction time if there is sudden braking or stopping.\n3. **Use Turn Signals**: If turning, use the turn signals well in advance to alert other drivers of your intentions.\n4. **Avoid Sudden Maneuvers**: Avoid sudden braking or sharp turns as they can cause hydroplaning on wet surfaces.\n5. **Check Mirrors and Lights**: Ensure all mirrors are clear and functioning properly, and check the headlights and brake lights to ensure they are working correctly.\n6. **Be Aware of Railings and Crossings**: The presence of railings suggests the possibility of railway crossings nearby, so remain vigilant for trains.\n7. **Stay Alert**: Be extra cautious as visibility might be reduced due to rain, and other drivers may also be driving cautiously.\n\nBy following these precautions, the ego vehicle can safely navigate through the potentially challenging driving conditions",
+        "rouge": {
+          "rouge1": 0.0548,
+          "rouge2": 0.0092,
+          "rougeL": 0.0365
+        },
+        "time_s": 13.0
+      },
+      "rag": {
+        "output": "In the current image, the road appears to be wet and there are no visible pedestrians or other vehicles approaching the intersection. The traffic lights are green, indicating that it is safe to proceed. However, given the wet conditions, it's important to be cautious and maintain a lower speed than usual to ensure better control of the vehicle.\n\n**Safe Actions for the Ego Vehicle:**\n1. **Reduce Speed:** Drive at a slower speed due to the wet road conditions.\n2. **Maintain a Safe Distance:** Keep a greater distance from the vehicle ahead to allow more time to react to any sudden changes.\n3. **Be Alert:** Be extra vigilant for potential hazards such as hydroplaning or slippery surfaces.\n4. **Use Turn Signals:** If turning, use turn signals well in advance to alert other drivers of your intentions.\n\nBy following these steps, the ego vehicle can safely navigate through the intersection under the current conditions.",
+        "rouge": {
+          "rouge1": 0.0617,
+          "rouge2": 0.0,
+          "rougeL": 0.0247
+        },
+        "time_s": 10.3,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0069,
+        "rougeL": -0.0118
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Back up, turn right.",
+      "zero_shot": {
+        "output": "In the given scenario, there are several dangerous actions that the ego vehicle (the vehicle from which the image is taken) could take:\n\n1. **Proceeding Through the Railroad Crossing**: The railroad crossing signals are showing red lights, indicating that trains are approaching or crossing. It is crucial to stop and wait until the crossing is clear before proceeding.\n\n2. **Driving in Poor Visibility**: The weather appears to be rainy, reducing visibility. This can make it difficult to see other vehicles, pedestrians, or obstacles on the road. It's important to drive cautiously and maintain a safe distance from other vehicles.\n\n3. **Speeding**: Even though the traffic lights are green, the presence of a railroad crossing requires the vehicle to slow down significantly. Speeding through a railroad crossing can lead to accidents if a train is approaching unexpectedly.\n\n4. **Not Observing the Railroad Crossing Signals**: The railroad crossing signals are clearly visible, but not following them could lead to accidents. Always follow the signals strictly to ensure safety.\n\n5. **Not Yielding to Pedestrians**: If there are pedestrians waiting to cross at the railroad crossing, yielding to them is essential. Pedestrian safety should always be prioritized.\n\nBy following these guidelines, the ego vehicle can ensure safer navigation through the area",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 13.1
+      },
+      "rag": {
+        "output": "In the current image, the road appears to be wet, which can reduce traction and increase the risk of hydroplaning. There are also railroad crossings visible, which require caution due to potential train crossings. Given these observations, here are some dangerous actions to avoid for the ego vehicle:\n\n- **Accelerate and go ahead**: This could lead to loss of control if the road is slippery.\n- **Back up**: This action is generally not advisable unless there is an immediate threat behind the vehicle.\n- **Decelerate gradually without braking**: This might not be sufficient to stop the vehicle safely, especially on a wet road.\n- **Turn left**: Turning left near a railroad crossing can be risky as it may obstruct the view or the path of approaching trains.\n\nThe safest actions would be to:\n- **Brake gently to a stop**: This allows for better control and reduces the risk of hydroplaning.\n- **Keep going at the same speed**: This is only safe if the road conditions allow for maintaining the current speed without losing control.\n- **Slightly offset to the left**: This can help maintain stability but should be done cautiously to avoid hitting any obstacles.\n\nGiven the wet conditions and the presence of railroad crossings, it's crucial to proceed with caution and avoid sudden movements",
+        "rouge": {
+          "rouge1": 0.0282,
+          "rouge2": 0.0095,
+          "rougeL": 0.0282
+        },
+        "time_s": 13.3,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0282,
+        "rougeL": 0.0282
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Stationary.",
+      "zero_shot": {
+        "output": "The image shows a street intersection with traffic lights and vehicles. The traffic light in the foreground is red, indicating that the ego vehicle (the vehicle from which this perspective is taken) should stop. The target action for the ego vehicle appears to be stopping at the intersection until the light turns green or until it is safe to proceed.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.2
+      },
+      "rag": {
+        "output": "The target action of the ego vehicle appears to be \"Go straight.\" The traffic light is red, indicating that vehicles should stop and not proceed until the light turns green. Since the ego vehicle is at a stop sign or intersection where it is expected to stop, the target action aligns with waiting for the light to turn green before proceeding.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.4,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+            "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Brake gently to a stop, brake suddenly, and slightly offset to the left.",
+      "zero_shot": {
+        "output": "In the given scenario, the ego vehicle is approaching an intersection with traffic lights and other vehicles already present. Here are some safe actions the ego vehicle should consider:\n\n1. **Check the Traffic Lights**: Ensure that the traffic light is green for the direction you intend to turn or proceed straight.\n\n2. **Look for Other Vehicles**: Be aware of the vehicles already at the intersection, including those turning or waiting to go. Ensure there is no conflicting traffic.\n\n3. **Signal if Necessary**: If turning, use your turn signal to inform other drivers of your intentions.\n\n4. **Maintain a Safe Distance**: Keep a safe distance from the vehicle directly in front of you to allow for reaction time in case they stop suddenly.\n\n5. **Be Prepared to Stop**: If the traffic light turns red or if there is a conflict with another vehicle, be prepared to stop safely.\n\n6. **Follow Traffic Rules**: Adhere to all traffic rules and signals to ensure safety for all road users.\n\n7. **Stay Alert**: Be vigilant for any unexpected movements or changes in traffic conditions.\n\nBy following these steps, the ego vehicle can navigate the intersection safely while respecting the rights of other road users.",
+        "rouge": {
+          "rouge1": 0.066,
+          "rouge2": 0.0,
+          "rougeL": 0.066
+        },
+        "time_s": 12.6
+      },
+      "rag": {
+        "output": "In the current image, the traffic light is red, indicating that the ego vehicle should stop. Given the presence of other vehicles and the urban environment, it's important to ensure safety by:\n\n1. **Braking gently to a stop**: This helps prevent sudden stops that could cause rear-end collisions.\n2. **Slightly offset to the left or right**: This can help avoid blocking the intersection if there are other vehicles approaching from different directions.\n3. **Check for pedestrians and other vehicles**: Ensure there are no pedestrians crossing or other vehicles turning that might require a reaction.\n\nSo, the safe actions for the ego vehicle would be:\n\n- **Brake gently to a stop**.\n- **Slightly offset to the left or right** to allow for better visibility and space for other vehicles to pass.\n- **Check for pedestrians and other vehicles** before proceeding once the light turns green.",
+        "rouge": {
+          "rouge1": 0.1538,
+          "rouge2": 0.1039,
+          "rougeL": 0.141
+        },
+        "time_s": 10.2,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0878,
+        "rougeL": 0.075
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Accelerate and go ahead, change to the right lane, and turn right.",
+      "zero_shot": {
+        "output": "In the given scenario, there are several potential dangerous actions that the ego vehicle (the vehicle from which the photo is taken) could take based on the image:\n\n1. **Running a Red Light**: The traffic light in the image shows red, indicating that vehicles should stop. If the ego vehicle were to proceed through the intersection while the light is red, it would be a dangerous action.\n\n2. **Turning Without Checking**: If the ego vehicle is turning right or left and does not check for oncoming traffic or pedestrians, it could lead to accidents.\n\n3. **Following Too Closely**: If the ego vehicle is following another vehicle too closely, it leaves little room for reaction if the vehicle ahead stops suddenly.\n\n4. **Not Yielding to Right-of-Way**: If the ego vehicle is at an intersection where it has the right of way but fails to yield to other vehicles or pedestrians who have the right of way, it can lead to conflicts.\n\n5. **Distraction**: If the driver of the ego vehicle is distracted by something outside the vehicle (like using a phone, eating, or talking loudly), it can lead to unsafe driving behavior.\n\n6. **Speeding**: If the ego vehicle is traveling faster than the speed limit or exceeds the speed limits set",
+        "rouge": {
+          "rouge1": 0.0625,
+          "rouge2": 0.018,
+          "rougeL": 0.0536
+        },
+        "time_s": 13.4
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle is approaching an intersection with traffic lights and other vehicles already present. Given the context of the image, here are some potential dangerous actions that the ego vehicle could take:\n\n- **Accelerate and go ahead**: This could be dangerous if there are pedestrians or other vehicles crossing the intersection.\n- **Back up**: This would be inappropriate as the ego vehicle is approaching the intersection, not backing out of it.\n- **Decelerate gradually without braking**: This might be necessary if the ego vehicle needs to slow down to yield to other vehicles or pedestrians, but it should be done cautiously.\n- **Turn left**: If turning left is the intended action, it should be done safely by yielding to oncoming traffic and checking for pedestrians.\n\nBased on the image, the most appropriate actions would be to **decelerate gradually** to ensure safety and to **yield to other vehicles** if necessary. The ego vehicle should also be prepared to stop if required by traffic signals or pedestrian crossings.\n\nTherefore, the dangerous actions to avoid include accelerating and going ahead without checking for other vehicles or pedestrians.",
+        "rouge": {
+          "rouge1": 0.0812,
+          "rouge2": 0.0308,
+          "rougeL": 0.0711
+        },
+        "time_s": 12.1,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0187,
+        "rougeL": 0.0175
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Stationary.",
+      "zero_shot": {
+        "output": "The image shows a road intersection with traffic lights and vehicles. The ego vehicle, which appears to be the white car in the foreground, seems to be waiting at a red light. Given that the traffic light is red for the direction the ego vehicle is facing, the target action for the ego vehicle would likely be to stop and wait until the light turns green before proceeding.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.6
+      },
+      "rag": {
+        "output": "The target action of the ego vehicle appears to be \"Go straight.\" The traffic light is red, indicating that vehicles should stop and not proceed until the light turns green. However, since the ego vehicle is already stopped at the intersection, it seems to be waiting for the right moment to continue moving forward once the light changes.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.4,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+            "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Brake gently to a stop, slightly offset to the right, and slightly offset to the left.",
+      "zero_shot": {
+        "output": "Given the image, here are some safe actions that the ego vehicle (the vehicle from which the photo is taken) should consider:\n\n1. **Check Traffic Signals**: Ensure that the traffic light is green or that it is safe to proceed based on the signals.\n\n2. **Look for Other Vehicles and Pedestrians**: Check both directions of the intersection for any vehicles or pedestrians who might be crossing or turning.\n\n3. **Merge Safely**: If merging into the lane where the white car is heading, ensure there is enough space and no other vehicles are approaching from behind.\n\n4. **Maintain Speed**: Drive at a speed appropriate for the conditions. If the road is clear and there are no pedestrians or other vehicles nearby, you can maintain a moderate speed.\n\n5. **Use Turn Signals**: If turning, use your turn signal to inform other drivers of your intentions.\n\n6. **Be Aware of Surroundings**: Keep an eye on the surroundings, including the large building on the right side of the image, as it may have its own traffic rules or pedestrian crossings.\n\n7. **Stay in Your Lane**: Stick to your lane unless you need to merge safely or make a turn.\n\n8. **Avoid Distractions**: Ensure you are not distracted by anything inside the vehicle",
+        "rouge": {
+          "rouge1": 0.0714,
+          "rouge2": 0.009,
+          "rougeL": 0.0625
+        },
+        "time_s": 13.4
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle is approaching an intersection with traffic lights and other vehicles visible. The traffic light appears to be red, indicating that the ego vehicle should stop. Given this observation, the safe action for the ego vehicle would be:\n\nA: Brake gently to a stop, slightly offset to the left.\n\nThis ensures that the ego vehicle complies with traffic rules and avoids any potential collisions or obstructing other vehicles.",
+        "rouge": {
+          "rouge1": 0.2889,
+          "rouge2": 0.2045,
+          "rougeL": 0.2222
+        },
+        "time_s": 6.3,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.2175,
+        "rougeL": 0.1597
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Changing to the right lane, accelerating, and going ahead, and backing up are dangerous actions to take for the ego vehicle in this scenario.",
+      "zero_shot": {
+        "output": "In the given scenario, there are several potential dangerous actions that the ego vehicle (the vehicle from which the photo is taken) could take based on the image:\n\n1. **Following Too Closely**: The white car ahead appears to be stopped at a red light. If the ego vehicle follows too closely, it might not have enough time to stop if the white car suddenly accelerates or if there's an emergency situation.\n\n2. **Not Observing Traffic Signals**: The traffic lights in the image show red signals, indicating that vehicles should stop. If the ego vehicle does not stop when it should, it could lead to accidents with other vehicles or pedestrians.\n\n3. **Not Yielding to Right-of-Way**: If the ego vehicle is turning right and there is a straight path available, it should yield to vehicles coming from the straight path unless it has the right of way. Not yielding could lead to collisions.\n\n4. **Not Checking for Pedestrians**: There are no visible pedestrians in the immediate area, but it\u2019s always important to check for pedestrians who might be crossing the street or entering the crosswalk.\n\n5. **Not Using Turn Signals**: If the ego vehicle is turning, it should use turn signals to inform other drivers of its intentions. This helps prevent",
+        "rouge": {
+          "rouge1": 0.1513,
+          "rouge2": 0.0339,
+          "rougeL": 0.0924
+        },
+        "time_s": 13.5
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle is approaching an intersection with traffic lights. The traffic light is red, indicating that the ego vehicle should stop. Given this context, the dangerous actions for the ego vehicle would be:\n\n- Accelerating or continuing forward.\n- Turning right without checking for oncoming traffic.\n- Turning left without checking for oncoming traffic.\n\nThe correct action would be to stop at the intersection, check for any oncoming vehicles, pedestrians, or cyclists, and then proceed when it is safe to do so.",
+        "rouge": {
+          "rouge1": 0.2593,
+          "rouge2": 0.0755,
+          "rougeL": 0.1296
+        },
+        "time_s": 7.1,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.108,
+        "rougeL": 0.0372
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Stationary.",
+      "zero_shot": {
+        "output": "The image shows an intersection with traffic lights and vehicles. The ego vehicle, which appears to be the car in the foreground on the right side of the image, seems to be preparing to turn right. The traffic light for the right-turn lane is red, indicating that the ego vehicle should stop and wait for the light to turn green before proceeding. The presence of other vehicles and the layout of the road suggest that the ego vehicle is following standard traffic rules and waiting for its turn to move.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 6.7
+      },
+      "rag": {
+        "output": "The target action of the ego vehicle appears to be \"Go straight.\" The traffic light is red, indicating that vehicles should stop and not proceed until the light turns green. However, since the question asks for the target action based on the current observation, and there is no indication that the ego vehicle is currently moving or preparing to move, the most accurate response would be that the ego vehicle is currently stopped at the intersection.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 6.3,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+            "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Brake gently to a stop, slightly offset to the left.",
+      "zero_shot": {
+        "output": "In the given scenario, the ego vehicle appears to be at an intersection with traffic lights and other vehicles present. Here are some safe actions the ego vehicle should consider:\n\n1. **Check Traffic Lights**: Ensure that the traffic light is green or yellow before proceeding. If it is red, stop behind the line of the crosswalk.\n\n2. **Look for Other Vehicles**: Check for oncoming traffic and pedestrians crossing the intersection. In the image, there are cars approaching from the right side, so the ego vehicle should yield to them if necessary.\n\n3. **Signal Intentions**: Use turn signals if turning or changing lanes to inform other drivers of your intentions.\n\n4. **Maintain Speed**: Drive at a speed appropriate for the conditions. If the traffic is light, maintain a moderate speed to ensure safety and efficiency.\n\n5. **Be Aware of Surroundings**: Keep an eye on the surroundings, including the traffic lights, other vehicles, and pedestrians.\n\n6. **Follow Traffic Rules**: Adhere to all traffic rules and signs to ensure safety for everyone on the road.\n\n7. **Prepare for Emergencies**: Be ready to brake or maneuver if needed, such as yielding to a pedestrian or avoiding a collision.\n\nBy following these guidelines, the ego vehicle can safely navigate through",
+        "rouge": {
+          "rouge1": 0.0558,
+          "rouge2": 0.0094,
+          "rougeL": 0.0372
+        },
+        "time_s": 13.5
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle is approaching an intersection with traffic lights and other vehicles visible. The traffic light appears to be red for the ego vehicle's direction, indicating it should stop.\n\nGiven this observation, the safe action for the ego vehicle would be:\n\nA: Brake gently to a stop, slightly offset to the left.\n\nThis ensures that the ego vehicle complies with traffic rules and avoids any potential collisions or obstructing other vehicles.",
+        "rouge": {
+          "rouge1": 0.2299,
+          "rouge2": 0.2118,
+          "rougeL": 0.2299
+        },
+        "time_s": 6.5,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.1741,
+        "rougeL": 0.1927
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Accelerate and go ahead, and turn right.",
+      "zero_shot": {
+        "output": "In the given scenario, there are several potential dangerous actions that the ego vehicle (the vehicle from which the image is taken) could take:\n\n1. **Following Too Closely**: The vehicle ahead appears to be stopped at a red light. If the ego vehicle follows too closely, it may not have enough time to stop if the car ahead suddenly accelerates or if there's an emergency situation.\n\n2. **Not Yielding Right of Way**: If the vehicle on the right has the right of way and the ego vehicle does not yield, it could lead to a collision.\n\n3. **Speeding**: If the ego vehicle is traveling faster than the speed limit or the flow of traffic allows, it could lead to accidents due to sudden braking or loss of control.\n\n4. **Distraction**: If the driver of the ego vehicle is distracted by something outside the vehicle (like a phone call, eating, or talking to passengers), it could lead to inattention and poor decision-making.\n\n5. **Improper Lane Change**: If the ego vehicle attempts to change lanes without signaling or checking for oncoming traffic, it could collide with another vehicle.\n\n6. **Running Red Lights**: If the ego vehicle runs a red light, it could cause accidents with other vehicles that have the",
+        "rouge": {
+          "rouge1": 0.0461,
+          "rouge2": 0.0,
+          "rougeL": 0.0276
+        },
+        "time_s": 13.6
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle is approaching an intersection with traffic lights and other vehicles already present. Here are some potential dangerous actions that the ego vehicle could take:\n\n- **Accelerate and go ahead**: This could lead to a collision if the traffic light changes or if another vehicle has the right of way.\n- **Back up**: This action is not appropriate in a forward-moving scenario like this.\n- **Decelerate gradually without braking**: This might be a safe option if the ego vehicle needs to slow down but should ensure it does not block the path of other vehicles.\n- **Turn left**: If turning left is not the intended direction, this could lead to confusion and potentially a collision.\n\nGiven these observations, the most dangerous actions would likely be accelerating and going ahead, as it could lead to a collision with other vehicles or pedestrians if the traffic light changes unexpectedly.",
+        "rouge": {
+          "rouge1": 0.0892,
+          "rouge2": 0.0387,
+          "rougeL": 0.0637
+        },
+        "time_s": 10.3,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0431,
+        "rougeL": 0.0361
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "bd8a5e326b804b069d497d29dbf19c2b",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708670912404.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Stationary.",
+      "zero_shot": {
+        "output": "The image shows a street scene with a large truck on the left side of the road, and two pedestrians standing on the sidewalk. The pedestrian in the foreground appears to be looking towards the truck, possibly indicating concern or curiosity about its presence. The pedestrian in the background seems to be walking away from the truck.\n\nGiven this context, the target action of the ego vehicle (the vehicle from whose perspective this image is taken) could be related to navigating around the truck safely. This might involve slowing down, yielding to the pedestrian, or perhaps stopping if there is a risk of collision or obstruction. The exact action would depend on the specific rules of the road and the intentions of the driver.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 8.5
+      },
+      "rag": {
+        "output": "The image shows a street scene with a large truck and other vehicles, but there is no clear indication of the ego vehicle's position or direction. Since the question asks for the target action of the ego vehicle, and there is no specific information about the ego vehicle in this image, it is not possible to determine the target action based solely on this image.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.7,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+            "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "bd8a5e326b804b069d497d29dbf19c2b",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708670912404.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Brake suddenly, brake gently to a stop.",
+      "zero_shot": {
+        "output": "In the image provided, it appears that the ego vehicle is a large truck on the left side of the street. Here are some safe actions the ego vehicle (the truck) should consider:\n\n1. **Maintain Speed and Distance**: Ensure you maintain a safe distance from the pedestrian crossing the street. Pedestrians may not always follow traffic signals or rules.\n\n2. **Check for Pedestrians**: Always be aware of pedestrians crossing the street, especially at crosswalks. Be prepared to stop if necessary.\n\n3. **Use Turn Signals**: If turning, ensure you use your turn signals to alert other drivers and pedestrians of your intentions.\n\n4. **Be Aware of Surrounding Traffic**: Be vigilant about other vehicles, including those coming from the opposite direction or turning.\n\n5. **Follow Traffic Laws**: Adhere to traffic laws such as stopping at stop signs, yielding to pedestrians, and following speed limits.\n\n6. **Stay in Your Lane**: Stick to your lane unless you need to make a turn or merge into another lane.\n\n7. **Avoid Distractions**: Keep your attention focused on driving safely. Avoid using your phone or engaging in activities that could distract you from the road.\n\n8. **Be Patient**: Allow pedestrians and other vehicles to move through intersections without",
+        "rouge": {
+          "rouge1": 0.0288,
+          "rouge2": 0.0,
+          "rougeL": 0.0192
+        },
+        "time_s": 13.5
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle is a large truck that appears to be turning or maneuvering into a lane where there are pedestrians and other vehicles. Given the presence of pedestrians near the crosswalk and the potential for collision risk due to the truck's size and movement, the following safe actions should be taken by the ego vehicle:\n\nA: Brake gently to a stop, slightly offset to the left.\n\nThis action allows the ego vehicle to slow down safely while maintaining a safe distance from the pedestrians and other vehicles. The slight offset to the left helps to avoid any potential collision with the pedestrians or other vehicles that might be in the path of the truck's turn.",
+        "rouge": {
+          "rouge1": 0.0775,
+          "rouge2": 0.063,
+          "rougeL": 0.0775
+        },
+        "time_s": 8.4,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0487,
+        "rougeL": 0.0583
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "bd8a5e326b804b069d497d29dbf19c2b",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708670912404.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Accelerate and go ahead, turn left, turn right, and back up.",
+      "zero_shot": {
+        "output": "In the image provided, there are several potential dangerous actions that could be taken by the ego vehicle (the vehicle being controlled or monitored in this context):\n\n1. **Following Too Closely**: The large truck is very close to the ego vehicle. If the ego vehicle were to follow too closely, it would not have enough time to stop if the truck suddenly stops or changes direction.\n\n2. **Not Observing Traffic Signals**: The traffic signal ahead appears to be red, indicating that vehicles should stop. If the ego vehicle does not stop, it could potentially cause an accident with other vehicles or pedestrians.\n\n3. **Not Yielding to Right-of-Way**: The ego vehicle is approaching an intersection where it has the right of way but might need to yield to pedestrians crossing the street or other vehicles turning.\n\n4. **Not Using Turn Signals**: If the ego vehicle is turning, it should use turn signals to alert other drivers and pedestrians of its intentions.\n\n5. **Not Maintaining Safe Speed**: The speed limit sign indicates a maximum speed, which should be adhered to. Exceeding the speed limit can increase the risk of accidents.\n\n6. **Not Being Aware of Surroundings**: The ego vehicle should be aware of all surrounding vehicles, pedestrians, and obstacles to",
+        "rouge": {
+          "rouge1": 0.0543,
+          "rouge2": 0.0,
+          "rougeL": 0.0362
+        },
+        "time_s": 13.5
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle is a large truck that appears to be turning right at an intersection. Given the presence of pedestrians and other vehicles, here are some potential dangerous actions the ego vehicle could take:\n\n- **Accelerating or speeding up**: This could lead to a collision with the pedestrian crossing the street.\n- **Braking suddenly**: This could startle the pedestrian and potentially cause them to react unpredictably.\n- **Turning sharply**: If the turn is too sharp, it could cut off the pedestrian's path or force them into a dangerous situation.\n\nGiven these observations, the most dangerous actions for the ego vehicle would be:\n\n**A: Accelerate and go ahead, brake suddenly, turn sharply.**\n\nThese actions could put both the ego vehicle and the pedestrian in a potentially hazardous situation.",
+        "rouge": {
+          "rouge1": 0.1277,
+          "rouge2": 0.0576,
+          "rougeL": 0.0851
+        },
+        "time_s": 9.6,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0734,
+        "rougeL": 0.0489
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708669412404.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Go straight.",
+      "zero_shot": {
+        "output": "The image shows a street scene with two pedestrians standing on the sidewalk, one of whom appears to be gesturing or pointing towards something off-camera. The ego vehicle, which is the white truck on the left side of the image, seems to be driving along the road. Given the context, it's not clear what specific action the ego vehicle intends to perform next. However, based on typical urban driving behavior, the truck might be preparing to make a turn, stop at an intersection, or continue straight depending on traffic signals and other vehicles' movements. Without additional context or information about the traffic lights or other vehicles, it's difficult to determine the exact target action of the ego vehicle.",
+        "rouge": {
+          "rouge1": 0.0163,
+          "rouge2": 0.0,
+          "rougeL": 0.0163
+        },
+        "time_s": 8.4
+      },
+      "rag": {
+        "output": "The image shows a street scene with two pedestrians standing near the sidewalk, and a large truck is visible on the left side of the road. The pedestrian on the right appears to be looking at something off-camera, possibly indicating they are waiting for something or someone. There are no clear indications of the ego vehicle's actions in this image, as the focus is on the pedestrians and the truck. Therefore, it is not possible to determine the target action of the ego vehicle based solely on this image.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 6.9,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+            "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": -0.0163,
+        "rougeL": -0.0163
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708669412404.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Decelerate gradually without braking and continue at the same speed.",
+      "zero_shot": {
+        "output": "In the given scenario, the ego vehicle should consider the following safe actions:\n\n1. **Stop at the Intersection**: The pedestrian is crossing the street, and there is a clear crosswalk. The ego vehicle should stop to allow the pedestrian to safely cross.\n\n2. **Check for Other Vehicles**: Ensure that no other vehicles are approaching from the opposite direction or turning onto the street where the pedestrian is crossing.\n\n3. **Wait for the Pedestrian to Cross**: Once the pedestrian has safely crossed the street, the ego vehicle can proceed if it is safe to do so.\n\n4. **Be Aware of Surrounding Traffic**: Keep an eye on the traffic lights and any other vehicles that might be approaching from different directions.\n\n5. **Follow Traffic Rules**: Adhere to all traffic signs and signals to ensure safety for both pedestrians and other drivers.\n\nBy following these steps, the ego vehicle can ensure that it acts responsibly and safely in this urban environment.",
+        "rouge": {
+          "rouge1": 0.0357,
+          "rouge2": 0.012,
+          "rougeL": 0.0238
+        },
+        "time_s": 10.7
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle appears to be a pedestrian crossing the street. Given the presence of other vehicles and pedestrians, here are some safe actions for the ego vehicle:\n\n1. **Look around**: Ensure that there are no other pedestrians or vehicles approaching from the sides.\n2. **Check the crosswalk**: Make sure it is clear to cross safely.\n3. **Signal if necessary**: If the pedestrian is crossing in a designated area, ensure they are visible to drivers.\n4. **Be cautious**: Pay attention to the traffic signals and the behavior of other pedestrians and vehicles.\n\nSince the pedestrian is already crossing, the ego vehicle should remain stationary until the pedestrian has safely crossed the street. Once the pedestrian has passed, the ego vehicle can proceed with caution, checking for any oncoming traffic.\n\n**Safe Actions for the Ego Vehicle:**\n- Stop if necessary to allow the pedestrian to cross safely.\n- Ensure the pedestrian has fully crossed before proceeding.\n- Be vigilant for any oncoming traffic.\n\nThis ensures safety for both the pedestrian and the ego vehicle.",
+        "rouge": {
+          "rouge1": 0.0217,
+          "rouge2": 0.0,
+          "rougeL": 0.0217
+        },
+        "time_s": 11.9,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": -0.014,
+        "rougeL": -0.0021
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708669412404.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Brake suddenly, accelerate, and go ahead are dangerous actions to take for the ego vehicle.",
+      "zero_shot": {
+        "output": "In the image provided, there are several potential dangerous actions that could be taken by the ego vehicle (the vehicle being controlled or monitored in this context):\n\n1. **Following Too Closely**: The truck ahead is quite close, and if the ego vehicle were to follow too closely, it could lead to a collision if the truck stops suddenly.\n\n2. **Not Observing Traffic Signals**: The traffic signals are visible, but if the ego vehicle does not stop at a red light or does not yield to pedestrians crossing the street, it could result in an accident.\n\n3. **Not Yielding to Pedestrians**: There are pedestrians on the sidewalk who appear to be crossing the street. If the ego vehicle does not yield to them, it could cause harm to the pedestrians.\n\n4. **Not Following Traffic Signs**: The \"No Stopping\" sign indicates that stopping is prohibited in certain areas. If the ego vehicle stops where it shouldn't, it could obstruct traffic or cause confusion.\n\n5. **Not Maintaining Safe Speed**: The speed limit is likely posted, but if the ego vehicle drives too fast, it could increase the risk of accidents, especially given the urban environment with other vehicles and pedestrians around.\n\n6. **Not Using Turn Signals**: If the ego vehicle is",
+        "rouge": {
+          "rouge1": 0.0893,
+          "rouge2": 0.027,
+          "rougeL": 0.0625
+        },
+        "time_s": 13.5
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle appears to be a pedestrian standing near the crosswalk. The pedestrians are not obstructing the path of any vehicles, but they are standing close to the edge of the crosswalk. Here are some potential dangerous actions for the ego vehicle (the pedestrian):\n\n- **Accelerate and go ahead**: This could potentially hit the pedestrian if the pedestrian is not paying attention.\n- **Back up**: This would be unsafe as it could cause confusion or panic among other pedestrians and drivers.\n- **Decelerate gradually without braking**: This might be appropriate if the pedestrian is standing still and not obstructing traffic, but it should be done cautiously.\n- **Brake gently to a stop**: This could be necessary if the pedestrian suddenly moves into the path of the vehicle.\n- **Turn left**: This action depends on the direction of the pedestrian's movement relative to the vehicle's path. If the pedestrian is moving away from the vehicle, turning left could be safe; if the pedestrian is moving towards the vehicle, it could be dangerous.\n\nGiven the context, the most cautious approach would be to **decelerate gradually without braking** if the pedestrian remains stationary and does not pose an immediate threat. If the pedestrian moves, the vehicle should **brake gently",
+        "rouge": {
+          "rouge1": 0.1256,
+          "rouge2": 0.0633,
+          "rougeL": 0.0717
+        },
+        "time_s": 13.6,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0363,
+        "rougeL": 0.0092
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708675412404.jpg",
+      "q_type": "target_action",
+      "query_question": "What is the target action of the ego vehicle?",
+      "gt_answer": "Stationary.",
+      "zero_shot": {
+        "output": "The image shows a street scene with pedestrians and vehicles. The pedestrian in the foreground appears to be crossing the street at a crosswalk. The target action for the ego vehicle, which is not visible in the image, would likely be to stop or slow down to allow the pedestrian to safely cross the street. This is based on standard traffic rules that require vehicles to yield to pedestrians crossing at designated crosswalks.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 6.0
+      },
+      "rag": {
+        "output": "The image does not provide enough information to determine the target action of the ego vehicle, as there is no visible ego vehicle in the scene. The image shows pedestrians crossing the street and vehicles on the road, but it does not include any vehicle that could be considered the \"ego vehicle.\" Therefore, it is not possible to determine the target action of the ego vehicle based on this image alone.",
+        "rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "time_s": 5.9,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+            "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d3d94f2ce3dc4db4b3ba6f4aa81c3987",
+            "frame_token": "c34518cf9970447b8284acb0197f06da",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "ced236f5da704cbcb41249bb6ecc8b68",
+            "frame_token": "8221b2ffc6b741d29b230737c30dc966",
+            "retrieved_q": "What is the target action of the ego vehicle?",
+            "retrieved_a": "Go straight.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708675412404.jpg",
+      "q_type": "safe_actions",
+      "query_question": "In this scenario, what are safe actions to take for the ego vehicle?",
+      "gt_answer": "Brake suddenly, brake gently to a stop.",
+      "zero_shot": {
+        "output": "In the given image, the ego vehicle appears to be a pedestrian crossing the street at a crosswalk. Here are some safe actions that the ego vehicle (the pedestrian) should consider:\n\n1. **Check for Traffic**: Ensure that there is no oncoming traffic from both directions before crossing. Look left and right to confirm that it is safe to proceed.\n\n2. **Use the Crosswalk**: Use the designated crosswalk to cross the street. This helps in maintaining safety and follows traffic rules.\n\n3. **Be Visible**: Make sure you are visible to drivers by wearing bright or reflective clothing if it's not already visible due to the lighting conditions.\n\n4. **Stay in the Crosswalk**: Stay within the boundaries of the crosswalk while crossing. This helps in maintaining visibility and safety.\n\n5. **Avoid Distracted Behavior**: Avoid using devices or engaging in activities that could distract you from the road and pedestrians around you.\n\n6. **Be Aware of Surroundings**: Be aware of other pedestrians and vehicles around you. If there are other pedestrians nearby, ensure they are also crossing safely.\n\n7. **Follow Traffic Signals**: If there are traffic signals, follow them strictly. This includes waiting for the green light to proceed.\n\n8. **Stay Alert**: Keep your eyes open",
+        "rouge": {
+          "rouge1": 0.019,
+          "rouge2": 0.0,
+          "rougeL": 0.019
+        },
+        "time_s": 13.5
+      },
+      "rag": {
+        "output": "Given the image, it appears that the pedestrian is crossing the street at a crosswalk. The pedestrian is in the process of crossing, and there are no vehicles directly in front of the ego vehicle that would require immediate action. However, there are vehicles approaching from the opposite direction, which means the ego vehicle should be cautious about yielding to oncoming traffic.\n\nHere are the safe actions for the ego vehicle:\n\nA: Maintain a safe distance from the pedestrian and be prepared to stop if necessary. Ensure that the pedestrian has fully crossed before proceeding. If there are no pedestrians or other obstacles, continue at a moderate speed but be ready to stop if needed.",
+        "rouge": {
+          "rouge1": 0.0492,
+          "rouge2": 0.0,
+          "rougeL": 0.0492
+        },
+        "time_s": 8.2,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "2575c1870ede486b8568279b4731e47e",
+            "frame_token": "0bbfda6682c04cef970a8cecf0250441",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "d9161e521b1644cea4cb9e3f21ef9f79",
+            "frame_token": "d3c00e5c5b1e42e68f021204dc5e6de3",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Slightly offset to the left, slightly offset to the right.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "e15260c4ed5b4505900d497ef92ddd2d",
+            "frame_token": "d44a135279b140178e76aa795c1d8977",
+            "retrieved_q": "In this scenario, what are safe actions to take for the ego vehicle?",
+            "retrieved_a": "Brake gently to a stop, slightly offset to the left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.0302,
+        "rougeL": 0.0302
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708675412404.jpg",
+      "q_type": "dangerous_actions",
+      "query_question": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+      "gt_answer": "Decelerate gradually without braking, accelerate and go ahead, keep going at the same speed, turn right, turn left, back up, change to the right lane, change to the left lane.",
+      "zero_shot": {
+        "output": "In the image provided, there are several potential dangerous actions that could be taken by the ego vehicle (the vehicle being controlled by the AI or human operator). Here are some considerations:\n\n1. **Crossing the Intersection**: The pedestrian is crossing the street in front of the ego vehicle. If the ego vehicle were to stop suddenly or turn, it could potentially hit the pedestrian.\n\n2. **Following Too Closely**: If the ego vehicle is following another vehicle too closely, it might not have enough time to stop if the vehicle ahead stops suddenly.\n\n3. **Turning Without Warning**: If the ego vehicle is turning and does not signal its intention clearly, other vehicles and pedestrians may not anticipate the turn and could be caught off guard.\n\n4. **Speeding**: If the ego vehicle is traveling at a high speed, it would take longer to stop in case of an emergency, increasing the risk of accidents.\n\n5. **Distractions**: If the driver or AI system is distracted, they might not notice obstacles or pedestrians in their path, leading to potential collisions.\n\n6. **Obstructed View**: If there are objects or people obstructing the view of the ego vehicle, it might not see hazards in time to avoid them.\n\n7. **Intersections with Multiple Vehicles",
+        "rouge": {
+          "rouge1": 0.1013,
+          "rouge2": 0.0,
+          "rougeL": 0.0675
+        },
+        "time_s": 13.5
+      },
+      "rag": {
+        "output": "In the current image, the ego vehicle appears to be a pedestrian crossing the street. The pedestrians are in the crosswalk, and there is no indication of any immediate danger to the pedestrians or the ego vehicle itself. However, if we consider the perspective of the ego vehicle as a driver observing the scene, here are some potential dangerous actions that could be taken by the ego vehicle:\n\n- **Accelerating**: If the ego vehicle is approaching the intersection and decides to accelerate, it might not give enough time for the pedestrians to safely cross.\n- **Braking Suddenly**: If the ego vehicle brakes suddenly while the pedestrians are crossing, it could cause the pedestrians to trip or fall.\n- **Turning Left**: If the ego vehicle is turning left and the pedestrians are crossing in the opposite direction, it could collide with the pedestrians if they are not paying attention.\n\nGiven these observations, the most dangerous actions for the ego vehicle would be:\n\n**A: Accelerate and go ahead, brake suddenly, and turn left.**\n\nThese actions could potentially endanger the pedestrians who are crossing the street.",
+        "rouge": {
+          "rouge1": 0.1333,
+          "rouge2": 0.0481,
+          "rougeL": 0.0857
+        },
+        "time_s": 11.9,
+        "context": [
+          {
+            "rank": 1,
+            "scene_id": "fd4ef697de684d0a8e016a8f8ae61193",
+            "frame_token": "6fc0149b2f914000bd212240ac10277d",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Back up, brake suddenly.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 2,
+            "scene_id": "3a1850241080418b88dcee97c7d17ed7",
+            "frame_token": "48676dfadb7e4abfacd4ec684182fbdb",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Keep going at the same speed, decelerate gradually without braking, brake gently to a stop, and slightly offset to the left.",
+            "similarity": 1.0
+          },
+          {
+            "rank": 3,
+            "scene_id": "210add02013a4dfa84b7c5e23058781f",
+            "frame_token": "74f9577414b745b0b0dcf3b241f2f0a7",
+            "retrieved_q": "In this scenario, what are dangerous actions to take for the ego vehicle?",
+            "retrieved_a": "Accelerate and go ahead, back up, decelerate gradually without braking, and turn left.",
+            "similarity": 1.0
+          }
+        ]
+      },
+      "delta": {
+        "rouge1": 0.032,
+        "rougeL": 0.0182
+      }
+    }
+  ]
+}
