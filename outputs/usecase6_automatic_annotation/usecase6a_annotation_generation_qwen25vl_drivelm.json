@@ -1,0 +1,882 @@
+{
+  "experiment": "UC6a",
+  "prompt_strategy": "zero_shot_structured",
+  "n_frames": 9,
+  "aggregate_metrics": {
+    "n_frames": 9,
+    "parsability": {
+      "description": 1.0,
+      "objects": 1.0,
+      "safety_qa": 1.0
+    },
+    "description_rouge": {
+      "rouge1": 0.1755,
+      "rougeL": 0.1226
+    },
+    "safety_qa_rouge": {
+      "rouge1": 0.106,
+      "rougeL": 0.106
+    },
+    "object_labels": {
+      "precision": 0.9101,
+      "recall": 0.5737,
+      "f1": 0.684
+    }
+  },
+  "per_frame_results": [
+    {
+      "scene_token": "f0f120e4",
+      "frame_token": "4a0798f8",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291010604799.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291010620482.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291010637558.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291010647405.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291010628113.jpg"
+      ],
+      "parsed": {
+        "description": "The vehicle is driving through a rainy urban area with moderate traffic and buildings in the background.",
+        "objects": [
+          "car",
+          "truck",
+          "traffic light"
+        ],
+        "safety_question": "Are there any pedestrians visible in the scene?",
+        "safety_answer": "No pedestrians are visible in the scene.",
+        "raw_output": "DESCRIPTION: The vehicle is driving through a rainy urban area with moderate traffic and buildings in the background.\n\nOBJECTS: car, truck, traffic light\n\nSAFETY_QUESTION: Are there any pedestrians visible in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "traffic light"
+        ]
+      },
+      "gt": {
+        "description": "There are many barriers and one construction vehicle to the front right of the ego car.",
+        "objects": [
+          "car",
+          "barrier",
+          "truck",
+          "pedestrian",
+          "traffic light"
+        ],
+        "safety_question": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "safety_answer": "None, no, none.",
+        "all_qa_count": 79
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.2424,
+          "rouge2": 0.0,
+          "rougeL": 0.1212
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.2,
+          "rouge2": 0.0,
+          "rougeL": 0.2
+        },
+        "object_labels": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "pred_set": [
+            "car",
+            "traffic light",
+            "truck"
+          ],
+          "gt_set": [
+            "barrier",
+            "car",
+            "pedestrian",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "car",
+            "traffic light",
+            "truck"
+          ],
+          "fp": [],
+          "fn": [
+            "barrier",
+            "pedestrian"
+          ]
+        }
+      }
+    },
+    {
+      "scene_token": "f0f120e4",
+      "frame_token": "ffd1bdf0",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291002254799.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291002270482.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291002287558.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291002297405.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291002278113.jpg"
+      ],
+      "parsed": {
+        "description": "A rainy urban street with traffic lights, buildings, and parked vehicles.",
+        "objects": [
+          "car",
+          "truck",
+          "bus",
+          "traffic light"
+        ],
+        "safety_question": "Are there any pedestrians in the scene?",
+        "safety_answer": "No pedestrians are visible in the scene.",
+        "raw_output": "DESCRIPTION: A rainy urban street with traffic lights, buildings, and parked vehicles.\n\nOBJECTS: car, truck, bus, traffic light\n\nSAFETY_QUESTION: Are there any pedestrians in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "bus",
+          "traffic light"
+        ]
+      },
+      "gt": {
+        "description": "There are many trucks, one car, two barriers, and one traffic cone to the back left of the ego car.",
+        "objects": [
+          "car",
+          "truck",
+          "traffic cone",
+          "barrier",
+          "bus",
+          "pedestrian",
+          "motorcycle",
+          "bicycle",
+          "traffic light"
+        ],
+        "safety_question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+        "safety_answer": "Back up.",
+        "all_qa_count": 72
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.129,
+          "rouge2": 0.0,
+          "rougeL": 0.0645
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "object_labels": {
+          "precision": 1.0,
+          "recall": 0.4444,
+          "f1": 0.6154,
+          "pred_set": [
+            "bus",
+            "car",
+            "traffic light",
+            "truck"
+          ],
+          "gt_set": [
+            "barrier",
+            "bicycle",
+            "bus",
+            "car",
+            "motorcycle",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "bus",
+            "car",
+            "traffic light",
+            "truck"
+          ],
+          "fp": [],
+          "fn": [
+            "barrier",
+            "bicycle",
+            "motorcycle",
+            "pedestrian",
+            "traffic cone"
+          ]
+        }
+      }
+    },
+    {
+      "scene_token": "f0f120e4",
+      "frame_token": "d9075c2a",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_LEFT__1537291005154799.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_FRONT_RIGHT__1537291005170482.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n008-2018-09-18-13-10-39-0400__CAM_BACK__1537291005187558.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-13-10-39-0400__CAM_BACK_LEFT__1537291005197405.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-13-10-39-0400__CAM_BACK_RIGHT__1537291005178113.jpg"
+      ],
+      "parsed": {
+        "description": "The vehicle is driving through a rainy urban area with wet roads and traffic signals.",
+        "objects": [
+          "car",
+          "truck",
+          "traffic light"
+        ],
+        "safety_question": "Are there any pedestrians in the scene?",
+        "safety_answer": "No pedestrians are visible in the scene.",
+        "raw_output": "DESCRIPTION: The vehicle is driving through a rainy urban area with wet roads and traffic signals.\n\nOBJECTS: car, truck, traffic light\n\nSAFETY_QUESTION: Are there any pedestrians in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "traffic light"
+        ]
+      },
+      "gt": {
+        "description": "There are many trucks, two cars, and many barriers to the back left of the ego car.",
+        "objects": [
+          "car",
+          "truck",
+          "barrier",
+          "bus",
+          "pedestrian",
+          "bicycle",
+          "traffic light"
+        ],
+        "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "safety_answer": "None, no, none.",
+        "all_qa_count": 77
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.125,
+          "rouge2": 0.0,
+          "rougeL": 0.0625
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.2,
+          "rouge2": 0.0,
+          "rougeL": 0.2
+        },
+        "object_labels": {
+          "precision": 1.0,
+          "recall": 0.4286,
+          "f1": 0.6,
+          "pred_set": [
+            "car",
+            "traffic light",
+            "truck"
+          ],
+          "gt_set": [
+            "barrier",
+            "bicycle",
+            "bus",
+            "car",
+            "pedestrian",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "car",
+            "traffic light",
+            "truck"
+          ],
+          "fp": [],
+          "fn": [
+            "barrier",
+            "bicycle",
+            "bus",
+            "pedestrian"
+          ]
+        }
+      }
+    },
+    {
+      "scene_token": "54cdaaae",
+      "frame_token": "542eaf1f",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280039154844.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280039170339.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280039187525.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280039197423.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280039177893.jpg"
+      ],
+      "parsed": {
+        "description": "The vehicle is driving through a city street with moderate traffic and modern buildings in the background.",
+        "objects": [
+          "car",
+          "truck",
+          "traffic cone"
+        ],
+        "safety_question": "Are there any pedestrians visible in the scene?",
+        "safety_answer": "No pedestrians are visible in the scene.",
+        "raw_output": "DESCRIPTION: The vehicle is driving through a city street with moderate traffic and modern buildings in the background.\n\nOBJECTS: car, truck, traffic cone\n\nSAFETY_QUESTION: Are there any pedestrians visible in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "traffic cone"
+        ]
+      },
+      "gt": {
+        "description": "There are many barriers, one pedestrian, one car, and one traffic cone to the front left of the ego car.",
+        "objects": [
+          "car",
+          "pedestrian",
+          "traffic cone",
+          "barrier",
+          "truck",
+          "traffic light"
+        ],
+        "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,714.3,503.6>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "safety_answer": "None, no, none.",
+        "all_qa_count": 104
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.2162,
+          "rouge2": 0.0,
+          "rougeL": 0.1081
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.2,
+          "rouge2": 0.0,
+          "rougeL": 0.2
+        },
+        "object_labels": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "pred_set": [
+            "car",
+            "traffic cone",
+            "truck"
+          ],
+          "gt_set": [
+            "barrier",
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "car",
+            "traffic cone",
+            "truck"
+          ],
+          "fp": [],
+          "fn": [
+            "barrier",
+            "pedestrian",
+            "traffic light"
+          ]
+        }
+      }
+    },
+    {
+      "scene_token": "54cdaaae",
+      "frame_token": "1b45a97a",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280042604844.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280042620339.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280042637525.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280042647423.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280042627893.jpg"
+      ],
+      "parsed": {
+        "description": "The vehicle is driving through a city street with modern buildings and trees lining the road.",
+        "objects": [
+          "car",
+          "truck",
+          "traffic cone"
+        ],
+        "safety_question": "Are there any pedestrians in the scene?",
+        "safety_answer": "No pedestrians are visible in the scene.",
+        "raw_output": "DESCRIPTION: The vehicle is driving through a city street with modern buildings and trees lining the road.\n\nOBJECTS: car, truck, traffic cone\n\nSAFETY_QUESTION: Are there any pedestrians in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "traffic cone"
+        ]
+      },
+      "gt": {
+        "description": "There are many barriers, three cars, and one pedestrian to the front left of the ego car.",
+        "objects": [
+          "car",
+          "pedestrian",
+          "barrier",
+          "truck",
+          "traffic cone",
+          "traffic light"
+        ],
+        "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,767.5,513.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "safety_answer": "None, no, none.",
+        "all_qa_count": 99
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.1818,
+          "rouge2": 0.0,
+          "rougeL": 0.1212
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.2,
+          "rouge2": 0.0,
+          "rougeL": 0.2
+        },
+        "object_labels": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "pred_set": [
+            "car",
+            "traffic cone",
+            "truck"
+          ],
+          "gt_set": [
+            "barrier",
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "car",
+            "traffic cone",
+            "truck"
+          ],
+          "fp": [],
+          "fn": [
+            "barrier",
+            "pedestrian",
+            "traffic light"
+          ]
+        }
+      }
+    },
+    {
+      "scene_token": "54cdaaae",
+      "frame_token": "d5e16062",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_LEFT__1533280045104844.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_FRONT_RIGHT__1533280045120339.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n015-2018-08-03-15-00-36+0800__CAM_BACK__1533280045137525.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n015-2018-08-03-15-00-36+0800__CAM_BACK_LEFT__1533280045147423.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-08-03-15-00-36+0800__CAM_BACK_RIGHT__1533280045127893.jpg"
+      ],
+      "parsed": {
+        "description": "The vehicle is driving through a city intersection with moderate traffic and modern buildings in the background.",
+        "objects": [
+          "car",
+          "truck",
+          "traffic cone",
+          "traffic light"
+        ],
+        "safety_question": "Is there any pedestrian crossing the road?",
+        "safety_answer": "No pedestrians are visible crossing the road in this scene.",
+        "raw_output": "DESCRIPTION: The vehicle is driving through a city intersection with moderate traffic and modern buildings in the background.\n\nOBJECTS: car, truck, traffic cone, traffic light\n\nSAFETY_QUESTION: Is there any pedestrian crossing the road?\nSAFETY_ANSWER: No pedestrians are visible crossing the road in this scene.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "traffic cone",
+          "traffic light"
+        ]
+      },
+      "gt": {
+        "description": "There are many barriers, two cars, and one pedestrian to the front left of the ego car.",
+        "objects": [
+          "car",
+          "pedestrian",
+          "barrier",
+          "truck",
+          "traffic cone",
+          "bus",
+          "motorcycle",
+          "traffic light"
+        ],
+        "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "safety_answer": "None, no, none.",
+        "all_qa_count": 100
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.1765,
+          "rouge2": 0.0,
+          "rougeL": 0.1176
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.1538,
+          "rouge2": 0.0,
+          "rougeL": 0.1538
+        },
+        "object_labels": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "pred_set": [
+            "car",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "gt_set": [
+            "barrier",
+            "bus",
+            "car",
+            "motorcycle",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "car",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "fp": [],
+          "fn": [
+            "barrier",
+            "bus",
+            "motorcycle",
+            "pedestrian"
+          ]
+        }
+      }
+    },
+    {
+      "scene_token": "1977a1c9",
+      "frame_token": "bd8a5e32",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708670912404.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-07-27-12-07-38-0400__CAM_FRONT_LEFT__1532708670904799.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-07-27-12-07-38-0400__CAM_FRONT_RIGHT__1532708670920482.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n008-2018-07-27-12-07-38-0400__CAM_BACK__1532708670937558.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n008-2018-07-27-12-07-38-0400__CAM_BACK_LEFT__1532708670947405.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-07-27-12-07-38-0400__CAM_BACK_RIGHT__1532708670928118.jpg"
+      ],
+      "parsed": {
+        "description": "A busy urban street with pedestrians crossing and vehicles moving in both directions.",
+        "objects": [
+          "car",
+          "truck",
+          "pedestrian",
+          "traffic cone",
+          "barrier",
+          "traffic light"
+        ],
+        "safety_question": "Is there any potential hazard for pedestrians crossing the street?",
+        "safety_answer": "Yes, there is a risk due to the presence of moving vehicles and the lack of clear pedestrian crossings.",
+        "raw_output": "DESCRIPTION: A busy urban street with pedestrians crossing and vehicles moving in both directions.\n\nOBJECTS: car, truck, pedestrian, traffic cone, barrier, traffic light\n\nSAFETY_QUESTION: Is there any potential hazard for pedestrians crossing the street?\nSAFETY_ANSWER: Yes, there is a risk due to the presence of moving vehicles and the lack of clear pedestrian crossings.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "pedestrian",
+          "traffic cone",
+          "barrier",
+          "traffic light"
+        ]
+      },
+      "gt": {
+        "description": "There are many pedestrians, one trailer, one motorcycle, three cars, and two trucks in front of the ego car.",
+        "objects": [
+          "car",
+          "truck",
+          "motorcycle",
+          "pedestrian",
+          "bicycle",
+          "traffic light"
+        ],
+        "safety_question": "Which object is most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "safety_answer": "None, no, none.",
+        "all_qa_count": 122
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.1875,
+          "rouge2": 0.0,
+          "rougeL": 0.1875
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "object_labels": {
+          "precision": 0.6667,
+          "recall": 0.6667,
+          "f1": 0.6667,
+          "pred_set": [
+            "barrier",
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "gt_set": [
+            "bicycle",
+            "car",
+            "motorcycle",
+            "pedestrian",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "car",
+            "pedestrian",
+            "traffic light",
+            "truck"
+          ],
+          "fp": [
+            "barrier",
+            "traffic cone"
+          ],
+          "fn": [
+            "bicycle",
+            "motorcycle"
+          ]
+        }
+      }
+    },
+    {
+      "scene_token": "1977a1c9",
+      "frame_token": "7903e674",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708669412404.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-07-27-12-07-38-0400__CAM_FRONT_LEFT__1532708669404799.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-07-27-12-07-38-0400__CAM_FRONT_RIGHT__1532708669420482.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n008-2018-07-27-12-07-38-0400__CAM_BACK__1532708669437558.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n008-2018-07-27-12-07-38-0400__CAM_BACK_LEFT__1532708669447405.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-07-27-12-07-38-0400__CAM_BACK_RIGHT__1532708669428113.jpg"
+      ],
+      "parsed": {
+        "description": "A city street with pedestrians, vehicles, and buildings under a partly cloudy sky.",
+        "objects": [
+          "car",
+          "truck",
+          "pedestrian",
+          "traffic cone",
+          "barrier",
+          "traffic light"
+        ],
+        "safety_question": "Is there any potential hazard for pedestrians crossing the street?",
+        "safety_answer": "Yes, there is a large truck partially obstructing the view of the crosswalk, which could pose a hazard to pedestrians.",
+        "raw_output": "DESCRIPTION: A city street with pedestrians, vehicles, and buildings under a partly cloudy sky.\n\nOBJECTS: car, truck, pedestrian, traffic cone, barrier, traffic light\n\nSAFETY_QUESTION: Is there any potential hazard for pedestrians crossing the street?\nSAFETY_ANSWER: Yes, there is a large truck partially obstructing the view of the crosswalk, which could pose a hazard to pedestrians.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "pedestrian",
+          "traffic cone",
+          "barrier",
+          "traffic light"
+        ]
+      },
+      "gt": {
+        "description": "There are many pedestrians, one motorcycle, three cars, and two trucks in front of the ego car.",
+        "objects": [
+          "car",
+          "truck",
+          "motorcycle",
+          "pedestrian",
+          "bicycle",
+          "traffic light"
+        ],
+        "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "safety_answer": "None, no, none.",
+        "all_qa_count": 127
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.1333,
+          "rouge2": 0.0,
+          "rougeL": 0.1333
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "object_labels": {
+          "precision": 0.6667,
+          "recall": 0.6667,
+          "f1": 0.6667,
+          "pred_set": [
+            "barrier",
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "gt_set": [
+            "bicycle",
+            "car",
+            "motorcycle",
+            "pedestrian",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "car",
+            "pedestrian",
+            "traffic light",
+            "truck"
+          ],
+          "fp": [
+            "barrier",
+            "traffic cone"
+          ],
+          "fn": [
+            "bicycle",
+            "motorcycle"
+          ]
+        }
+      }
+    },
+    {
+      "scene_token": "1977a1c9",
+      "frame_token": "b6bf5a2b",
+      "image_paths": [
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708675412404.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-07-27-12-07-38-0400__CAM_FRONT_LEFT__1532708675404799.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-07-27-12-07-38-0400__CAM_FRONT_RIGHT__1532708675420482.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK/n008-2018-07-27-12-07-38-0400__CAM_BACK__1532708675437558.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_LEFT/n008-2018-07-27-12-07-38-0400__CAM_BACK_LEFT__1532708675447405.jpg",
+        "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-07-27-12-07-38-0400__CAM_BACK_RIGHT__1532708675428113.jpg"
+      ],
+      "parsed": {
+        "description": "A busy urban street with pedestrians crossing and vehicles moving in both directions.",
+        "objects": [
+          "car",
+          "truck",
+          "bicycle",
+          "pedestrian",
+          "traffic cone",
+          "barrier",
+          "traffic light"
+        ],
+        "safety_question": "Are there any pedestrians crossing the street without a crosswalk?",
+        "safety_answer": "Yes, there is a pedestrian crossing the street without a designated crosswalk.",
+        "raw_output": "DESCRIPTION: A busy urban street with pedestrians crossing and vehicles moving in both directions.\n\nOBJECTS: car, truck, bicycle, pedestrian, traffic cone, barrier, traffic light\n\nSAFETY_QUESTION: Are there any pedestrians crossing the street without a crosswalk?\nSAFETY_ANSWER: Yes, there is a pedestrian crossing the street without a designated crosswalk.",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "objects_raw": [
+          "car",
+          "truck",
+          "bicycle",
+          "pedestrian",
+          "traffic cone",
+          "barrier",
+          "traffic light"
+        ]
+      },
+      "gt": {
+        "description": "There are many pedestrians, one trailer, one motorcycle, many cars, and one truck in front of the ego car.",
+        "objects": [
+          "car",
+          "truck",
+          "motorcycle",
+          "pedestrian",
+          "bicycle",
+          "traffic cone",
+          "traffic light"
+        ],
+        "safety_question": "Which object is most likely to be occluded by <c2,CAM_BACK,1366.0,705.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+        "safety_answer": "None, no, none.",
+        "all_qa_count": 107
+      },
+      "metrics": {
+        "description_rouge": {
+          "rouge1": 0.1875,
+          "rouge2": 0.0,
+          "rougeL": 0.1875
+        },
+        "safety_qa_rouge": {
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0
+        },
+        "object_labels": {
+          "precision": 0.8571,
+          "recall": 0.8571,
+          "f1": 0.8571,
+          "pred_set": [
+            "barrier",
+            "bicycle",
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "gt_set": [
+            "bicycle",
+            "car",
+            "motorcycle",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "tp": [
+            "bicycle",
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "traffic light",
+            "truck"
+          ],
+          "fp": [
+            "barrier"
+          ],
+          "fn": [
+            "motorcycle"
+          ]
+        }
+      }
+    }
+  ]
+}

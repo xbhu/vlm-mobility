@@ -1,0 +1,2446 @@
+{
+  "experiment": "UC6b",
+  "description": "Prompt strategy comparison for annotation quality",
+  "strategies_tested": [
+    "free_form",
+    "structured",
+    "few_shot"
+  ],
+  "n_frames": 9,
+  "aggregate_metrics": {
+    "free_form": {
+      "parsability": {
+        "description": 1.0,
+        "objects": 1.0,
+        "safety_qa": 0.0
+      },
+      "description_rouge": {
+        "rouge1": 0.1339,
+        "rougeL": 0.1096
+      },
+      "safety_qa_rouge": {
+        "rouge1": 0.0,
+        "rougeL": 0.0
+      },
+      "object_labels": {
+        "precision": 1.0,
+        "recall": 0.3147,
+        "f1": 0.4639
+      }
+    },
+    "structured": {
+      "parsability": {
+        "description": 1.0,
+        "objects": 1.0,
+        "safety_qa": 1.0
+      },
+      "description_rouge": {
+        "rouge1": 0.182,
+        "rougeL": 0.1293
+      },
+      "safety_qa_rouge": {
+        "rouge1": 0.106,
+        "rougeL": 0.106
+      },
+      "object_labels": {
+        "precision": 0.9101,
+        "recall": 0.5614,
+        "f1": 0.6712
+      }
+    },
+    "few_shot": {
+      "parsability": {
+        "description": 1.0,
+        "objects": 1.0,
+        "safety_qa": 1.0
+      },
+      "description_rouge": {
+        "rouge1": 0.2351,
+        "rougeL": 0.138
+      },
+      "safety_qa_rouge": {
+        "rouge1": 0.0512,
+        "rougeL": 0.0512
+      },
+      "object_labels": {
+        "precision": 1.0,
+        "recall": 0.453,
+        "f1": 0.6221
+      }
+    }
+  },
+  "per_strategy_results": {
+    "free_form": [
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "4a0798f8",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The road is wet, likely due to rain, and there are several vehicles visible ahead. The traffic lights are red, indicating that vehicles must stop. There are buildings on both sides of the road, and some construction signs are visible. The sky appears overcast, suggesting cloudy weather conditions.\n\nThere are no pedestrians visible in the image. However, given the wet road and the presence of other vehicles, it's important for drivers to be cautious and maintain a safe distance from others. The traffic lights indicate that the intersection is controlled by signals, which may require drivers to stop and wait for their turn to proceed. It's also important to be aware of any potential hazards or obstacles on the road, such as construction zones or debris, especially with the overcast sky and wet conditions.",
+          "objects": [
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The road is wet, likely due to rain, and there are several vehicles visible ahead. The traffic lights are red, indicating that vehicles must stop. There are buildings on both sides of the road, and some construction signs are visible. The sky appears overcast, suggesting cloudy weather conditions.\n\nThere are no pedestrians visible in the image. However, given the wet road and the presence of other vehicles, it's important for drivers to be cautious and maintain a safe distance from others. The traffic lights indicate that the intersection is controlled by signals, which may require drivers to stop and wait for their turn to proceed. It's also important to be aware of any potential hazards or obstacles on the road, such as construction zones or debris, especially with the overcast sky and wet conditions.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "pedestrian",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers and one construction vehicle to the front right of the ego car.",
+          "objects": [
+            "car",
+            "barrier",
+            "truck",
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 79
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1184,
+            "rouge2": 0.0267,
+            "rougeL": 0.1184
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.4,
+            "f1": 0.5714,
+            "pred_set": [
+              "pedestrian",
+              "traffic light"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "pedestrian",
+              "traffic light"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "car",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "ffd1bdf0",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The road is clear, but there are several parked vehicles in the area, including trucks and cars. There are also some trees and a building with a sign that says \"BICYCLES.\" The sky appears overcast, suggesting it might rain soon. There are no pedestrians visible in the scene.\n\nThere are no immediate safety concerns in this scene. However, drivers should be cautious due to the presence of parked vehicles and the possibility of rain. It's important to maintain a safe distance from other vehicles and to drive slowly if visibility is reduced.",
+          "objects": [
+            "car",
+            "truck",
+            "bicycle",
+            "pedestrian"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The road is clear, but there are several parked vehicles in the area, including trucks and cars. There are also some trees and a building with a sign that says \"BICYCLES.\" The sky appears overcast, suggesting it might rain soon. There are no pedestrians visible in the scene.\n\nThere are no immediate safety concerns in this scene. However, drivers should be cautious due to the presence of parked vehicles and the possibility of rain. It's important to maintain a safe distance from other vehicles and to drive slowly if visibility is reduced.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "bicycle",
+            "pedestrian"
+          ]
+        },
+        "gt": {
+          "description": "There are many trucks, one car, two barriers, and one traffic cone to the back left of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic cone",
+            "barrier",
+            "bus",
+            "pedestrian",
+            "motorcycle",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+          "safety_answer": "Back up.",
+          "all_qa_count": 72
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1593,
+            "rouge2": 0.036,
+            "rougeL": 0.1593
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.4444,
+            "f1": 0.6154,
+            "pred_set": [
+              "bicycle",
+              "car",
+              "pedestrian",
+              "truck"
+            ],
+            "gt_set": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "bicycle",
+              "car",
+              "pedestrian",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bus",
+              "motorcycle",
+              "traffic cone",
+              "traffic light"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "d9075c2a",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The road is clear, but there are several parked vehicles in front of a building. There are no pedestrians visible on the sidewalk or street. The sky appears overcast, suggesting potential rain. There are no immediate safety concerns, but drivers should be cautious due to the weather conditions.",
+          "objects": [
+            "pedestrian"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The road is clear, but there are several parked vehicles in front of a building. There are no pedestrians visible on the sidewalk or street. The sky appears overcast, suggesting potential rain. There are no immediate safety concerns, but drivers should be cautious due to the weather conditions.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "pedestrian"
+          ]
+        },
+        "gt": {
+          "description": "There are many trucks, two cars, and many barriers to the back left of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "barrier",
+            "bus",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 77
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1846,
+            "rouge2": 0.0635,
+            "rougeL": 0.1231
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.1429,
+            "f1": 0.25,
+            "pred_set": [
+              "pedestrian"
+            ],
+            "gt_set": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "pedestrian"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "car",
+              "traffic light",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "542eaf1f",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The road is clear, and there are no other vehicles or pedestrians in sight. The surroundings include trees, buildings, and a sign that reads \"Mediapolis.\" There are no immediate safety concerns visible in the scene.",
+          "objects": [
+            "pedestrian"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The road is clear, and there are no other vehicles or pedestrians in sight. The surroundings include trees, buildings, and a sign that reads \"Mediapolis.\" There are no immediate safety concerns visible in the scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "pedestrian"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, one pedestrian, one car, and one traffic cone to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "truck",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,714.3,503.6>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 104
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2182,
+            "rouge2": 0.0377,
+            "rougeL": 0.1818
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.1667,
+            "f1": 0.2857,
+            "pred_set": [
+              "pedestrian"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "pedestrian"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "car",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "1b45a97a",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The road is clear, and there are no other vehicles or pedestrians in sight. The surroundings include trees, buildings, and a sign that reads \"Mediapolis.\" There are no immediate safety concerns visible in the image.",
+          "objects": [
+            "pedestrian"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The road is clear, and there are no other vehicles or pedestrians in sight. The surroundings include trees, buildings, and a sign that reads \"Mediapolis.\" There are no immediate safety concerns visible in the image.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "pedestrian"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, three cars, and one pedestrian to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "barrier",
+            "truck",
+            "traffic cone",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,767.5,513.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 99
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2308,
+            "rouge2": 0.04,
+            "rougeL": 0.1923
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.1667,
+            "f1": 0.2857,
+            "pred_set": [
+              "pedestrian"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "pedestrian"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "car",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "d5e16062",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The road is clear, and there are no other vehicles or pedestrians in sight. The traffic light is red, indicating that the vehicle should stop. There are no immediate safety concerns visible in the image. However, it's important to be cautious and follow traffic rules while driving.",
+          "objects": [
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The road is clear, and there are no other vehicles or pedestrians in sight. The traffic light is red, indicating that the vehicle should stop. There are no immediate safety concerns visible in the image. However, it's important to be cautious and follow traffic rules while driving.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "pedestrian",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, two cars, and one pedestrian to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "barrier",
+            "truck",
+            "traffic cone",
+            "bus",
+            "motorcycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 100
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2154,
+            "rouge2": 0.0317,
+            "rougeL": 0.1538
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "pred_set": [
+              "pedestrian",
+              "traffic light"
+            ],
+            "gt_set": [
+              "barrier",
+              "bus",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "pedestrian",
+              "traffic light"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bus",
+              "car",
+              "motorcycle",
+              "traffic cone",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "bd8a5e32",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The road is clear in front of the vehicle. There is a man sitting on the sidewalk in front of a building. There is a bicycle leaning against the building. There is a sign on the sidewalk that says \"Turn On Red\". There is a white van parked on the side of the road. There is a silver car parked on the side of the road. There is a silver car driving down the street. There is a white truck driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street",
+          "objects": [
+            "car",
+            "truck",
+            "bicycle"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The road is clear in front of the vehicle. There is a man sitting on the sidewalk in front of a building. There is a bicycle leaning against the building. There is a sign on the sidewalk that says \"Turn On Red\". There is a white van parked on the side of the road. There is a silver car parked on the side of the road. There is a silver car driving down the street. There is a white truck driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street. There is a white van driving down the street",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "bicycle"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one trailer, one motorcycle, three cars, and two trucks in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 122
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.0333,
+            "rouge2": 0.0125,
+            "rougeL": 0.0249
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "pred_set": [
+              "bicycle",
+              "car",
+              "truck"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "bicycle",
+              "car",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "motorcycle",
+              "pedestrian",
+              "traffic light"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "7903e674",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The truck is turning right. There is a bicycle parked on the sidewalk. There is a person sitting on the sidewalk. There is a building with a door. There is a sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street",
+          "objects": [
+            "truck",
+            "bicycle"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The truck is turning right. There is a bicycle parked on the sidewalk. There is a person sitting on the sidewalk. There is a building with a door. There is a sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street sign on the sidewalk. There is a street",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "truck",
+            "bicycle"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one motorcycle, three cars, and two trucks in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 127
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.0127,
+            "rouge2": 0.0,
+            "rougeL": 0.0085
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.3333,
+            "f1": 0.5,
+            "pred_set": [
+              "bicycle",
+              "truck"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "bicycle",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic light"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "b6bf5a2b",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": false
+        },
+        "parsed": {
+          "description": "The road is clear in front of the vehicle. There is a person sitting on the sidewalk near the building. There is a bicycle parked outside the building. There is a sign board on the sidewalk. There is a car parked on the right side of the road. There is a truck parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car",
+          "objects": [
+            "car",
+            "truck",
+            "bicycle"
+          ],
+          "safety_question": "",
+          "safety_answer": "",
+          "raw_output": "The road is clear in front of the vehicle. There is a person sitting on the sidewalk near the building. There is a bicycle parked outside the building. There is a sign board on the sidewalk. There is a car parked on the right side of the road. There is a truck parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car parked on the left side of the road. There is a car parked on the right side of the road. There is a car",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": false
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "bicycle"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one trailer, one motorcycle, many cars, and one truck in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic cone",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c2,CAM_BACK,1366.0,705.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 107
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.0326,
+            "rouge2": 0.0123,
+            "rougeL": 0.0244
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.4286,
+            "f1": 0.6,
+            "pred_set": [
+              "bicycle",
+              "car",
+              "truck"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "bicycle",
+              "car",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light"
+            ]
+          }
+        }
+      }
+    ],
+    "structured": [
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "4a0798f8",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The vehicle is driving through a rainy urban area with moderate traffic and buildings in the background.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic light"
+          ],
+          "safety_question": "Are there any pedestrians visible in the scene?",
+          "safety_answer": "No pedestrians are visible in the scene.",
+          "raw_output": "DESCRIPTION: The vehicle is driving through a rainy urban area with moderate traffic and buildings in the background.\n\nOBJECTS: car, truck, traffic light\n\nSAFETY_QUESTION: Are there any pedestrians visible in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers and one construction vehicle to the front right of the ego car.",
+          "objects": [
+            "car",
+            "barrier",
+            "truck",
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 79
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2424,
+            "rouge2": 0.0,
+            "rougeL": 0.1212
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.2,
+            "rouge2": 0.0,
+            "rougeL": 0.2
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75,
+            "pred_set": [
+              "car",
+              "traffic light",
+              "truck"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "traffic light",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "pedestrian"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "ffd1bdf0",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "A rainy urban street with traffic lights and buildings in the background.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic light"
+          ],
+          "safety_question": "Are there any pedestrians visible in the scene?",
+          "safety_answer": "No pedestrians are visible in the scene.",
+          "raw_output": "DESCRIPTION: A rainy urban street with traffic lights and buildings in the background.\n\nOBJECTS: car, truck, traffic light\n\nSAFETY_QUESTION: Are there any pedestrians visible in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many trucks, one car, two barriers, and one traffic cone to the back left of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic cone",
+            "barrier",
+            "bus",
+            "pedestrian",
+            "motorcycle",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+          "safety_answer": "Back up.",
+          "all_qa_count": 72
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1875,
+            "rouge2": 0.0,
+            "rougeL": 0.125
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.3333,
+            "f1": 0.5,
+            "pred_set": [
+              "car",
+              "traffic light",
+              "truck"
+            ],
+            "gt_set": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "traffic light",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "d9075c2a",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The vehicle is driving through a rainy urban area with wet roads and traffic signals.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic light"
+          ],
+          "safety_question": "Are there any pedestrians in the scene?",
+          "safety_answer": "No pedestrians are visible in the scene.",
+          "raw_output": "DESCRIPTION: The vehicle is driving through a rainy urban area with wet roads and traffic signals.\n\nOBJECTS: car, truck, traffic light\n\nSAFETY_QUESTION: Are there any pedestrians in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many trucks, two cars, and many barriers to the back left of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "barrier",
+            "bus",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 77
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.125,
+            "rouge2": 0.0,
+            "rougeL": 0.0625
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.2,
+            "rouge2": 0.0,
+            "rougeL": 0.2
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.4286,
+            "f1": 0.6,
+            "pred_set": [
+              "car",
+              "traffic light",
+              "truck"
+            ],
+            "gt_set": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "traffic light",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "pedestrian"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "542eaf1f",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The vehicle is driving through a city street with moderate traffic and modern buildings in the background.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic cone"
+          ],
+          "safety_question": "Are there any pedestrians visible in the scene?",
+          "safety_answer": "No pedestrians are visible in the scene.",
+          "raw_output": "DESCRIPTION: The vehicle is driving through a city street with moderate traffic and modern buildings in the background.\n\nOBJECTS: car, truck, traffic cone\n\nSAFETY_QUESTION: Are there any pedestrians visible in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "traffic cone"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, one pedestrian, one car, and one traffic cone to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "truck",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,714.3,503.6>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 104
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2162,
+            "rouge2": 0.0,
+            "rougeL": 0.1081
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.2,
+            "rouge2": 0.0,
+            "rougeL": 0.2
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "pred_set": [
+              "car",
+              "traffic cone",
+              "truck"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "traffic cone",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "pedestrian",
+              "traffic light"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "1b45a97a",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The vehicle is driving through a city street with modern buildings and trees lining the road.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic cone"
+          ],
+          "safety_question": "Are there any pedestrians in the scene?",
+          "safety_answer": "No pedestrians are visible in the scene.",
+          "raw_output": "DESCRIPTION: The vehicle is driving through a city street with modern buildings and trees lining the road.\n\nOBJECTS: car, truck, traffic cone\n\nSAFETY_QUESTION: Are there any pedestrians in the scene?\nSAFETY_ANSWER: No pedestrians are visible in the scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "traffic cone"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, three cars, and one pedestrian to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "barrier",
+            "truck",
+            "traffic cone",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,767.5,513.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 99
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1818,
+            "rouge2": 0.0,
+            "rougeL": 0.1212
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.2,
+            "rouge2": 0.0,
+            "rougeL": 0.2
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "pred_set": [
+              "car",
+              "traffic cone",
+              "truck"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "traffic cone",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "pedestrian",
+              "traffic light"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "d5e16062",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The vehicle is driving through a city intersection with moderate traffic and modern buildings in the background.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic cone",
+            "traffic light"
+          ],
+          "safety_question": "Is there any pedestrian crossing the road?",
+          "safety_answer": "No pedestrians are visible crossing the road in this scene.",
+          "raw_output": "DESCRIPTION: The vehicle is driving through a city intersection with moderate traffic and modern buildings in the background.\n\nOBJECTS: car, truck, traffic cone, traffic light\n\nSAFETY_QUESTION: Is there any pedestrian crossing the road?\nSAFETY_ANSWER: No pedestrians are visible crossing the road in this scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "traffic cone",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, two cars, and one pedestrian to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "barrier",
+            "truck",
+            "traffic cone",
+            "bus",
+            "motorcycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 100
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1765,
+            "rouge2": 0.0,
+            "rougeL": 0.1176
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.1538,
+            "rouge2": 0.0,
+            "rougeL": 0.1538
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "pred_set": [
+              "car",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "gt_set": [
+              "barrier",
+              "bus",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bus",
+              "motorcycle",
+              "pedestrian"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "bd8a5e32",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "A busy urban street with pedestrians crossing and vehicles moving in both directions.",
+          "objects": [
+            "car",
+            "truck",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "traffic light"
+          ],
+          "safety_question": "Is there any potential hazard for pedestrians crossing the street?",
+          "safety_answer": "Yes, there is a risk due to the presence of moving vehicles and the lack of clear pedestrian crossings.",
+          "raw_output": "DESCRIPTION: A busy urban street with pedestrians crossing and vehicles moving in both directions.\n\nOBJECTS: car, truck, pedestrian, traffic cone, barrier, traffic light\n\nSAFETY_QUESTION: Is there any potential hazard for pedestrians crossing the street?\nSAFETY_ANSWER: Yes, there is a risk due to the presence of moving vehicles and the lack of clear pedestrian crossings.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one trailer, one motorcycle, three cars, and two trucks in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 122
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1875,
+            "rouge2": 0.0,
+            "rougeL": 0.1875
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 0.6667,
+            "recall": 0.6667,
+            "f1": 0.6667,
+            "pred_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "fp": [
+              "barrier",
+              "traffic cone"
+            ],
+            "fn": [
+              "bicycle",
+              "motorcycle"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "7903e674",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "A city street with pedestrians, vehicles, and buildings under a partly cloudy sky.",
+          "objects": [
+            "car",
+            "truck",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "traffic light"
+          ],
+          "safety_question": "Is there any potential hazard for pedestrians crossing the street?",
+          "safety_answer": "Yes, there is a large truck partially obstructing the view of the crosswalk, which could pose a hazard to pedestrians.",
+          "raw_output": "DESCRIPTION: A city street with pedestrians, vehicles, and buildings under a partly cloudy sky.\n\nOBJECTS: car, truck, pedestrian, traffic cone, barrier, traffic light\n\nSAFETY_QUESTION: Is there any potential hazard for pedestrians crossing the street?\nSAFETY_ANSWER: Yes, there is a large truck partially obstructing the view of the crosswalk, which could pose a hazard to pedestrians.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one motorcycle, three cars, and two trucks in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 127
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1333,
+            "rouge2": 0.0,
+            "rougeL": 0.1333
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 0.6667,
+            "recall": 0.6667,
+            "f1": 0.6667,
+            "pred_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "fp": [
+              "barrier",
+              "traffic cone"
+            ],
+            "fn": [
+              "bicycle",
+              "motorcycle"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "b6bf5a2b",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "A busy urban street with pedestrians crossing and vehicles moving in both directions.",
+          "objects": [
+            "car",
+            "truck",
+            "bicycle",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "traffic light"
+          ],
+          "safety_question": "Are there any pedestrians crossing the street without a crosswalk?",
+          "safety_answer": "Yes, there is a pedestrian crossing the street without a designated crosswalk.",
+          "raw_output": "DESCRIPTION: A busy urban street with pedestrians crossing and vehicles moving in both directions.\n\nOBJECTS: car, truck, bicycle, pedestrian, traffic cone, barrier, traffic light\n\nSAFETY_QUESTION: Are there any pedestrians crossing the street without a crosswalk?\nSAFETY_ANSWER: Yes, there is a pedestrian crossing the street without a designated crosswalk.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "bicycle",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one trailer, one motorcycle, many cars, and one truck in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic cone",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c2,CAM_BACK,1366.0,705.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 107
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1875,
+            "rouge2": 0.0,
+            "rougeL": 0.1875
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 0.8571,
+            "recall": 0.8571,
+            "f1": 0.8571,
+            "pred_set": [
+              "barrier",
+              "bicycle",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "bicycle",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "fp": [
+              "barrier"
+            ],
+            "fn": [
+              "motorcycle"
+            ]
+          }
+        }
+      }
+    ],
+    "few_shot": [
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "4a0798f8",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving through a rainy urban area with moderate traffic and clear visibility.",
+          "objects": [
+            "car",
+            "traffic light"
+          ],
+          "safety_question": "Is there a risk of a collision due to the rain?",
+          "safety_answer": "Yes, the wet conditions increase the risk of hydroplaning and reduced braking distance.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving through a rainy urban area with moderate traffic and clear visibility.\n\nOBJECTS: car, traffic light\n\nSAFETY_QUESTION: Is there a risk of a collision due to the rain?\n\nSAFETY_ANSWER: Yes, the wet conditions increase the risk of hydroplaning and reduced braking distance.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers and one construction vehicle to the front right of the ego car.",
+          "objects": [
+            "car",
+            "barrier",
+            "truck",
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_BACK,1088.3,497.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 79
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.25,
+            "rouge2": 0.0667,
+            "rougeL": 0.125
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.4,
+            "f1": 0.5714,
+            "pred_set": [
+              "car",
+              "traffic light"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "traffic light"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "pedestrian",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "ffd1bdf0",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving through a rainy urban area with buildings, trees, and parked vehicles visible.",
+          "objects": [
+            "car",
+            "truck",
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "Is there a risk of pedestrians crossing the street in front of the ego vehicle?",
+          "safety_answer": "No, there are no pedestrians visible in the scene.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving through a rainy urban area with buildings, trees, and parked vehicles visible.\n\nOBJECTS: car, truck, pedestrian, traffic light\n\nSAFETY_QUESTION: Is there a risk of pedestrians crossing the street in front of the ego vehicle?\n\nSAFETY_ANSWER: No, there are no pedestrians visible in the scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "pedestrian",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many trucks, one car, two barriers, and one traffic cone to the back left of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "traffic cone",
+            "barrier",
+            "bus",
+            "pedestrian",
+            "motorcycle",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "What actions taken by the ego vehicle can lead to a collision with <c1,CAM_BACK,991.7,603.0>?",
+          "safety_answer": "Back up.",
+          "all_qa_count": 72
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1622,
+            "rouge2": 0.0571,
+            "rougeL": 0.1081
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.4444,
+            "f1": 0.6154,
+            "pred_set": [
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "gt_set": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "motorcycle",
+              "traffic cone"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "f0f120e4",
+        "frame_token": "d9075c2a",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving through a rainy urban area with buildings and parked vehicles visible.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "Is there a risk of pedestrians crossing the street?",
+          "safety_answer": "No, there are no pedestrians visible in the scene.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving through a rainy urban area with buildings and parked vehicles visible.\n\nOBJECTS: car, pedestrian, traffic light\n\nSAFETY_QUESTION: Is there a risk of pedestrians crossing the street?\nSAFETY_ANSWER: No, there are no pedestrians visible in the scene.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "pedestrian",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many trucks, two cars, and many barriers to the back left of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "barrier",
+            "bus",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT_LEFT,231.5,472.1>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 77
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.1818,
+            "rouge2": 0.0645,
+            "rougeL": 0.1212
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.1667,
+            "rouge2": 0.0,
+            "rougeL": 0.1667
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.4286,
+            "f1": 0.6,
+            "pred_set": [
+              "car",
+              "pedestrian",
+              "traffic light"
+            ],
+            "gt_set": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "car",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic light"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bicycle",
+              "bus",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "542eaf1f",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving on a multi-lane urban road with several cars ahead and a pedestrian waiting at the curb.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "Is there a risk of the pedestrian entering the roadway?",
+          "safety_answer": "Yes, the pedestrian is near the crosswalk and the traffic light is red, suggesting they may enter the road soon.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving on a multi-lane urban road with several cars ahead and a pedestrian waiting at the curb.\n\nOBJECTS: car, pedestrian, traffic light\n\nSAFETY_QUESTION: Is there a risk of the pedestrian entering the roadway?\nSAFETY_ANSWER: Yes, the pedestrian is near the crosswalk and the traffic light is red, suggesting they may enter the road soon.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "pedestrian",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, one pedestrian, one car, and one traffic cone to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic cone",
+            "barrier",
+            "truck",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,714.3,503.6>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 104
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2857,
+            "rouge2": 0.05,
+            "rougeL": 0.1429
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "pred_set": [
+              "car",
+              "pedestrian",
+              "traffic light"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic light"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "traffic cone",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "1b45a97a",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving through a multi-lane urban area with several vehicles ahead and a pedestrian crossing sign visible.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic cone"
+          ],
+          "safety_question": "Is there a risk of a pedestrian crossing the road?",
+          "safety_answer": "No, the pedestrian crossing sign indicates it's not safe for pedestrians to cross now.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving through a multi-lane urban area with several vehicles ahead and a pedestrian crossing sign visible.\n\nOBJECTS: car, pedestrian, traffic cone\n\nSAFETY_QUESTION: Is there a risk of a pedestrian crossing the road?\nSAFETY_ANSWER: No, the pedestrian crossing sign indicates it's not safe for pedestrians to cross now.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "pedestrian",
+            "traffic cone"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, three cars, and one pedestrian to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "barrier",
+            "truck",
+            "traffic cone",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,767.5,513.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 99
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2105,
+            "rouge2": 0.0556,
+            "rougeL": 0.1053
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.1111,
+            "rouge2": 0.0,
+            "rougeL": 0.1111
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "pred_set": [
+              "car",
+              "pedestrian",
+              "traffic cone"
+            ],
+            "gt_set": [
+              "barrier",
+              "car",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic cone"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "traffic light",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "54cdaaae",
+        "frame_token": "d5e16062",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving on a multi-lane urban road with several vehicles ahead and a pedestrian crossing the street.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic cone"
+          ],
+          "safety_question": "Is there a risk of the pedestrian entering the roadway?",
+          "safety_answer": "Yes, the pedestrian is crossing the street and there is no clear indication that they have stopped or will stop soon.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving on a multi-lane urban road with several vehicles ahead and a pedestrian crossing the street.\n\nOBJECTS: car, pedestrian, traffic cone\n\nSAFETY_QUESTION: Is there a risk of the pedestrian entering the roadway?\nSAFETY_ANSWER: Yes, the pedestrian is crossing the street and there is no clear indication that they have stopped or will stop soon.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "pedestrian",
+            "traffic cone"
+          ]
+        },
+        "gt": {
+          "description": "There are many barriers, two cars, and one pedestrian to the front left of the ego car.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "barrier",
+            "truck",
+            "traffic cone",
+            "bus",
+            "motorcycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT_RIGHT,850.0,484.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 100
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2632,
+            "rouge2": 0.0556,
+            "rougeL": 0.1579
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0833,
+            "rouge2": 0.0,
+            "rougeL": 0.0833
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.375,
+            "f1": 0.5455,
+            "pred_set": [
+              "car",
+              "pedestrian",
+              "traffic cone"
+            ],
+            "gt_set": [
+              "barrier",
+              "bus",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic cone"
+            ],
+            "fp": [],
+            "fn": [
+              "barrier",
+              "bus",
+              "motorcycle",
+              "traffic light",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "bd8a5e32",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving through a city street with pedestrians crossing the street and buildings lining both sides of the road.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "Is there a risk of a pedestrian crossing in front of the ego vehicle?",
+          "safety_answer": "Yes, a pedestrian is crossing the street in front of the ego vehicle.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving through a city street with pedestrians crossing the street and buildings lining both sides of the road.\n\nOBJECTS: car, pedestrian, traffic light\n\nSAFETY_QUESTION: Is there a risk of a pedestrian crossing in front of the ego vehicle?\n\nSAFETY_ANSWER: Yes, a pedestrian is crossing the street in front of the ego vehicle.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "pedestrian",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one trailer, one motorcycle, three cars, and two trucks in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c2,CAM_FRONT_LEFT,1431.7,404.2>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 122
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2439,
+            "rouge2": 0.1026,
+            "rougeL": 0.1951
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "pred_set": [
+              "car",
+              "pedestrian",
+              "traffic light"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic light"
+            ],
+            "fp": [],
+            "fn": [
+              "bicycle",
+              "motorcycle",
+              "truck"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "7903e674",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving through a busy urban street with multiple lanes, encountering various vehicles including trucks and cars, while pedestrians are visible on the sidewalks.",
+          "objects": [
+            "car",
+            "truck",
+            "pedestrian"
+          ],
+          "safety_question": "Is there a risk of collision with the pedestrian crossing the street?",
+          "safety_answer": "No, the pedestrian is safely on the sidewalk and not in the path of the ego vehicle.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving through a busy urban street with multiple lanes, encountering various vehicles including trucks and cars, while pedestrians are visible on the sidewalks.\n\nOBJECTS: car, truck, pedestrian\n\nSAFETY_QUESTION: Is there a risk of collision with the pedestrian crossing the street?\n\nSAFETY_ANSWER: No, the pedestrian is safely on the sidewalk and not in the path of the ego vehicle.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "truck",
+            "pedestrian"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one motorcycle, three cars, and two trucks in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c1,CAM_FRONT,1035.8,587.5>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 127
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.3182,
+            "rouge2": 0.0476,
+            "rougeL": 0.1364
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.1,
+            "rouge2": 0.0,
+            "rougeL": 0.1
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "pred_set": [
+              "car",
+              "pedestrian",
+              "truck"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "truck"
+            ],
+            "fp": [],
+            "fn": [
+              "bicycle",
+              "motorcycle",
+              "traffic light"
+            ]
+          }
+        }
+      },
+      {
+        "scene_token": "1977a1c9",
+        "frame_token": "b6bf5a2b",
+        "parse_success": {
+          "description": true,
+          "objects": true,
+          "safety_qa": true
+        },
+        "parsed": {
+          "description": "The ego vehicle is driving through a busy urban street with pedestrians crossing the street and vehicles parked along the side.",
+          "objects": [
+            "car",
+            "pedestrian",
+            "traffic light"
+          ],
+          "safety_question": "Is there a risk of pedestrians crossing in front of the ego vehicle?",
+          "safety_answer": "Yes, pedestrians are crossing the street in front of the ego vehicle.",
+          "raw_output": "DESCRIPTION: The ego vehicle is driving through a busy urban street with pedestrians crossing the street and vehicles parked along the side.\n\nOBJECTS: car, pedestrian, traffic light\n\nSAFETY_QUESTION: Is there a risk of pedestrians crossing in front of the ego vehicle?\n\nSAFETY_ANSWER: Yes, pedestrians are crossing the street in front of the ego vehicle.",
+          "parse_success": {
+            "description": true,
+            "objects": true,
+            "safety_qa": true
+          },
+          "objects_raw": [
+            "car",
+            "pedestrian",
+            "traffic light"
+          ]
+        },
+        "gt": {
+          "description": "There are many pedestrians, one trailer, one motorcycle, many cars, and one truck in front of the ego car.",
+          "objects": [
+            "car",
+            "truck",
+            "motorcycle",
+            "pedestrian",
+            "bicycle",
+            "traffic cone",
+            "traffic light"
+          ],
+          "safety_question": "Which object is most likely to be occluded by <c2,CAM_BACK,1366.0,705.3>? Would this object affect the ego vehicle? Based on this object, what action of the ego vehicle is dangerous?",
+          "safety_answer": "None, no, none.",
+          "all_qa_count": 107
+        },
+        "metrics": {
+          "description_rouge": {
+            "rouge1": 0.2,
+            "rouge2": 0.0526,
+            "rougeL": 0.15
+          },
+          "safety_qa_rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "object_labels": {
+            "precision": 1.0,
+            "recall": 0.4286,
+            "f1": 0.6,
+            "pred_set": [
+              "car",
+              "pedestrian",
+              "traffic light"
+            ],
+            "gt_set": [
+              "bicycle",
+              "car",
+              "motorcycle",
+              "pedestrian",
+              "traffic cone",
+              "traffic light",
+              "truck"
+            ],
+            "tp": [
+              "car",
+              "pedestrian",
+              "traffic light"
+            ],
+            "fp": [],
+            "fn": [
+              "bicycle",
+              "motorcycle",
+              "traffic cone",
+              "truck"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
