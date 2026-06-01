@@ -1,0 +1,929 @@
+{
+  "distance_estimation": [
+    {
+      "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+      "obj_key": "<c1,CAM_BACK,1088.3,497.5>",
+      "vis_desc": "Brown SUV.",
+      "gt_distance": 11.122537566417543,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are two vehicles visible:\n\n1. A silver minivan is closer to the camera, approximately 50 meters away.\n2. A black sedan is further back, about 100 meters away.\n\nThese distances are approximate and based on the perspective of the image.",
+        "pred": 1.0,
+        "mae": 10.122537566417543,
+        "pct_error": 91.00924592046948
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Brown SUV. from your vehicle? Please give a single number.",
+        "response": "The image shows two vehicles on a wet street with buildings in the background. The distance between the vehicles cannot be accurately determined without additional context such as the scale of the image or a reference object for size comparison. However, based on typical urban street widths and the apparent size of the vehicles relative to each other, the Brown SUV appears to be about 50-100 meters away from the perspective vehicle.\n\nFor a more precise answer, you would need to know the exact scale of the image or have additional information about the environment.",
+        "pred": 50.0,
+        "mae": 38.87746243358246,
+        "pct_error": 349.537703976526
+      }
+    },
+    {
+      "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+      "obj_key": "<c2,CAM_BACK,864.2,468.3>",
+      "vis_desc": "Black sedan.",
+      "gt_distance": 19.336790420244608,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are two vehicles visible:\n\n1. A silver minivan is closer to the camera, approximately 50 meters away.\n2. A black sedan is further back, about 100 meters away.\n\nThese distances are approximate and based on the perspective of the image.",
+        "pred": 1.0,
+        "mae": 18.336790420244608,
+        "pct_error": 94.82851094588555
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Black sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 80.66320957975539,
+        "pct_error": 417.1489054114442
+      }
+    },
+    {
+      "frame_token": "ffd1bdf020d145759224c629b501d2b2",
+      "obj_key": "<c1,CAM_BACK,991.7,603.0>",
+      "vis_desc": "Champagne-colored sedan.",
+      "gt_distance": 6.663889480970696,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there is one vehicle visible, which appears to be a Kia sedan. The car is positioned on the right side of the road, facing forward.\n\nTo estimate the distance to the car, we need to consider the perspective and scale of the image. However, without specific reference points or a known object's size, it's challenging to provide an exact distance in meters. Typically, the distance to a vehicle like this would range from about 10 to 50 meters depending on the actual size of the car and the camera's focal length.\n\nFor a more precise measurement, you would need additional context such as the size of the car relative to other objects in the image or a known distance marker.",
+        "pred": 10.0,
+        "mae": 3.3361105190293037,
+        "pct_error": 50.062512719573924
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Champagne-colored sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 93.3361105190293,
+        "pct_error": 1400.6251271957392
+      }
+    },
+    {
+      "frame_token": "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "obj_key": "<c1,CAM_FRONT_LEFT,231.5,472.1>",
+      "vis_desc": "White sedan.",
+      "gt_distance": 55.83370091309797,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there appears to be a vehicle on the left side of the road, near the traffic lights. However, due to the rain and fog, it is difficult to determine the exact distance accurately. The vehicle seems to be some distance away, possibly around 100-200 meters from the viewpoint of the photo.\n\nThe exact distance cannot be determined precisely without more information or clearer visibility.",
+        "pred": 100.0,
+        "mae": 44.16629908690203,
+        "pct_error": 79.10329848211997
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White sedan. from your vehicle? Please give a single number.",
+        "response": "The image does not provide enough detail to accurately estimate the distance to the white sedan in meters. The sedan appears to be quite far away, but without specific markers or a scale, it's impossible to give an accurate measurement.",
+        "pred": null,
+        "mae": null,
+        "pct_error": null
+      }
+    },
+    {
+      "frame_token": "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "obj_key": "<c2,CAM_BACK,966.7,580.0>",
+      "vis_desc": "Gray sedan.",
+      "gt_distance": 9.420619140433734,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there is one vehicle visible:\n\n1. A beige SUV is driving on the road. It appears to be about 50 meters away from the camera.\n\nThere are no other vehicles immediately nearby, but there might be others further down the street that are not clearly visible due to the angle of the photo or the distance.",
+        "pred": 1.0,
+        "mae": 8.420619140433734,
+        "pct_error": 89.38498643143365
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Gray sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 90.57938085956627,
+        "pct_error": 961.5013568566357
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_key": "<c1,CAM_FRONT,714.3,503.6>",
+      "vis_desc": "Red car.",
+      "gt_distance": 34.96626763492265,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "As a driver looking at the image, here is an approximate assessment of the vehicles and their distances:\n\n1. **Red Car**: This car appears to be about 20-30 meters away from the intersection.\n2. **Black Car**: This car is also around 20-30 meters away from the intersection.\n3. **White Car**: This car is further back, approximately 50-70 meters away from the intersection.\n\nThese distances are based on the perspective of the image and are approximate due to the lack of scale and the perspective of the photo.",
+        "pred": 1.0,
+        "mae": 33.96626763492265,
+        "pct_error": 97.14010082391165
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Red car. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 65.03373236507736,
+        "pct_error": 185.98991760883493
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_key": "<c2,CAM_FRONT,993.3,503.3>",
+      "vis_desc": "White SUV.",
+      "gt_distance": 37.42468823395675,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "As a driver looking at the image, I can see several vehicles:\n\n1. A red car is approximately 20 meters ahead of the intersection.\n2. A black car is about 30 meters behind the red car.\n3. A white car is further back, around 50 meters from the intersection.\n\nThese distances are approximate based on the perspective and size of the vehicles relative to the intersection.",
+        "pred": 1.0,
+        "mae": 36.42468823395675,
+        "pct_error": 97.3279670527952
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White SUV. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 62.57531176604325,
+        "pct_error": 167.2032947204793
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_key": "<c3,CAM_FRONT,1300.8,531.7>",
+      "vis_desc": "White sedan.",
+      "gt_distance": 25.35450380807799,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "As a driver looking at the image, here is an approximate assessment of the vehicles and their distances:\n\n1. **Red Car**: This car appears to be about 20-30 meters away from the intersection.\n2. **Black Car**: This car is also around 20-30 meters away from the intersection.\n3. **White Car**: This car is further back, approximately 50-70 meters away from the intersection.\n\nThese distances are based on the perspective of the image and are approximate due to the lack of scale and the perspective of the photo.",
+        "pred": 1.0,
+        "mae": 24.35450380807799,
+        "pct_error": 96.05592754814079
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 74.645496191922,
+        "pct_error": 294.4072451859216
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_key": "<c4,CAM_FRONT,892.5,507.5>",
+      "vis_desc": "Black sedan.",
+      "gt_distance": 31.40319458698836,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are several vehicles visible:\n\n1. A red car is approximately 20 meters from the intersection.\n2. A black car is approximately 30 meters from the intersection.\n3. A white car is approximately 40 meters from the intersection.\n\nThese distances are approximate and based on the perspective of the image. The exact distances would depend on the actual size of the vehicles and the scale of the image.",
+        "pred": 1.0,
+        "mae": 30.40319458698836,
+        "pct_error": 96.81561059901102
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Black sedan. from your vehicle? Please give a single number.",
+        "response": "50",
+        "pred": 50.0,
+        "mae": 18.59680541301164,
+        "pct_error": 59.21947004944862
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_key": "<c1,CAM_FRONT,767.5,513.3>",
+      "vis_desc": "White sedan car.",
+      "gt_distance": 27.178153330215363,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are two vehicles visible:\n\n1. A white car is driving on the road ahead of the intersection. It appears to be about 50 meters away from the camera.\n2. A van is on the left side of the image, waiting at the intersection. It seems to be around 30 meters away from the camera.\n\nThese distances are approximate based on the perspective and size of the vehicles in the image.",
+        "pred": 1.0,
+        "mae": 26.178153330215363,
+        "pct_error": 96.32057414699973
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White sedan car. from your vehicle? Please give a single number.",
+        "response": "50",
+        "pred": 50.0,
+        "mae": 22.821846669784637,
+        "pct_error": 83.97129265001388
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_key": "<c2,CAM_FRONT_RIGHT,420.0,540.0>",
+      "vis_desc": "Blue sedan.",
+      "gt_distance": 23.15422319420524,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "As a driver, the vehicles visible in the image appear to be:\n\n1. A silver car (likely a hatchback) is closest to the camera, approximately 50 meters away.\n2. A white sedan is further back, about 70 meters from the camera.\n3. A white van or truck is further still, around 100 meters from the camera.\n\nThese distances are approximate and based on the relative sizes of the vehicles in the image. The exact distances would depend on the actual size of the vehicles and the perspective of the photo.",
+        "pred": 1.0,
+        "mae": 22.15422319420524,
+        "pct_error": 95.68113345192998
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Blue sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 76.84577680579476,
+        "pct_error": 331.88665480700206
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_key": "<c3,CAM_FRONT_RIGHT,787.5,529.2>",
+      "vis_desc": "White sedan.",
+      "gt_distance": 25.918169361652634,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "As a driver, the vehicles visible in the image appear to be:\n\n1. A silver car (likely a hatchback) is closest to the camera, approximately 50 meters away.\n2. A white sedan is further back, about 70 meters from the camera.\n3. A white van or truck is further still, around 100 meters from the camera.\n\nThese distances are approximate and based on the relative sizes of the vehicles in the image. The exact distances would depend on the actual size of the vehicles and the perspective of the photo.",
+        "pred": 1.0,
+        "mae": 24.918169361652634,
+        "pct_error": 96.14170281069482
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 74.08183063834737,
+        "pct_error": 285.8297189305181
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_key": "<c4,CAM_FRONT,13.3,475.0>",
+      "vis_desc": "White van.",
+      "gt_distance": 28.72038941125171,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are two vehicles visible:\n\n1. A white car is driving on the road ahead of the intersection. It appears to be about 50 meters away from the camera.\n2. A van is on the left side of the image, waiting at the intersection. It seems to be around 30 meters away from the camera.\n\nThese distances are approximate based on the perspective and size of the vehicles in the image.",
+        "pred": 1.0,
+        "mae": 27.72038941125171,
+        "pct_error": 96.51815305955346
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White van. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 71.27961058874828,
+        "pct_error": 248.18469404465412
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_key": "<c1,CAM_FRONT_RIGHT,850.0,484.2>",
+      "vis_desc": "White truck.",
+      "gt_distance": 24.668295062154534,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are two vehicles visible:\n\n1. A white sedan is approaching from the left side of the intersection. It appears to be about 50 meters away from the camera.\n2. A white truck is waiting at the traffic light on the right side of the intersection. It seems to be around 30 meters away from the camera.\n\nThese distances are approximate based on the perspective and size of the vehicles in the image.",
+        "pred": 1.0,
+        "mae": 23.668295062154534,
+        "pct_error": 95.94621356084647
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White truck. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 75.33170493784547,
+        "pct_error": 305.3786439153529
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_key": "<c2,CAM_FRONT,684.2,500.0>",
+      "vis_desc": "White sedan.",
+      "gt_distance": 45.852966894206666,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are several vehicles visible:\n\n1. **Van on the left side**: This vehicle appears to be about 20 meters away from the intersection.\n2. **Car in the middle of the intersection**: This car is closer to the intersection than the van but still some distance away. It seems to be around 15 meters from the intersection.\n3. **Car on the right side**: This car is further away from the intersection compared to the other two. It appears to be around 30 meters from the intersection.\n\nThese distances are approximate and based on the perspective of the image. The exact distances would depend on the actual size of the vehicles and the scale of the image.",
+        "pred": 1.0,
+        "mae": 44.852966894206666,
+        "pct_error": 97.81911604039226
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 54.147033105793334,
+        "pct_error": 118.0883959607739
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_key": "<c3,CAM_FRONT,1180.8,541.7>",
+      "vis_desc": "Gray sedan.",
+      "gt_distance": 22.25372941170809,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are several vehicles visible:\n\n1. **Van on the left side**: This vehicle appears to be about 20 meters away from the intersection.\n2. **Car in the middle of the intersection**: This car is closer to the intersection than the van but still some distance away. It seems to be around 15 meters from the intersection.\n3. **Car on the right side**: This car is further away from the intersection compared to the other two. It appears to be around 30 meters from the intersection.\n\nThese distances are approximate and based on the perspective of the image. The exact distances would depend on the actual size of the vehicles and the scale of the image.",
+        "pred": 1.0,
+        "mae": 21.25372941170809,
+        "pct_error": 95.50637117267237
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Gray sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 77.7462705882919,
+        "pct_error": 349.36288273276205
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_key": "<c4,CAM_FRONT_RIGHT,338.3,540.0>",
+      "vis_desc": "White sedan.",
+      "gt_distance": 23.32945596799613,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are two vehicles visible:\n\n1. A white sedan is approaching from the left side of the intersection. It appears to be about 50 meters away from the camera.\n2. A white truck is waiting at the traffic light on the right side of the intersection. It seems to be around 30 meters away from the camera.\n\nThese distances are approximate based on the perspective of the image and the size of the vehicles relative to the surroundings.",
+        "pred": 1.0,
+        "mae": 22.32945596799613,
+        "pct_error": 95.71357342677935
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 76.67054403200387,
+        "pct_error": 328.6426573220663
+      }
+    },
+    {
+      "frame_token": "bd8a5e326b804b069d497d29dbf19c2b",
+      "obj_key": "<c4,CAM_BACK,950.0,544.2>",
+      "vis_desc": "Silver sedan.",
+      "gt_distance": 11.494486620830964,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are several vehicles visible:\n\n1. **Car in the foreground**: This is the vehicle from which the photo is taken. It appears to be about 5 meters away from the camera.\n2. **Car approaching on the right side**: This car is further down the street and appears to be around 30-40 meters away.\n3. **Van or truck ahead**: There is a van or truck ahead of the car in the foreground. It seems to be about 20-30 meters away.\n4. **Bicycle on the left side**: The bicycle is closer to the camera than the cars but still some distance away. It appears to be around 10-15 meters away.\n\nThese distances are approximate due to the perspective and the resolution of the image.",
+        "pred": 1.0,
+        "mae": 10.494486620830964,
+        "pct_error": 91.30017691970912
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Silver sedan. from your vehicle? Please give a single number.",
+        "response": "10",
+        "pred": 10.0,
+        "mae": 1.4944866208309637,
+        "pct_error": 13.00176919709115
+      }
+    },
+    {
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "obj_key": "<c2,CAM_FRONT,746.7,468.3>",
+      "vis_desc": "White truck.",
+      "gt_distance": 41.00358335076468,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are two large trucks visible:\n\n1. The truck on the left side of the image is closer to the camera. It appears to be about 50 meters away from the foreground.\n2. The truck further down the street is farther away. It looks like it is around 100 meters from the foreground.\n\nThese distances are approximate and depend on the actual size of the vehicles and the perspective of the image.",
+        "pred": 1.0,
+        "mae": 40.00358335076468,
+        "pct_error": 97.5611887589299
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White truck. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 58.99641664923532,
+        "pct_error": 143.88112410701075
+      }
+    },
+    {
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "obj_key": "<c3,CAM_BACK,1173.3,557.5>",
+      "vis_desc": "White sedan.",
+      "gt_distance": 28.12764731500809,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are several vehicles visible:\n\n1. **Car on the right side of the image**: This car appears to be about 50 meters away from the camera.\n2. **Van in the middle of the image**: The van is further back, approximately 70 meters from the camera.\n3. **Truck on the left side of the image**: The truck is also further back, around 80 meters from the camera.\n\nThese distances are approximate based on the perspective and size of the vehicles relative to the camera's position.",
+        "pred": 1.0,
+        "mae": 27.12764731500809,
+        "pct_error": 96.4447790858554
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 71.87235268499191,
+        "pct_error": 255.5220914144601
+      }
+    },
+    {
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "obj_key": "<c5,CAM_BACK,885.0,515.8>",
+      "vis_desc": "Silver sedan.",
+      "gt_distance": 16.838838992271643,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are several vehicles visible:\n\n1. **Car on the right side of the image**: This car appears to be about 50 meters away from the camera.\n2. **Van in the middle of the image**: The van is further back, approximately 70 meters from the camera.\n3. **Truck on the left side of the image**: The truck is also further back, around 80 meters from the camera.\n\nThese distances are approximate based on the perspective and size of the vehicles relative to the camera's position.",
+        "pred": 1.0,
+        "mae": 15.838838992271643,
+        "pct_error": 94.06134828856693
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the Silver sedan. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 83.16116100772835,
+        "pct_error": 493.8651711433075
+      }
+    },
+    {
+      "frame_token": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+      "obj_key": "<c3,CAM_BACK,838.3,464.2>",
+      "vis_desc": "White truck.",
+      "gt_distance": 33.68022986696283,
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, what vehicles can you see and approximately how far away are they? Give distances in meters.",
+        "response": "In the image, there are several vehicles visible:\n\n1. **Truck on the right side**: This is a large delivery truck with the name \"Paul W. Marks\" on it. It appears to be about 50 meters away from the camera.\n\n2. **Car on the right side**: There is a smaller car parked or moving near the truck. It seems to be around 30 meters away from the camera.\n\n3. **Car in the foreground**: The car closest to the camera is partially visible at the bottom of the image. It appears to be about 10 meters away from the camera.\n\n4. **Other vehicles**: There are a few other cars further down the street, but their exact distances are harder to estimate without more context. They appear to be between 50 and 100 meters away from the camera.\n\nThe distances are approximate due to the perspective and the angle of the photo.",
+        "pred": 1.0,
+        "mae": 32.68022986696283,
+        "pct_error": 97.03089912405584
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, approximately how far away (in meters) is the White truck. from your vehicle? Please give a single number.",
+        "response": "100",
+        "pred": 100.0,
+        "mae": 66.31977013303717,
+        "pct_error": 196.91008759441598
+      }
+    }
+  ],
+  "relative_order": [
+    {
+      "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+      "obj_a": "Brown SUV.",
+      "obj_b": "Black sedan.",
+      "dist_a": 11.122537566417543,
+      "dist_b": 19.336790420244608,
+      "gt_diff_m": 8.214252853827064,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "In the image, there is a vehicle visible in the distance, approaching the intersection. It appears to be a car, and it seems to be about 200-300 meters away from your perspective. The exact distance cannot be determined precisely without more context or a reference point for scale.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the Brown SUV. or (B) the Black sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "obj_a": "White sedan.",
+      "obj_b": "Gray sedan.",
+      "dist_a": 55.83370091309797,
+      "dist_b": 9.420619140433734,
+      "gt_diff_m": 46.413081772664235,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "In the image, there are no vehicles visible that appear close to the viewer. The scene shows an empty intersection with traffic lights and railroad crossing signals. The road is wet, suggesting recent rain, and there are no cars or other vehicles in sight. Therefore, there are no vehicles closer to the viewer than what can be seen in the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan. or (B) the Gray sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_a": "Red car.",
+      "obj_b": "White SUV.",
+      "dist_a": 34.96626763492265,
+      "dist_b": 37.42468823395675,
+      "gt_diff_m": 2.458420599034099,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the white car on the right side of the image, near the traffic light. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the Red car. or (B) the White SUV.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_a": "Red car.",
+      "obj_b": "White sedan.",
+      "dist_a": 34.96626763492265,
+      "dist_b": 25.35450380807799,
+      "gt_diff_m": 9.611763826844662,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "As a driver, the vehicle that appears closest to you in the scene is the white car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the Red car. or (B) the White sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_a": "Red car.",
+      "obj_b": "Black sedan.",
+      "dist_a": 34.96626763492265,
+      "dist_b": 31.40319458698836,
+      "gt_diff_m": 3.5630730479342922,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "As a driver, the vehicle that appears closest to you is the white car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the size of the vehicles relative to each other.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the Red car. or (B) the Black sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_a": "White SUV.",
+      "obj_b": "White sedan.",
+      "dist_a": 37.42468823395675,
+      "dist_b": 25.35450380807799,
+      "gt_diff_m": 12.070184425878761,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the white car on the right side of the image, near the traffic light. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White SUV. or (B) the White sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_a": "White SUV.",
+      "obj_b": "Black sedan.",
+      "dist_a": 37.42468823395675,
+      "dist_b": 31.40319458698836,
+      "gt_diff_m": 6.021493646968391,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "As a driver, the vehicle that appears closest to you is the white car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White SUV. or (B) the Black sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "obj_a": "White sedan.",
+      "obj_b": "Black sedan.",
+      "dist_a": 25.35450380807799,
+      "dist_b": 31.40319458698836,
+      "gt_diff_m": 6.04869077891037,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "As a driver, the vehicle that appears closest to you is the white car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the size of the vehicles relative to each other.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan. or (B) the Black sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_a": "White sedan car.",
+      "obj_b": "Blue sedan.",
+      "dist_a": 27.178153330215363,
+      "dist_b": 23.15422319420524,
+      "gt_diff_m": 4.023930136010122,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the white car on the right side of the intersection. It is positioned in the lane directly ahead of your perspective, indicating it is closer than the other vehicles visible in the image. The exact distance cannot be determined without additional context or reference points, but it seems to be within a few hundred meters based on the perspective of the photo.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan car. or (B) the Blue sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_a": "White sedan car.",
+      "obj_b": "White sedan.",
+      "dist_a": 27.178153330215363,
+      "dist_b": 25.918169361652634,
+      "gt_diff_m": 1.2599839685627288,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the white car on the right side of the intersection. It is positioned in the lane directly ahead of your perspective, indicating it is closer than the other vehicles visible in the image. The exact distance cannot be determined without additional context or reference points, but it seems to be within a few hundred meters based on the perspective of the photo.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan car. or (B) the White sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_a": "White sedan car.",
+      "obj_b": "White van.",
+      "dist_a": 27.178153330215363,
+      "dist_b": 28.72038941125171,
+      "gt_diff_m": 1.5422360810363465,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you is the white car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image. The exact distance cannot be determined without additional context or a reference object for scale.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan car. or (B) the White van.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_a": "Blue sedan.",
+      "obj_b": "White sedan.",
+      "dist_a": 23.15422319420524,
+      "dist_b": 25.918169361652634,
+      "gt_diff_m": 2.7639461674473935,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you is the white car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image. The exact distance cannot be determined without additional context or a reference object for scale.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the Blue sedan. or (B) the White sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_a": "Blue sedan.",
+      "obj_b": "White van.",
+      "dist_a": 23.15422319420524,
+      "dist_b": 28.72038941125171,
+      "gt_diff_m": 5.566166217046469,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you is the white car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image. The exact distance cannot be determined without additional context or a reference object for scale.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the Blue sedan. or (B) the White van.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "obj_a": "White sedan.",
+      "obj_b": "White van.",
+      "dist_a": 25.918169361652634,
+      "dist_b": 28.72038941125171,
+      "gt_diff_m": 2.8022200495990752,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the white car on the right side of the intersection. It is positioned in the lane directly ahead of your perspective, indicating it is closer than the other vehicles visible in the image. The exact distance cannot be determined without additional context or reference points, but it seems to be within a few hundred meters based on the perspective of the photo.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan. or (B) the White van.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_a": "White truck.",
+      "obj_b": "White sedan.",
+      "dist_a": 24.668295062154534,
+      "dist_b": 45.852966894206666,
+      "gt_diff_m": 21.184671832052132,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the silver car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White truck. or (B) the White sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_a": "White truck.",
+      "obj_b": "Gray sedan.",
+      "dist_a": 24.668295062154534,
+      "dist_b": 22.25372941170809,
+      "gt_diff_m": 2.4145656504464448,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you is the silver car on the right side of the image, near the bottom right corner. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White truck. or (B) the Gray sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_a": "White truck.",
+      "obj_b": "White sedan.",
+      "dist_a": 24.668295062154534,
+      "dist_b": 23.32945596799613,
+      "gt_diff_m": 1.3388390941584056,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you is the silver car on the right side of the image, near the bottom right corner. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White truck. or (B) the White sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_a": "White sedan.",
+      "obj_b": "Gray sedan.",
+      "dist_a": 45.852966894206666,
+      "dist_b": 22.25372941170809,
+      "gt_diff_m": 23.599237482498577,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the silver car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan. or (B) the Gray sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_a": "White sedan.",
+      "obj_b": "White sedan.",
+      "dist_a": 45.852966894206666,
+      "dist_b": 23.32945596799613,
+      "gt_diff_m": 22.523510926210538,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the silver car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan. or (B) the White sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "obj_a": "Gray sedan.",
+      "obj_b": "White sedan.",
+      "dist_a": 22.25372941170809,
+      "dist_b": 23.32945596799613,
+      "gt_diff_m": 1.0757265562880391,
+      "gt_closer": "A",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the silver car on the right side of the intersection. It seems to be about 50-100 meters away from your perspective, depending on the exact viewpoint and the scale of the image.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the Gray sedan. or (B) the White sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": true
+      }
+    },
+    {
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "obj_a": "White truck.",
+      "obj_b": "White sedan.",
+      "dist_a": 41.00358335076468,
+      "dist_b": 28.12764731500809,
+      "gt_diff_m": 12.875936035756588,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the white truck on the left side of the image. It is positioned directly in front of you, likely within a few feet or meters, as it is close enough to be seen clearly and is partially obstructing the view of the street ahead.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White truck. or (B) the White sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "obj_a": "White truck.",
+      "obj_b": "Silver sedan.",
+      "dist_a": 41.00358335076468,
+      "dist_b": 16.838838992271643,
+      "gt_diff_m": 24.164744358493035,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the white truck on the left side of the image. It is positioned directly in front of you, likely within a few feet or meters, as it is close enough to be seen clearly and is partially obstructing the view of the street ahead.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White truck. or (B) the Silver sedan.? Answer with just A or B.",
+        "response": "A",
+        "pred": "A",
+        "correct": false
+      }
+    },
+    {
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "obj_a": "White sedan.",
+      "obj_b": "Silver sedan.",
+      "dist_a": 28.12764731500809,
+      "dist_b": 16.838838992271643,
+      "gt_diff_m": 11.288808322736447,
+      "gt_closer": "B",
+      "coarse": {
+        "prompt": "You are a driver. Looking at this image, which vehicle in the scene appears closest to you? Describe which one and roughly how far away it is.",
+        "response": "The vehicle that appears closest to you in the scene is the white truck on the left side of the image. It is positioned directly in front of you, likely within a few feet or meters, as it is close enough to be seen clearly and is partially obstructing the view of the street ahead.",
+        "pred": null,
+        "correct": null
+      },
+      "fine": {
+        "prompt": "You are a driver. Looking at this image, which vehicle is closer to you: (A) the White sedan. or (B) the Silver sedan.? Answer with just A or B.",
+        "response": "B",
+        "pred": "B",
+        "correct": true
+      }
+    }
+  ]
+}
