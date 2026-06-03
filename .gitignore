@@ -72,6 +72,11 @@ Thumbs.db
 *.swo
 
 # ================================
+# Large dataset files (>100MB, GitHub limit)
+# ================================
+datasets/drivelm-sample/v1_1_train_nus.json
+
+# ================================
 # Results (large outputs)
 # ================================
 results/raw_outputs/
