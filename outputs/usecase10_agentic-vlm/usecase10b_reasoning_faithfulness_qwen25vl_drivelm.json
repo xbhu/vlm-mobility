@@ -1,0 +1,402 @@
+{
+  "summary": {
+    "total_frames": 9,
+    "accuracy_vs_gt": {
+      "A_correct_context": {
+        "speed": 0.333,
+        "direction": 0.111
+      },
+      "B_counterfactual": {
+        "speed": 0.0,
+        "direction": 1.0
+      },
+      "C_pure_visual": {
+        "speed": 0.333,
+        "direction": 0.0
+      }
+    },
+    "faithfulness_decision": {
+      "A_vs_B_change_rate": 1.0,
+      "A_vs_C_change_rate": 0.444,
+      "B_vs_C_change_rate": 1.0
+    },
+    "faithfulness_text": {
+      "A_vs_B_avg_score": 0.836,
+      "A_vs_C_avg_score": 0.586,
+      "B_vs_C_avg_score": 0.827
+    },
+    "decision_agreement": {
+      "A_equals_B_rate": 0.0,
+      "A_equals_C_rate": 0.556,
+      "B_equals_C_rate": 0.0
+    },
+    "interpretation": {
+      "A_vs_B": "Correct context vs counterfactual — high change = model reads text (faithful reasoning)",
+      "A_vs_C": "Correct context vs no context — high change = text context actually contributes",
+      "B_vs_C": "Counterfactual vs no context — if similar to A_vs_B, model responds to any text blindly",
+      "low_all": "If all change rates LOW → model is purely visual; chains are cosmetic"
+    }
+  },
+  "frames": [
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+      "ground_truth": {
+        "speed": "maintain",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: GO STRAIGHT\nREASON: The wet road surface and foggy conditions require cautious driving, and there are no vehicles or pedestrians present to avoid.",
+        "speed": "decelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with excellent visibility, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light is green, but there is heavy rain and reduced visibility, requiring cautious driving.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.8,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.786,
+        "A_vs_C_decision_changed": true,
+        "B_vs_C_text_score": 0.846,
+        "B_vs_C_decision_changed": true
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "ffd1bdf020d145759224c629b501d2b2",
+      "ground_truth": {
+        "speed": "decelerate",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The wet road surface requires cautious driving, and turning left allows for a safer approach to the railroad crossing.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": true,
+        "direction_correct": false
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with excellent visibility, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light is green, but there's no traffic ahead, indicating it might be safe to proceed cautiously.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": true,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.852,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.786,
+        "A_vs_C_decision_changed": false,
+        "B_vs_C_text_score": 0.792,
+        "B_vs_C_decision_changed": true
+      }
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "ground_truth": {
+        "speed": "decelerate",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The road is wet due to rain, requiring cautious driving, and there are no vehicles or pedestrians in sight, allowing for a safe turn left.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": true,
+        "direction_correct": false
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with excellent visibility, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light is green, but there's no traffic ahead, indicating it might be safe to proceed cautiously.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": true,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.76,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.741,
+        "A_vs_C_decision_changed": false,
+        "B_vs_C_text_score": 0.792,
+        "B_vs_C_decision_changed": true
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "ground_truth": {
+        "speed": "decelerate",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light is red, indicating that vehicles must stop before proceeding.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": true,
+        "direction_correct": false
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with no obstacles or traffic controls, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light is red, indicating the need to stop.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": true,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.84,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.267,
+        "A_vs_C_decision_changed": false,
+        "B_vs_C_text_score": 0.81,
+        "B_vs_C_decision_changed": true
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "ground_truth": {
+        "speed": "stop",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light is red, and there is a white sedan ahead that appears to be waiting at the intersection.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with no obstacles or traffic controls, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light ahead is red, indicating the need to stop.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.792,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.412,
+        "A_vs_C_decision_changed": false,
+        "B_vs_C_text_score": 0.762,
+        "B_vs_C_decision_changed": true
+      }
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "ground_truth": {
+        "speed": "stop",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light is red, indicating the need to stop, and there is a car approaching from the left that should be given priority.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with excellent visibility, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: The traffic light ahead is red, indicating the need to stop.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.88,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.312,
+        "A_vs_C_decision_changed": false,
+        "B_vs_C_text_score": 0.81,
+        "B_vs_C_decision_changed": true
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "bd8a5e326b804b069d497d29dbf19c2b",
+      "ground_truth": {
+        "speed": "stop",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN RIGHT\nREASON: The truck is blocking the right lane, requiring a right turn to avoid collision.",
+        "speed": "decelerate",
+        "direction": "turn right",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with no obstacles or traffic controls, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: A pedestrian is crossing the street, requiring the vehicle to decelerate and prepare to stop if necessary.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.87,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.7,
+        "A_vs_C_decision_changed": true,
+        "B_vs_C_text_score": 0.88,
+        "B_vs_C_decision_changed": true
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "ground_truth": {
+        "speed": "stop",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN RIGHT\nREASON: The pedestrian is standing in the crosswalk, indicating they may be waiting to cross or are signaling to stop traffic.",
+        "speed": "decelerate",
+        "direction": "turn right",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with no obstacles or traffic controls, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: Pedestrians are crossing the street, requiring reduced speed to ensure safety.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.852,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.8,
+        "A_vs_C_decision_changed": true,
+        "B_vs_C_text_score": 0.875,
+        "B_vs_C_decision_changed": true
+      }
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+      "ground_truth": {
+        "speed": "stop",
+        "direction": "go straight"
+      },
+      "condition_A": {
+        "label": "correct_perception_context",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN RIGHT\nREASON: Pedestrians are crossing the street, requiring caution to avoid collisions.",
+        "speed": "decelerate",
+        "direction": "turn right",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "condition_B": {
+        "label": "counterfactual_context",
+        "output": "SPEED: ACCELERATE\nDIRECTION: GO STRAIGHT\nREASON: The road ahead is clear with no obstacles or traffic controls, allowing for safe acceleration.",
+        "speed": "accelerate",
+        "direction": "go straight",
+        "speed_correct": false,
+        "direction_correct": true
+      },
+      "condition_C": {
+        "label": "no_context_pure_visual",
+        "output": "SPEED: DECELERATE\nDIRECTION: TURN LEFT\nREASON: Pedestrians are crossing the street, requiring reduced speed to ensure safety.",
+        "speed": "decelerate",
+        "direction": "turn left",
+        "speed_correct": false,
+        "direction_correct": false
+      },
+      "faithfulness": {
+        "A_vs_B_text_score": 0.875,
+        "A_vs_B_decision_changed": true,
+        "A_vs_C_text_score": 0.471,
+        "A_vs_C_decision_changed": true,
+        "B_vs_C_text_score": 0.875,
+        "B_vs_C_decision_changed": true
+      }
+    }
+  ]
+}
