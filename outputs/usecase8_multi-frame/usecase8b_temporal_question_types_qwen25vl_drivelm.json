@@ -1,0 +1,760 @@
+{
+  "f0f120e4d4b0441da90ec53b16ee169d": {
+    "scene_description": "The ego vehicle proceeds through the intersection, continuing along the current roadway.",
+    "frame_tokens_used": [
+      "ffd1bdf020d145759224c629b501d2b2",
+      "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "4a0798f849ca477ab18009c3a20b7df2"
+    ],
+    "num_frames": 3,
+    "categories": {
+      "action": {
+        "variants": {
+          "A1": {
+            "question": "What is the ego vehicle doing throughout this sequence?",
+            "response": "The ego vehicle appears to be moving forward through an intersection under rainy conditions. The traffic lights are green, indicating that the vehicle has the right of way to proceed. The vehicle's movement is consistent across the frames, suggesting it is driving steadily through the intersection. The wet road surface and overcast sky suggest rainy weather, which may require cautious driving.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 1,
+              "frame_references": 0,
+              "total_words": 61
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "mov"
+              ]
+            }
+          },
+          "A2": {
+            "question": "Describe the driving behavior of the ego vehicle from the first frame to the last frame.",
+            "response": "The ego vehicle appears to be driving through an intersection in a rainy environment, as evidenced by the wet road and the presence of traffic lights. In the first frame, the vehicle is stopped at a red light, waiting for it to turn green. As the frames progress, the traffic light changes to green, indicating that the vehicle can proceed. The vehicle then moves forward, navigating through the intersection. The camera angle suggests that the vehicle is moving forward, likely turning right based on the perspective of the traffic signals and the direction of travel. The vehicle maintains a steady speed throughout the frames, following the traffic rules and adapting to the wet conditions.",
+            "lexical_analysis": {
+              "temporal_connectors": 3,
+              "dynamic_descriptors": 2,
+              "change_descriptors": 2,
+              "frame_references": 1,
+              "total_words": 114
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "turn",
+                "stop",
+                "mov",
+                "speed",
+                "maintain",
+                "chang"
+              ]
+            }
+          },
+          "A3": {
+            "question": "Is the ego vehicle accelerating, decelerating, turning, or maintaining speed? Describe how this changes across frames.",
+            "response": "The ego vehicle appears to be maintaining its speed throughout the sequence of frames provided. Here's a breakdown:\n\n- **Frame 1**: The traffic lights are green, indicating that the vehicle can proceed. There is no visible change in the vehicle's speed or direction.\n- **Frame 2**: The vehicle continues to move forward under the same green light conditions. The consistent green light suggests steady movement without acceleration or deceleration.\n- **Frame 3**: The vehicle maintains the same green light and continues moving forward. There are no signs of acceleration, deceleration, or turning.\n\nOverall, the vehicle seems to be consistently moving at a steady pace through the intersection without any significant changes in speed or direction.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 2,
+              "change_descriptors": 3,
+              "frame_references": 3,
+              "total_words": 115
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "accelerat",
+                "deceler",
+                "turn",
+                "mov",
+                "speed",
+                "maintain",
+                "continu",
+                "chang"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 2,
+          "contradictions": [
+            {
+              "positive_signals": [
+                "accelerat"
+              ],
+              "negative_signals": [
+                "deceler"
+              ]
+            },
+            {
+              "positive_signals": [
+                "stop"
+              ],
+              "negative_signals": [
+                "moving",
+                "driving",
+                "continu"
+              ]
+            }
+          ],
+          "consistent": false
+        }
+      },
+      "change": {
+        "variants": {
+          "C1": {
+            "question": "What changes between the first frame and the last frame?",
+            "response": "The changes between the first frame and the last frame include:\n\n1. **Camera Position**: The camera appears to have moved forward, as indicated by the change in perspective and the relative positions of the traffic lights and the road.\n   \n2. **Traffic Lights**: In the first frame, there is a traffic light on the left side that is not visible in the last frame. This suggests the camera has moved past it.\n\n3. **Visibility**: The visibility seems slightly better in the last frame compared to the first frame, possibly due to the camera moving closer to the subject or the weather conditions improving slightly.\n\n4. **Foreground Elements**: The foreground elements, such as the wet road surface and reflections, remain consistent but appear more prominent in the last frame, indicating the camera's proximity to the ground.\n\n5. **Background Elements**: The background buildings and trees are still present but appear slightly less distinct in the last frame, which could be due to the camera's focus shifting or the weather conditions changing.\n\n6. **Overall Composition**: The overall composition shifts from a wider view of the intersection in the first frame to a more focused view of the road ahead in the last frame.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 3,
+              "frame_references": 2,
+              "total_words": 199
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "first frame",
+                "last frame",
+                "compared to",
+                "from",
+                "to"
+              ]
+            }
+          },
+          "C2": {
+            "question": "What new objects or vehicles appear or disappear across the frames?",
+            "response": "In the sequence of frames provided, there are no new objects or vehicles that appear or disappear. The frames show a consistent view of a wet road with traffic lights and railroad crossing signals. The environment remains static throughout the frames, with no significant changes in the objects or vehicles present.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 3,
+              "frame_references": 0,
+              "total_words": 51
+            },
+            "completion": {
+              "completed": false,
+              "matched_keywords": []
+            }
+          },
+          "C3": {
+            "question": "Does the traffic density around the ego vehicle increase or decrease from the beginning to the end of the sequence?",
+            "response": "The traffic density around the ego vehicle appears to remain relatively low throughout the sequence. There is no significant increase in the number of vehicles visible on the road, and the environment remains quiet with minimal traffic activity. The frames show an empty street with only a few traffic lights and some distant buildings, indicating that the traffic density does not change significantly from the beginning to the end of the sequence.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 1,
+              "frame_references": 0,
+              "total_words": 72
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "beginning",
+                "end of",
+                "from",
+                "to"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 1,
+          "contradictions": [
+            {
+              "positive_signals": [
+                "increas",
+                "more"
+              ],
+              "negative_signals": [
+                "less"
+              ]
+            }
+          ],
+          "consistent": false
+        }
+      },
+      "event": {
+        "variants": {
+          "E1": {
+            "question": "In which frame does the scene change the most?",
+            "response": "The scene changes the most in Frame 3. Here's why:\n\n- **Frame 1** shows a view of an intersection with traffic lights and rail crossing signals, but there is no visible movement or change in the environment.\n- **Frame 2** continues to show the same intersection from a slightly different angle, maintaining the static nature of the scene.\n- **Frame 3**, however, introduces a new element: a car is now visible on the road, moving away into the distance. This introduces dynamic action that significantly alters the scene compared to the previous frames.\n\nTherefore, the scene changes the most in Frame 3 due to the introduction of the moving vehicle.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 2,
+              "frame_references": 3,
+              "total_words": 110
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "frame 1",
+                "frame 2",
+                "frame 3",
+                "in the"
+              ]
+            }
+          },
+          "E2": {
+            "question": "At what point in the sequence does the ego vehicle appear to be closest to other vehicles or obstacles?",
+            "response": "In the provided frames, there is no visible presence of other vehicles or obstacles near the ego vehicle. The frames show an empty road with traffic lights and some distant buildings under overcast skies. There are no signs of other vehicles or obstacles that would suggest the ego vehicle being close to them.\n\nThe frames primarily focus on the road conditions and the traffic signals, indicating a quiet and possibly rainy environment without immediate interaction with other vehicles or obstacles.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 0,
+              "frame_references": 0,
+              "total_words": 80
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "in the"
+              ]
+            }
+          },
+          "E3": {
+            "question": "Which frame best represents the most complex or challenging driving situation in this sequence?",
+            "response": "The third frame (Frame 3) appears to represent the most complex or challenging driving situation in this sequence. Here's why:\n\n- **Visibility**: The sky is overcast, and there seems to be some fog or mist, which can significantly reduce visibility for drivers.\n- **Traffic Signals**: The traffic lights are green, indicating that vehicles have the right of way, but the lack of other vehicles in sight suggests that the driver might need to be extra cautious due to the reduced visibility.\n- **Environment**: The wet road surface reflects light, which could create glare or reflections that might affect the driver’s ability to see clearly.\n- **Surroundings**: There are buildings and structures on both sides of the road, which might indicate an urban or suburban setting where unexpected obstacles or pedestrians could appear.\n\nOverall, the combination of reduced visibility, potential glare from reflections, and the urban environment creates a more complex driving situation compared to the first two frames, which show a relatively clear view with no immediate threats.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 2,
+              "frame_references": 2,
+              "total_words": 168
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "frame 3",
+                "third frame",
+                "at the"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 0,
+          "contradictions": [],
+          "consistent": true
+        }
+      }
+    }
+  },
+  "54cdaaae372d421fa4734d66f51a8c48": {
+    "scene_description": "The ego vehicle proceeds along the current road, coming to a halt at the traffic light intersection.",
+    "frame_tokens_used": [
+      "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "d5e16062410f4e329d31a881b28e5c1c"
+    ],
+    "num_frames": 3,
+    "categories": {
+      "action": {
+        "variants": {
+          "A1": {
+            "question": "What is the ego vehicle doing throughout this sequence?",
+            "response": "The ego vehicle appears to be stationary at an intersection, waiting for the traffic light to change from red to green. In Frame 1, the traffic light is red, and there are several cars stopped at the intersection. As the frames progress (Frames 2 and 3), the traffic light remains red, but the cars in the adjacent lanes begin to move forward, indicating that they have the right of way or are turning. The ego vehicle does not move during these frames, suggesting it is waiting for its turn to proceed when the light changes.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 2,
+              "frame_references": 1,
+              "total_words": 95
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "turn",
+                "stop",
+                "mov",
+                "chang"
+              ]
+            }
+          },
+          "A2": {
+            "question": "Describe the driving behavior of the ego vehicle from the first frame to the last frame.",
+            "response": "The ego vehicle appears to be stationary at a traffic light in the first frame, as it is waiting for the light to turn green. In the second frame, the traffic light has turned red, and the ego vehicle remains stationary, likely waiting for the light to change again. In the third frame, the traffic light is still red, and the ego vehicle continues to remain stationary, indicating that it is still waiting for the light to turn green. The behavior of the ego vehicle does not show any forward movement or acceleration during this sequence of frames.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 1,
+              "frame_references": 3,
+              "total_words": 98
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "accelerat",
+                "turn",
+                "mov",
+                "continu",
+                "chang"
+              ]
+            }
+          },
+          "A3": {
+            "question": "Is the ego vehicle accelerating, decelerating, turning, or maintaining speed? Describe how this changes across frames.",
+            "response": "In Frame 1, the traffic light is red, and there are several cars stopped at the intersection. The ego vehicle appears to be stationary as it waits for the light to turn green.\n\nIn Frame 2, the traffic light remains red, but the cars in front of the ego vehicle have started moving forward slightly. This suggests that the ego vehicle might be preparing to move forward once the light turns green.\n\nIn Frame 3, the traffic light is still red, and the cars in front of the ego vehicle continue to move forward. The ego vehicle itself does not appear to be moving yet, indicating it is still waiting for the light to change.\n\nOverall, the ego vehicle is maintaining its speed (or possibly decelerating slightly) while waiting for the traffic light to turn green. There is no indication of acceleration or turning in these frames.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 3,
+              "change_descriptors": 1,
+              "frame_references": 3,
+              "total_words": 147
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "accelerat",
+                "deceler",
+                "turn",
+                "stop",
+                "mov",
+                "speed",
+                "maintain",
+                "continu",
+                "chang"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 2,
+          "contradictions": [
+            {
+              "positive_signals": [
+                "accelerat"
+              ],
+              "negative_signals": [
+                "deceler"
+              ]
+            },
+            {
+              "positive_signals": [
+                "stop",
+                "stationary"
+              ],
+              "negative_signals": [
+                "moving",
+                "continu"
+              ]
+            }
+          ],
+          "consistent": false
+        }
+      },
+      "change": {
+        "variants": {
+          "C1": {
+            "question": "What changes between the first frame and the last frame?",
+            "response": "Between the first frame and the last frame, there is a noticeable change in the traffic flow:\n\n- In the first frame, several cars are waiting at the intersection, with some already stopped at the red light.\n- In the second frame, the cars that were waiting have started to move forward, indicating that the traffic light has likely changed from red to green for them.\n- In the third frame, the cars continue to move forward, and a new car appears on the right side of the frame, entering the intersection.\n\nThe primary difference is the progression of vehicles moving through the intersection as the traffic light changes from red to green.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 2,
+              "frame_references": 4,
+              "total_words": 113
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "first frame",
+                "last frame",
+                "from",
+                "to"
+              ]
+            }
+          },
+          "C2": {
+            "question": "What new objects or vehicles appear or disappear across the frames?",
+            "response": "In the sequence of frames provided, there is a noticeable change in the vehicles present at the intersection:\n\n- **Frame 1:** A red car and a black car are visible on the right side of the intersection.\n- **Frame 2:** The red car has moved further into the intersection, while the black car remains stationary.\n- **Frame 3:** A silver car appears on the right side of the intersection.\n\nNo vehicles have disappeared from the scene; rather, they are either moving or entering the frame.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 1,
+              "frame_references": 3,
+              "total_words": 85
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "while",
+                "from",
+                "to"
+              ]
+            }
+          },
+          "C3": {
+            "question": "Does the traffic density around the ego vehicle increase or decrease from the beginning to the end of the sequence?",
+            "response": "The traffic density around the ego vehicle appears to remain relatively stable throughout the sequence. In Frame 1, there is a mix of vehicles at the intersection, including cars waiting at the red light and others moving through the intersection. In Frame 2, the traffic continues with some vehicles still waiting while others move forward. By Frame 3, the traffic flow remains consistent, with vehicles continuing to move through the intersection.\n\nThere isn't a significant increase or decrease in the number of vehicles; rather, the traffic density stays within a similar range throughout the frames. The vehicles are consistently spaced out, indicating a moderate level of traffic density without congestion.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 1,
+              "frame_references": 3,
+              "total_words": 110
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "while",
+                "to"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 2,
+          "contradictions": [
+            {
+              "positive_signals": [
+                "increas"
+              ],
+              "negative_signals": [
+                "decreas"
+              ]
+            },
+            {
+              "positive_signals": [
+                "stop",
+                "stationary"
+              ],
+              "negative_signals": [
+                "moving",
+                "continu"
+              ]
+            }
+          ],
+          "consistent": false
+        }
+      },
+      "event": {
+        "variants": {
+          "E1": {
+            "question": "In which frame does the scene change the most?",
+            "response": "The scene changes the most in **Frame 3**. Here's why:\n\n- In Frame 1, there is a red traffic light, and several cars are waiting at the intersection.\n- In Frame 2, the traffic light remains red, but the cars that were waiting have started to move forward slightly.\n- In Frame 3, the traffic light has turned green, and a silver car is now crossing the intersection from right to left.\n\nThis sequence shows a clear progression of traffic signals changing from red to green, and vehicles responding to the signal change, indicating the most significant change in the scene.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 1,
+              "frame_references": 3,
+              "total_words": 101
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "frame 1",
+                "frame 2",
+                "frame 3",
+                "at the",
+                "in the"
+              ]
+            }
+          },
+          "E2": {
+            "question": "At what point in the sequence does the ego vehicle appear to be closest to other vehicles or obstacles?",
+            "response": "In the provided frames, it appears that the ego vehicle is closest to other vehicles or obstacles in Frame 2. Specifically:\n\n- In Frame 1, there are no vehicles directly in front of the ego vehicle.\n- In Frame 2, a white car is directly ahead of the ego vehicle, and another black car is further behind it.\n- In Frame 3, the white car has moved slightly forward, but the black car remains behind.\n\nTherefore, the point where the ego vehicle is closest to other vehicles or obstacles is in Frame 2, when the white car is directly in front of it.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 0,
+              "frame_references": 3,
+              "total_words": 103
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "frame 1",
+                "frame 2",
+                "frame 3",
+                "at the",
+                "in the"
+              ]
+            }
+          },
+          "E3": {
+            "question": "Which frame best represents the most complex or challenging driving situation in this sequence?",
+            "response": "The third frame (Frame 3) appears to represent the most complex or challenging driving situation in this sequence. Here's why:\n\n- **Traffic Flow**: In Frame 3, there is a car turning right into the intersection from the right side of the image. This introduces a new vehicle that needs to be monitored and accounted for as it enters the intersection.\n  \n- **Pedestrian Consideration**: While not visible in these frames, the presence of pedestrians crossing or waiting at crosswalks would add another layer of complexity.\n\n- **Intersection Dynamics**: The intersection itself is a critical area where multiple vehicles and pedestrians converge, requiring careful observation and decision-making to ensure safety.\n\nIn contrast:\n- **Frame 1** shows a relatively quiet intersection with minimal traffic and no immediate action.\n- **Frame 2** continues to show a similar quiet scene with no significant changes in traffic flow or pedestrian activity.\n\nThus, Frame 3 captures a moment where the driver must be more alert due to the introduction of a turning vehicle, which adds a layer of complexity to the driving situation.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 3,
+              "frame_references": 4,
+              "total_words": 176
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "frame 1",
+                "frame 2",
+                "frame 3",
+                "third frame",
+                "in the",
+                "moment"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 0,
+          "contradictions": [],
+          "consistent": true
+        }
+      }
+    }
+  },
+  "1977a1c98a6c4eb79fbc2a6dc0da9b0f": {
+    "scene_description": "The ego vehicle is parked on the right side of the current road.",
+    "frame_tokens_used": [
+      "7903e67446c64958b0a660f10bdadf19",
+      "bd8a5e326b804b069d497d29dbf19c2b",
+      "b6bf5a2bcb094969ace1023f8fe0b9e2"
+    ],
+    "num_frames": 3,
+    "categories": {
+      "action": {
+        "variants": {
+          "A1": {
+            "question": "What is the ego vehicle doing throughout this sequence?",
+            "response": "The ego vehicle, which appears to be the camera or the perspective from which the video is being recorded, remains stationary throughout these frames. There is no movement of the camera itself; it captures the scene as pedestrians and vehicles move around in the background. The focus remains on the two individuals standing near the sidewalk, with the surrounding environment and traffic providing context.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 1,
+              "frame_references": 0,
+              "total_words": 64
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "mov"
+              ]
+            }
+          },
+          "A2": {
+            "question": "Describe the driving behavior of the ego vehicle from the first frame to the last frame.",
+            "response": "The ego vehicle is stationary in all three frames, as it appears to be at a crosswalk waiting for pedestrians to clear the intersection before proceeding. There is no indication of driving behavior from the ego vehicle itself; instead, the focus is on the pedestrians and their actions.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 1,
+              "frame_references": 0,
+              "total_words": 48
+            },
+            "completion": {
+              "completed": false,
+              "matched_keywords": []
+            }
+          },
+          "A3": {
+            "question": "Is the ego vehicle accelerating, decelerating, turning, or maintaining speed? Describe how this changes across frames.",
+            "response": "In Frame 1, the ego vehicle appears to be stationary as it is positioned at a crosswalk with pedestrians and vehicles nearby.\n\nIn Frame 2, the ego vehicle remains stationary, but there is a slight change in the perspective of the scene, suggesting that the camera might have moved slightly, possibly due to the movement of the pedestrians or vehicles around the crosswalk.\n\nIn Frame 3, the ego vehicle is still stationary, and the perspective has shifted further, indicating continued movement of the camera or the ego vehicle itself. The pedestrians continue their activities, and the vehicles remain in their positions relative to the crosswalk.\n\nOverall, the ego vehicle maintains its speed throughout these frames, as there is no indication of acceleration, deceleration, or turning. The changes in perspective suggest that the camera or the ego vehicle might be moving very slowly or remaining stationary while capturing the scene from different angles.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 2,
+              "change_descriptors": 2,
+              "frame_references": 3,
+              "total_words": 152
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "accelerat",
+                "deceler",
+                "slow",
+                "turn",
+                "mov",
+                "speed",
+                "maintain",
+                "continu",
+                "chang"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 2,
+          "contradictions": [
+            {
+              "positive_signals": [
+                "accelerat"
+              ],
+              "negative_signals": [
+                "deceler",
+                "slow"
+              ]
+            },
+            {
+              "positive_signals": [
+                "stationary"
+              ],
+              "negative_signals": [
+                "moving",
+                "driving",
+                "continu"
+              ]
+            }
+          ],
+          "consistent": false
+        }
+      },
+      "change": {
+        "variants": {
+          "C1": {
+            "question": "What changes between the first frame and the last frame?",
+            "response": "In the sequence of frames provided, there are several changes:\n\n1. **First Frame to Second Frame**: The person on the left is seen adjusting their cap with both hands in the second frame.\n\n2. **Second Frame to Third Frame**: The person on the left is now walking across the crosswalk in the third frame, while the person on the right remains standing on the sidewalk.\n\nThese changes indicate that the person on the left has moved from standing still to walking across the street, while the person on the right remains stationary.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 1,
+              "frame_references": 3,
+              "total_words": 92
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "first frame",
+                "while",
+                "from",
+                "to"
+              ]
+            }
+          },
+          "C2": {
+            "question": "What new objects or vehicles appear or disappear across the frames?",
+            "response": "In the sequence of frames provided, there is no significant change in the appearance or disappearance of new objects or vehicles. The primary action involves two individuals standing on the sidewalk and one of them walking across the crosswalk. The environment remains consistent with the same vehicles and structures visible throughout the frames. There are no new objects or vehicles introduced into the scene that can be identified.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 2,
+              "frame_references": 0,
+              "total_words": 68
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "to"
+              ]
+            }
+          },
+          "C3": {
+            "question": "Does the traffic density around the ego vehicle increase or decrease from the beginning to the end of the sequence?",
+            "response": "The traffic density around the ego vehicle appears to remain relatively stable throughout the sequence. There is a truck moving in the opposite direction, and there are pedestrians on the sidewalk, but no significant changes in the number of vehicles or pedestrians are observed between the frames. The density does not seem to increase or decrease noticeably; it stays consistent with moderate traffic flow.",
+            "lexical_analysis": {
+              "temporal_connectors": 1,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 2,
+              "frame_references": 0,
+              "total_words": 64
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "to"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 2,
+          "contradictions": [
+            {
+              "positive_signals": [
+                "increas"
+              ],
+              "negative_signals": [
+                "decreas"
+              ]
+            },
+            {
+              "positive_signals": [
+                "stationary"
+              ],
+              "negative_signals": [
+                "moving"
+              ]
+            }
+          ],
+          "consistent": false
+        }
+      },
+      "event": {
+        "variants": {
+          "E1": {
+            "question": "In which frame does the scene change the most?",
+            "response": "The scene changes the most in Frame 3. In this frame, there is a noticeable shift in the activity and environment compared to the previous frames:\n\n- **Frame 1** shows two individuals standing on the sidewalk near a crosswalk, with a large truck passing by.\n- **Frame 2** continues to show the same scene with minimal changes; the individuals remain in their positions, and the truck is still moving.\n- **Frame 3** introduces a new element: another person is now walking across the street from the right side of the image towards the left. This addition significantly alters the dynamic of the scene, introducing movement and a new character into the frame.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 2,
+              "frame_references": 3,
+              "total_words": 112
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "frame 1",
+                "frame 2",
+                "frame 3",
+                "in the"
+              ]
+            }
+          },
+          "E2": {
+            "question": "At what point in the sequence does the ego vehicle appear to be closest to other vehicles or obstacles?",
+            "response": "In the provided frames, there is no mention of the ego vehicle appearing in the sequence. The frames show pedestrians and vehicles on a city street, but the ego vehicle itself is not visible in these images. Therefore, it's not possible to determine at what point the ego vehicle would be closest to other vehicles or obstacles based on this information alone.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 0,
+              "change_descriptors": 0,
+              "frame_references": 0,
+              "total_words": 62
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "in the"
+              ]
+            }
+          },
+          "E3": {
+            "question": "Which frame best represents the most complex or challenging driving situation in this sequence?",
+            "response": "The third frame (Frame 3) appears to represent the most complex or challenging driving situation in this sequence. This is because it shows a person crossing the street, which introduces a pedestrian into the scene. Pedestrian crossings can be unpredictable and require drivers to be cautious and alert for potential hazards such as pedestrians stepping out unexpectedly or not following traffic signals. The presence of the pedestrian adds an element of unpredictability that could make this moment more challenging than the other frames where vehicles are either stationary or moving at a consistent pace.",
+            "lexical_analysis": {
+              "temporal_connectors": 0,
+              "dynamic_descriptors": 1,
+              "change_descriptors": 1,
+              "frame_references": 2,
+              "total_words": 94
+            },
+            "completion": {
+              "completed": true,
+              "matched_keywords": [
+                "frame 3",
+                "third frame",
+                "moment"
+              ]
+            }
+          }
+        },
+        "cross_variant_consistency": {
+          "contradiction_count": 1,
+          "contradictions": [
+            {
+              "positive_signals": [
+                "stationary"
+              ],
+              "negative_signals": [
+                "moving",
+                "driving",
+                "continu"
+              ]
+            }
+          ],
+          "consistent": false
+        }
+      }
+    }
+  }
+}
