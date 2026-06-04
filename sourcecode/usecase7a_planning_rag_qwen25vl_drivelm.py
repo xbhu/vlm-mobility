@@ -1,8 +1,8 @@
 """
 UC7a: Planning RAG Pipeline
-检索方式：sentence-transformers 对 planning Q 做文本 embedding，检索语义相似帧
-只使用三类真实 planning 问题：target_action / safe_actions / dangerous_actions
-每帧 3 个问题，共 27 对推理（zero-shot vs RAG）
+Retrieval: sentence-transformers encodes planning questions into text embeddings to retrieve semantically similar frames
+Only three types of real planning questions are used: target_action / safe_actions / dangerous_actions
+3 questions per frame, 27 inference pairs total (zero-shot vs RAG)
 """
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
@@ -72,7 +72,7 @@ def get_q_type(q):
     return "other"
 
 def get_target_planning_qas(frame_data):
-    """只取三类真实 planning 问题，排除坐标占位类。"""
+    """Retrieve only three types of real planning questions, excluding coordinate placeholder types."""
     qas = []
     for qa in frame_data.get("QA", {}).get("planning", []):
         q = qa.get("Q", "").strip()
@@ -82,7 +82,7 @@ def get_target_planning_qas(frame_data):
     return qas
 
 def get_all_planning_qas(frame_data):
-    """用于建索引：只索引三类真实 planning 问题。"""
+    """For building the index: index only three types of real planning questions."""
     qas = []
     for qa in frame_data.get("QA", {}).get("planning", []):
         q = qa.get("Q", "").strip()
@@ -94,7 +94,7 @@ def get_all_planning_qas(frame_data):
 # ─── BUILD INDEX ──────────────────────────────────────────────────────────────
 
 def build_planning_index(data, sbert_model, embed_cache, meta_cache):
-    print("[Index] 收集所有 target planning QA...")
+    print("[Index] Collecting all target planning QA...")
     records = []
     for scene_id, scene_data in data.items():
         for frame_token, frame_data in scene_data.get("key_frames", {}).items():
@@ -109,7 +109,7 @@ def build_planning_index(data, sbert_model, embed_cache, meta_cache):
 
     total = len(records)
     unique_qs = set(r["q"] for r in records)
-    print(f"[Index] 共 {total} 条，唯一 Q：{len(unique_qs)}（重复率 {1 - len(unique_qs)/total:.1%}）")
+    print(f"[Index] Total: {total}, unique Q: {len(unique_qs)} (duplicate rate {1 - len(unique_qs)/total:.1%})")
 
     questions = [r["q"] for r in records]
     embeddings = sbert_model.encode(
@@ -119,7 +119,7 @@ def build_planning_index(data, sbert_model, embed_cache, meta_cache):
     np.save(embed_cache, embeddings.astype(np.float32))
     with open(meta_cache, "w") as f:
         json.dump(records, f)
-    print(f"[Index] 已缓存：{embed_cache}")
+    print(f"[Index] Cached: {embed_cache}")
     return embeddings, records
 
 def load_planning_index(embed_cache, meta_cache):
@@ -214,40 +214,40 @@ def main():
     print("UC7a: Planning RAG Pipeline")
     print("=" * 60)
 
-    # 1. 加载数据
-    print("\n[1/5] 加载 DriveLM...")
+    # 1. Load data
+    print("\n[1/5] Loading DriveLM...")
     data = load_drivelm(DRIVELM_JSON)
-    print(f"  场景数：{len(data)}")
+    print(f"  Scenes: {len(data)}")
 
-    # 2. 加载 SBERT
-    print("\n[2/5] 加载 SBERT 模型...")
+    # 2. Load SBERT
+    print("\n[2/5] Loading SBERT model...")
     sbert = SentenceTransformer(SBERT_MODEL)
 
-    # 3. 建索引或加载缓存
+    # 3. Build index or load cache
     os.makedirs(os.path.dirname(EMBED_CACHE), exist_ok=True)
     if os.path.exists(EMBED_CACHE) and os.path.exists(META_CACHE):
-        print(f"\n[3/5] 加载缓存索引...")
+        print(f"\n[3/5] Loading cached index...")
         all_embeddings, all_records = load_planning_index(EMBED_CACHE, META_CACHE)
         unique_qs = set(r["q"] for r in all_records)
-        print(f"  共 {len(all_records)} 条，唯一 Q：{len(unique_qs)}（重复率 {1 - len(unique_qs)/len(all_records):.1%}）")
+        print(f"  Total: {len(all_records)}, unique Q: {len(unique_qs)} (duplicate rate {1 - len(unique_qs)/len(all_records):.1%})")
     else:
-        print(f"\n[3/5] 构建 planning embedding 索引...")
+        print(f"\n[3/5] Building planning embedding index...")
         all_embeddings, all_records = build_planning_index(
             data, sbert, EMBED_CACHE, META_CACHE
         )
 
-    # 4. 加载 Qwen2.5-VL
-    print("\n[4/5] 加载 Qwen2.5-VL-7B-Instruct (4-bit)...")
+    # 4. Load Qwen2.5-VL
+    print("\n[4/5] Loading Qwen2.5-VL-7B-Instruct (4-bit)...")
     bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.float16)
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         VLM_MODEL_ID, quantization_config=bnb_config, device_map="auto"
     )
     processor = AutoProcessor.from_pretrained(VLM_MODEL_ID)
     model.eval()
-    print("  VLM 加载完成。")
+    print("  VLM loaded.")
 
-    # 5. 评估
-    print("\n[5/5] 开始评估（9帧 × 3问题 × 2次推理）...")
+    # 5. Evaluation
+    print("\n[5/5] Starting evaluation (9 frames × 3 questions × 2 inferences)...")
     results = []
 
     for scene_id, frame_tokens in EVAL_FRAMES.items():
@@ -257,17 +257,17 @@ def main():
             print(f"\n  scene={scene_id[:8]}  frame={frame_token[:8]}")
             frame_data = frames_dict.get(frame_token)
             if frame_data is None:
-                print("  [WARN] frame_token 不存在，跳过")
+                print("  [WARN] frame_token not found, skipping")
                 continue
 
             img_path = get_cam_front_image(frame_data, IMAGE_ROOT)
             if not img_path or not os.path.exists(img_path):
-                print(f"  [WARN] 图像不存在，跳过")
+                print(f"  [WARN] Image not found, skipping")
                 continue
 
             target_qas = get_target_planning_qas(frame_data)
             if not target_qas:
-                print("  [WARN] 无 target planning QA，跳过")
+                print("  [WARN] No target planning QA, skipping")
                 continue
 
             for query_q, gt_a in target_qas:
@@ -282,7 +282,7 @@ def main():
                 zs_rouge = compute_rouge(zs_output, gt_a)
                 print(f"    ZS  ROUGE-1={zs_rouge['rouge1']:.3f}  ROUGE-L={zs_rouge['rougeL']:.3f}  ({zs_time}s)")
 
-                # 检索
+                # Retrieve
                 q_emb = sbert.encode([query_q], normalize_embeddings=True)
                 retrieved = retrieve_top_k(
                     q_emb, all_embeddings, all_records,
@@ -313,7 +313,7 @@ def main():
                     "delta":         {"rouge1": delta_r1, "rougeL": delta_rL},
                 })
 
-    # 汇总
+    # Summary
     if results:
         by_type = defaultdict(list)
         for r in results:
@@ -364,7 +364,7 @@ def main():
             print(f"    ZS  ROUGE-L={st['zero_shot']['avg_rougeL']}  RAG ROUGE-L={st['rag']['avg_rougeL']}  Δ={st['delta']['avg_rougeL']:+.4f}")
     else:
         summary = {}
-        print("\n[WARN] 没有成功处理任何帧")
+        print("\n[WARN] No frames were successfully processed")
 
     output = {
         "experiment": "UC7a",
@@ -375,7 +375,7 @@ def main():
     }
     with open(OUTPUT_FILE, "w") as f:
         json.dump(output, f, indent=2)
-    print(f"\n结果已保存 → {OUTPUT_FILE}")
+    print(f"\nResults saved → {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()

@@ -2,15 +2,15 @@
 Use Case 1D: Fine-tuning PaliGemma2-3B on BDD100K
 Script: usecase1D_finetune-PaliGemma2-3B.py
 
-注意：PaliGemma2 zero-shot 时输出 0%（模型拒绝回答 instruct 类问题）
-     微调的目标：验证微调能否救活一个 zero-shot 完全失败的模型
+Note: PaliGemma2 outputs 0% zero-shot (model refuses to answer instruct-type questions)
+     Fine-tuning goal: verify whether fine-tuning can rescue a model that completely fails zero-shot
 
-训练集：与 1A/1C/1F 完全一致（SEED=42, N_TRAIN=250, N_VAL=25, N_TEST=50）
+Training set: identical to 1A/1C/1F (SEED=42, N_TRAIN=250, N_VAL=25, N_TEST=50)
 
-PaliGemma2 与其他模型的关键差异：
-  - 没有 system/user chat 格式，prompt 就是一段纯文本
-  - 图像 token 排在序列最前面，文本 token 跟在后面
-  - 不需要 apply_chat_template
+Key differences between PaliGemma2 and other models:
+  - No system/user chat format; prompt is a single plain text block
+  - Image tokens are placed at the front of the sequence, followed by text tokens
+  - apply_chat_template is not needed
 """
 
 import torch, json, os, re, random
@@ -30,7 +30,7 @@ SAMPLES_JSON = "/home/xzh5180/Research/vlm-mobility/datasets/bdd100k_hf/samples.
 OUTPUT_DIR   = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1_finetune/PaliGemma2-3B/"
 ADAPTER_DIR  = OUTPUT_DIR + "adapter/"
 
-# 与所有其他脚本完全一致
+# Identical to all other scripts
 N_TEST       = 50
 N_TRAIN      = 250
 N_VAL        = 25
@@ -46,7 +46,7 @@ LORA_DROPOUT = 0.05
 
 # ============================================================
 # PROMPT
-# PaliGemma 无 chat 格式，直接拼 prompt + response
+# PaliGemma has no chat format; directly concatenate prompt + response
 # ============================================================
 PROMPT = (
     "You are a traffic scene analysis assistant. "
@@ -59,7 +59,7 @@ PROMPT = (
 )
 
 # ============================================================
-# 数据准备（与所有其他脚本完全相同）
+# Data preparation (identical to all other scripts)
 # ============================================================
 def load_annotations(samples_json):
     with open(samples_json) as f:
@@ -87,13 +87,13 @@ def prepare_splits(data_dir, annotations):
 
 # ============================================================
 # Label masking
-# PaliGemma 序列结构：[图像 token] [prompt token] [response token]
-# 只在 response token 上计算 loss
+# PaliGemma sequence structure: [image tokens] [prompt tokens] [response tokens]
+# Loss is computed only on response tokens
 # ============================================================
 def build_inputs_with_labels(processor, image_path, gt_json, device):
     image = Image.open(image_path).convert("RGB")
 
-    # 完整文本 = prompt + response
+    # Full text = prompt + response
     full_text   = PROMPT + "\n" + gt_json
     prompt_text = PROMPT
 
@@ -102,7 +102,7 @@ def build_inputs_with_labels(processor, image_path, gt_json, device):
     prompt_len = prompt_enc["input_ids"].shape[1]
 
     labels = full_enc["input_ids"].clone()
-    labels[0, :prompt_len] = -100  # 图像 token + prompt 部分不计算 loss
+    labels[0, :prompt_len] = -100  # image tokens + prompt portion excluded from loss
 
     result = {
         "input_ids":      full_enc["input_ids"].to(device),
@@ -116,7 +116,7 @@ def build_inputs_with_labels(processor, image_path, gt_json, device):
     return result
 
 # ============================================================
-# 训练 / 验证一个 epoch
+# Train / validate one epoch
 # ============================================================
 def run_epoch(model, processor, samples, optimizer, device, is_train):
     model.train() if is_train else model.eval()
@@ -154,7 +154,7 @@ def run_epoch(model, processor, samples, optimizer, device, is_train):
     return total_loss / steps if steps > 0 else 0.0
 
 # ============================================================
-# 评估（测试 50 张）
+# Evaluation (test on 50 images)
 # ============================================================
 def parse_json(text):
     try:

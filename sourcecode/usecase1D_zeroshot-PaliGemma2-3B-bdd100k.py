@@ -34,8 +34,8 @@ MAX_NEW_TOKENS = 512
 
 # ============================================================
 # QUANTIZATION CONFIG
-# 注：PaliGemma2-3B 在 BF16 下只需 ~6GB，12GB 显存放得下
-# 但这里保持 4-bit 与其他模型一致，便于对比
+# Note: PaliGemma2-3B only needs ~6GB in BF16, fits in 12GB VRAM
+# but we keep 4-bit here to be consistent with other models for fair comparison
 # ============================================================
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -46,8 +46,8 @@ bnb_config = BitsAndBytesConfig(
 
 # ============================================================
 # PROMPTS
-# PaliGemma 2 没有 system/user 分离，把所有指令合并成一段文字
-# Exp-A 和 Exp-B 的区别仍然保留：有无固定选项
+# PaliGemma 2 has no system/user separation; all instructions are merged into one text block
+# The distinction between Exp-A and Exp-B is preserved: with vs without fixed options
 # ============================================================
 PROMPT_A = "<image>\n" + (
     "You are a traffic scene analysis assistant. "
@@ -103,9 +103,9 @@ def load_annotations(samples_json: str) -> dict:
 
 def run_inference(model, processor, image_path: str, prompt: str) -> tuple[str, dict | None]:
     """
-    PaliGemma 2 的推理接口：
-    - 直接传 PIL Image + 文本 prompt，无 chat template
-    - 输出截取：去掉 input tokens，只保留新生成部分
+    PaliGemma 2 inference interface:
+    - Pass PIL Image + text prompt directly, no chat template
+    - Output truncation: remove input tokens, keep only newly generated part
     """
     image = Image.open(image_path).convert("RGB")
 
@@ -126,7 +126,7 @@ def run_inference(model, processor, image_path: str, prompt: str) -> tuple[str, 
             top_p=None,
         )
 
-    # 只解码新生成的 token
+    # Decode only newly generated tokens
     new_tokens = generated_ids[0][input_len:]
     raw = processor.decode(new_tokens, skip_special_tokens=True).strip()
     return raw, parse_json_output(raw)
@@ -138,16 +138,16 @@ def run_inference(model, processor, image_path: str, prompt: str) -> tuple[str, 
 def main():
     Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 
-    # ── 1. 选图 ───────────────────────────────────────────────
+    # ── 1. Select images ─────────────────────────────────────
     all_images = sorted([f for f in os.listdir(DATA_DIR) if f.endswith(".jpg")])
     selected = all_images[:N_IMAGES]
     print(f"Selected {len(selected)} images")
     print(f"First: {selected[0]}  Last: {selected[-1]}\n")
 
-    # ── 2. 加载标注 ───────────────────────────────────────────
+    # ── 2. Load annotations ──────────────────────────────────
     annotations = load_annotations(SAMPLES_JSON)
 
-    # ── 3. 加载模型 ───────────────────────────────────────────
+    # ── 3. Load model ────────────────────────────────────────
     print("Loading model (first run downloads ~6GB)...")
     model = PaliGemmaForConditionalGeneration.from_pretrained(
         MODEL_ID,
@@ -160,7 +160,7 @@ def main():
     allocated = torch.cuda.memory_allocated() / 1e9
     print(f"Model loaded  |  VRAM used: {allocated:.1f} GB\n")
 
-    # ── 4. 推理 ───────────────────────────────────────────────
+    # ── 4. Inference ─────────────────────────────────────────
     results_a, results_b = [], []
 
     for i, fname in enumerate(selected):
@@ -189,7 +189,7 @@ def main():
 
         print(f"  A: {parsed_a}  |  B: {parsed_b}  |  GT: {gt}")
 
-    # ── 5. 保存结果 ───────────────────────────────────────────
+    # ── 5. Save results ──────────────────────────────────────
     model_tag = "PaliGemma2-3B"
     for tag, results in [("expA", results_a), ("expB", results_b)]:
         out_path = Path(OUTPUT_DIR) / f"{tag}_{model_tag}_results.json"
@@ -197,7 +197,7 @@ def main():
             json.dump(results, f, indent=2, ensure_ascii=False)
         print(f"\nSaved → {out_path}")
 
-    # ── 6. 统计 ───────────────────────────────────────────────
+    # ── 6. Statistics ────────────────────────────────────────
     for tag, results in [("Exp-A", results_a), ("Exp-B", results_b)]:
         success = sum(r["parse_success"] for r in results)
         print(f"{tag} parse success: {success}/{N_IMAGES} ({100*success/N_IMAGES:.0f}%)")

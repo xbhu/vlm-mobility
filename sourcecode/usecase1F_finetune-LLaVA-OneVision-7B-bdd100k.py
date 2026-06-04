@@ -2,7 +2,7 @@
 Use Case 1C: Fine-tuning LLaVA-OneVision-7B on BDD100K
 Script: usecase1C_finetune-LLaVA-OneVision-7B.py
 
-训练集：与 1A/1B 完全一致（SEED=42, N_TRAIN=250, N_VAL=25, N_TEST=50）
+Training set: identical to 1A/1B (SEED=42, N_TRAIN=250, N_VAL=25, N_TEST=50)
 """
 
 import os
@@ -24,7 +24,7 @@ SAMPLES_JSON = "/home/xzh5180/Research/vlm-mobility/datasets/bdd100k_hf/samples.
 OUTPUT_DIR   = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1_finetune/LLaVA-OneVision-7B/"
 ADAPTER_DIR  = OUTPUT_DIR + "adapter/"
 
-# 与 1A/1B 完全一致
+# Identical to 1A/1B
 N_TEST       = 50
 N_TRAIN      = 250
 N_VAL        = 25
@@ -39,8 +39,8 @@ LORA_ALPHA   = 16
 LORA_DROPOUT = 0.05
 
 # ============================================================
-# PROMPT（与 Exp-A / 1A / 1B 完全一致）
-# LLaVA-OneVision 不支持 system message，指令放进 user turn
+# PROMPT (identical to Exp-A / 1A / 1B)
+# LLaVA-OneVision does not support system messages; instructions go in the user turn
 # ============================================================
 PROMPT_A = (
     "You are a traffic scene analysis assistant. "
@@ -53,7 +53,7 @@ PROMPT_A = (
 )
 
 # ============================================================
-# 数据准备（与 1A/1B 完全相同的划分逻辑）
+# Data preparation (same split logic as 1A/1B)
 # ============================================================
 def load_annotations(samples_json):
     with open(samples_json) as f:
@@ -81,10 +81,10 @@ def prepare_splits(data_dir, annotations):
 
 # ============================================================
 # Label masking
-# LLaVA-OneVision 与 Qwen/LLaMA 的区别：
-#   - 无 system message，所有指令在 user turn
-#   - 图像用 {"type": "image"} 占位，PIL Image 单独传 processor
-#   - 不需要 process_vision_info / image_grid_thw
+# LLaVA-OneVision differences from Qwen/LLaMA:
+#   - No system message; all instructions in user turn
+#   - Image uses {"type": "image"} placeholder; PIL Image passed separately to processor
+#   - process_vision_info / image_grid_thw not needed
 # ============================================================
 def build_inputs_with_labels(processor, image_path, gt_json, device):
     image = Image.open(image_path).convert("RGB").resize((384, 384), Image.LANCZOS)
@@ -123,7 +123,7 @@ def build_inputs_with_labels(processor, image_path, gt_json, device):
     return result
 
 # ============================================================
-# 训练 / 验证一个 epoch
+# Train / validate one epoch
 # ============================================================
 def run_epoch(model, processor, samples, optimizer, device, is_train):
     model.train() if is_train else model.eval()
@@ -161,7 +161,7 @@ def run_epoch(model, processor, samples, optimizer, device, is_train):
     return total_loss / steps if steps > 0 else 0.0
 
 # ============================================================
-# 评估（测试 50 张）
+# Evaluation (test on 50 images)
 # ============================================================
 def parse_json(text):
     try:

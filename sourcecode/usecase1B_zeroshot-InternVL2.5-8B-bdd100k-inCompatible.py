@@ -10,8 +10,8 @@ Compatibility fixes for transformers 5.x:
 """
 
 # ============================================================
-# COMPATIBILITY PATCHES  —— 必须在任何 transformers import 之后、
-# 模型加载之前执行
+# COMPATIBILITY PATCHES  —— must run after any transformers import,
+# before model loading
 # ============================================================
 import transformers.quantizers.base as _qbase
 import transformers.integrations.accelerate as _acc_int
@@ -167,7 +167,7 @@ def main():
     )
     model.eval()
 
-    # use_fast=False：绕过 transformers 5.x 的 TikToken/protobuf 冲突
+    # use_fast=False: bypasses TikToken/protobuf conflict in transformers 5.x
     tokenizer = AutoTokenizer.from_pretrained(
         MODEL_ID,
         trust_remote_code=True,

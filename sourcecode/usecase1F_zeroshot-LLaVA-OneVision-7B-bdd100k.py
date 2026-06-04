@@ -42,7 +42,7 @@ bnb_config = BitsAndBytesConfig(
 )
 
 # ============================================================
-# PROMPTS — 全部放进 user turn，无 system message
+# PROMPTS — all placed in user turn, no system message
 # ============================================================
 PROMPT_A = (
     "You are a traffic scene analysis assistant. "

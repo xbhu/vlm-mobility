@@ -6,7 +6,7 @@ IMG_BASE   = "/home/xzh5180/Research/vlm-mobility/datasets/drivelm"
 OUT_PATH   = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1B_zeroshot_llama32_drivelm.json"
 MODEL_NAME = "meta-llama/Llama-3.2-11B-Vision-Instruct"
 
-# ── 固定评估子集：3 scenes × 3 frames × 5 questions = 45条 ──
+# ── Fixed evaluation subset: 3 scenes × 3 frames × 5 questions = 45 samples ──
 MAX_SCENES    = 3
 MAX_FRAMES    = 3
 MAX_QUESTIONS = 5

@@ -40,7 +40,7 @@ bnb_config = BitsAndBytesConfig(
 )
 
 # ============================================================
-# PROMPTS  —— 与其他模型完全一致
+# PROMPTS  —— identical to other models
 # ============================================================
 SYSTEM_A = (
     "You are a traffic scene analysis assistant. "
@@ -96,10 +96,10 @@ def load_annotations(samples_json: str) -> dict:
 
 def run_inference(model, processor, image_path: str, system_prompt: str) -> tuple[str, dict | None]:
     """
-    Pixtral 推理接口：
-    - 使用 LLaVA 风格的消息格式
-    - system prompt 单独传入
-    - 图像以 PIL Image 形式传给 processor
+    Pixtral inference interface:
+    - Uses LLaVA-style message format
+    - system prompt passed separately
+    - Image passed as PIL Image to processor
     """
     image = Image.open(image_path).convert("RGB")
 
@@ -145,16 +145,16 @@ def run_inference(model, processor, image_path: str, system_prompt: str) -> tupl
 def main():
     Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 
-    # ── 1. 选图（相同排序）────────────────────────────────────
+    # ── 1. Select images (same sort order) ───────────────────
     all_images = sorted([f for f in os.listdir(DATA_DIR) if f.endswith(".jpg")])
     selected = all_images[:N_IMAGES]
     print(f"Selected {len(selected)} images")
     print(f"First: {selected[0]}  Last: {selected[-1]}\n")
 
-    # ── 2. 加载标注 ───────────────────────────────────────────
+    # ── 2. Load annotations ──────────────────────────────────
     annotations = load_annotations(SAMPLES_JSON)
 
-    # ── 3. 加载模型 ───────────────────────────────────────────
+    # ── 3. Load model ────────────────────────────────────────
     print("Loading model (first run downloads ~24GB)...")
     model = LlavaForConditionalGeneration.from_pretrained(
         MODEL_ID,
@@ -167,7 +167,7 @@ def main():
     allocated = torch.cuda.memory_allocated() / 1e9
     print(f"Model loaded  |  VRAM used: {allocated:.1f} GB\n")
 
-    # ── 4. 推理 ───────────────────────────────────────────────
+    # ── 4. Inference ─────────────────────────────────────────
     results_a, results_b = [], []
 
     for i, fname in enumerate(selected):
@@ -196,7 +196,7 @@ def main():
 
         print(f"  A: {parsed_a}  |  B: {parsed_b}  |  GT: {gt}")
 
-    # ── 5. 保存结果 ───────────────────────────────────────────
+    # ── 5. Save results ──────────────────────────────────────
     model_tag = "Pixtral-12B-4bit"
     for tag, results in [("expA", results_a), ("expB", results_b)]:
         out_path = Path(OUTPUT_DIR) / f"{tag}_{model_tag}_results.json"
@@ -204,7 +204,7 @@ def main():
             json.dump(results, f, indent=2, ensure_ascii=False)
         print(f"\nSaved → {out_path}")
 
-    # ── 6. 统计 ───────────────────────────────────────────────
+    # ── 6. Statistics ────────────────────────────────────────
     for tag, results in [("Exp-A", results_a), ("Exp-B", results_b)]:
         success = sum(r["parse_success"] for r in results)
         print(f"{tag} parse success: {success}/{N_IMAGES} ({100*success/N_IMAGES:.0f}%)")

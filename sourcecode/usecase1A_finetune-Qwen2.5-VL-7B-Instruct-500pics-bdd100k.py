@@ -2,12 +2,12 @@
 Use Case 1A: Fine-tuning Qwen2.5-VL-7B on BDD100K Traffic Scene Understanding
 Script: usecase1A_finetune-Qwen2.5-VL-7B-Instruct.py
 
-训练集设计（跨模型一致）：
-  - SEED=42 固定随机顺序
-  - Test : 前 50 张（字母序，与 Exp-A 相同，不参与训练）
-  - Val  : shuffle 后第 1-25 张
-  - Train: shuffle 后第 26-275 张（固定 250 张）
-  所有模型使用完全相同的 250 张训练图
+Training set design (consistent across models):
+  - SEED=42 fixed random order
+  - Test : first 50 images (alphabetical, same as Exp-A, excluded from training)
+  - Val  : 1st-25th images after shuffle
+  - Train: 26th-275th images after shuffle (fixed 250 images)
+  All models use the exact same 250 training images
 """
 
 import torch, json, os, re, random
@@ -27,10 +27,10 @@ SAMPLES_JSON = "/home/xzh5180/Research/vlm-mobility/datasets/bdd100k_hf/samples.
 OUTPUT_DIR   = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1_finetune/Qwen2.5-VL-7B/"
 ADAPTER_DIR  = OUTPUT_DIR + "adapter/"
 
-N_TEST       = 50       # 固定测试集（字母序前50张）
-N_TRAIN      = 250      # 固定训练集大小（跨模型一致）
-N_VAL        = 25       # 固定验证集大小
-SEED         = 42       # 固定随机顺序（跨模型一致）
+N_TEST       = 50       # fixed test set (first 50 images alphabetically)
+N_TRAIN      = 250      # fixed training set size (consistent across models)
+N_VAL        = 25       # fixed validation set size
+SEED         = 42       # fixed random order (consistent across models)
 
 EPOCHS       = 2
 GRAD_ACCUM   = 8
@@ -41,12 +41,12 @@ LORA_R       = 8
 LORA_ALPHA   = 16
 LORA_DROPOUT = 0.05
 
-# 图像分辨率限制（控制视觉 token 数，避免 OOM）
+# Image resolution limit (controls number of visual tokens, prevents OOM)
 MIN_PIXELS   = 128 * 28 * 28
 MAX_PIXELS   = 256 * 28 * 28
 
 # ============================================================
-# PROMPT（与 Exp-A 完全一致）
+# PROMPT (identical to Exp-A)
 # ============================================================
 SYSTEM_PROMPT = (
     "You are a traffic scene analysis assistant. "
@@ -59,7 +59,7 @@ SYSTEM_PROMPT = (
 USER_PROMPT = "Analyze this image and output the JSON only."
 
 # ============================================================
-# 数据准备
+# Data preparation
 # ============================================================
 def load_annotations(samples_json):
     with open(samples_json) as f:
@@ -76,7 +76,7 @@ def load_annotations(samples_json):
 
 def prepare_splits(data_dir, annotations):
     """
-    固定划分逻辑（所有模型必须使用完全相同的参数）：
+    Fixed split logic (all models must use the exact same parameters):
       SEED=42, N_TEST=50, N_VAL=25, N_TRAIN=250
     """
     all_images = sorted([f for f in os.listdir(data_dir) if f.endswith(".jpg")])
@@ -89,7 +89,7 @@ def prepare_splits(data_dir, annotations):
     train_list = pool[N_VAL : N_VAL + N_TRAIN]
 
     print(f"Split → train:{len(train_list)}  val:{len(val_list)}  test:{N_TEST}")
-    print(f"Train[0]: {train_list[0]}  Train[-1]: {train_list[-1]}")  # 便于跨模型验证
+    print(f"Train[0]: {train_list[0]}  Train[-1]: {train_list[-1]}")  # for cross-model verification
     return train_list, val_list
 
 # ============================================================
@@ -133,7 +133,7 @@ def build_inputs_with_labels(processor, image_path, gt_json, device):
     return result
 
 # ============================================================
-# 训练 / 验证一个 epoch
+# Train / validate one epoch
 # ============================================================
 def run_epoch(model, processor, samples, optimizer, device, is_train):
     model.train() if is_train else model.eval()
@@ -171,7 +171,7 @@ def run_epoch(model, processor, samples, optimizer, device, is_train):
     return total_loss / steps if steps > 0 else 0.0
 
 # ============================================================
-# 评估（测试 50 张）
+# Evaluation (test on 50 images)
 # ============================================================
 def parse_json(text):
     try:

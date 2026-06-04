@@ -1,10 +1,10 @@
 """
 Use Case 1: Zero-shot Traffic Scene Understanding
 Script:      usecase1_zeroshot.py
-Purpose:     对比两种 prompt 策略（受限 vs 开放）在 BDD100K 上的 zero-shot 表现
+Purpose:     Compare two prompt strategies (constrained vs open) on BDD100K zero-shot performance
 Experiments:
-  Exp-A: 给出合法选项，要求 VLM 从中选择
-  Exp-B: 不给选项，VLM 自由描述
+  Exp-A: Provide valid options and ask the VLM to choose from them
+  Exp-B: No options provided; VLM freely describes
 """
 
 import torch
@@ -26,7 +26,7 @@ MODEL_ID      = "Qwen/Qwen2.5-VL-7B-Instruct"
 DATA_DIR      = "/home/xzh5180/Research/vlm-mobility/datasets/bdd100k_hf/data/"
 SAMPLES_JSON  = "/home/xzh5180/Research/vlm-mobility/datasets/bdd100k_hf/samples.json"
 OUTPUT_DIR    = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1_zeroshot/"
-N_IMAGES      = 50          # 前50张（按文件名字母排序，保证跨模型一致）
+N_IMAGES      = 50          # first 50 images (sorted alphabetically by filename, consistent across models)
 MAX_NEW_TOKENS = 512
 
 # ============================================================
@@ -122,7 +122,7 @@ def run_inference(model, processor, image_path: str, system_prompt: str) -> tupl
 
 
 def load_annotations(samples_json: str) -> dict:
-    """返回 {filename: {weather, timeofday, scene}} 的查找表"""
+    """Returns a lookup table of {filename: {weather, timeofday, scene}}"""
     with open(samples_json) as f:
         data = json.load(f)
     lookup = {}
@@ -142,7 +142,7 @@ def load_annotations(samples_json: str) -> dict:
 def main():
     Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 
-    # ── 1. 选图：按文件名字母排序，取前 N_IMAGES 张 ──────────
+    # ── 1. Select images: sort alphabetically by filename, take first N_IMAGES ──
     all_images = sorted([
         f for f in os.listdir(DATA_DIR) if f.endswith(".jpg")
     ])
@@ -150,10 +150,10 @@ def main():
     print(f"Selected {len(selected)} images (alphabetical order)")
     print(f"First: {selected[0]}  Last: {selected[-1]}\n")
 
-    # ── 2. 加载标注查找表 ─────────────────────────────────────
+    # ── 2. Load annotation lookup table ──────────────────────
     annotations = load_annotations(SAMPLES_JSON)
 
-    # ── 3. 加载模型 ───────────────────────────────────────────
+    # ── 3. Load model ────────────────────────────────────────
     print("Loading model...")
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         MODEL_ID,
@@ -167,7 +167,7 @@ def main():
     allocated = torch.cuda.memory_allocated() / 1e9
     print(f"Model loaded  |  VRAM used: {allocated:.1f} GB\n")
 
-    # ── 4. 推理：两个实验 ─────────────────────────────────────
+    # ── 4. Inference: two experiments ────────────────────────
     results_a, results_b = [], []
 
     for i, fname in enumerate(selected):
@@ -198,14 +198,14 @@ def main():
 
         print(f"  A: {parsed_a}  |  B: {parsed_b}  |  GT: {gt}")
 
-    # ── 5. 保存结果 ───────────────────────────────────────────
+    # ── 5. Save results ──────────────────────────────────────
     for tag, results in [("expA", results_a), ("expB", results_b)]:
         out_path = Path(OUTPUT_DIR) / f"{tag}_results.json"
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
         print(f"\nSaved → {out_path}")
 
-    # ── 6. 简单统计：parse 成功率 ─────────────────────────────
+    # ── 6. Simple statistics: parse success rate ─────────────
     for tag, results in [("Exp-A", results_a), ("Exp-B", results_b)]:
         success = sum(r["parse_success"] for r in results)
         print(f"{tag} parse success: {success}/{N_IMAGES} ({100*success/N_IMAGES:.0f}%)")

@@ -2,11 +2,11 @@
 Use Case 1C: Fine-tuning LLaMA 3.2 Vision 11B on BDD100K
 Script: usecase1C_finetune-Llama3.2-Vision-11B.py
 
-训练集：与 1A 完全一致（SEED=42, N_TRAIN=250, N_VAL=25, N_TEST=50）
-OOM 修复：
-  1. expandable_segments 减少显存碎片
-  2. 图像 resize 到 560x560（单 tile），减少视觉编码器显存
-  3. LoRA 只作用于语言模型层，跳过视觉编码器
+Training set: identical to 1A (SEED=42, N_TRAIN=250, N_VAL=25, N_TEST=50)
+OOM fixes:
+  1. expandable_segments reduces VRAM fragmentation
+  2. Resize images to 560x560 (single tile) to reduce vision encoder memory
+  3. LoRA applied only to language model layers, skipping the vision encoder
 """
 
 import os
@@ -42,8 +42,8 @@ LORA_R       = 8
 LORA_ALPHA   = 16
 LORA_DROPOUT = 0.05
 
-# LLaMA 3.2 Vision 使用 560x560 tile 处理图像
-# resize 到这个尺寸保证只生成 1 个 tile，大幅减少视觉编码器显存
+# LLaMA 3.2 Vision processes images using 560x560 tiles
+# resizing to this size guarantees only 1 tile, greatly reducing vision encoder memory
 IMAGE_SIZE   = 560
 
 # ============================================================
@@ -60,7 +60,7 @@ SYSTEM_PROMPT = (
 USER_PROMPT = "Analyze this image and output the JSON only."
 
 # ============================================================
-# 数据准备
+# Data preparation
 # ============================================================
 def load_annotations(samples_json):
     with open(samples_json) as f:
@@ -90,7 +90,7 @@ def prepare_splits(data_dir, annotations):
 # Label masking
 # ============================================================
 def build_inputs_with_labels(processor, image_path, gt_json, device):
-    # resize 到单 tile 尺寸，减少视觉编码器显存
+    # resize to single tile size to reduce vision encoder memory
     image = Image.open(image_path).convert("RGB").resize(
         (IMAGE_SIZE, IMAGE_SIZE), Image.LANCZOS
     )
@@ -127,7 +127,7 @@ def build_inputs_with_labels(processor, image_path, gt_json, device):
     return result
 
 # ============================================================
-# 训练 / 验证一个 epoch
+# Train / validate one epoch
 # ============================================================
 def run_epoch(model, processor, samples, optimizer, device, is_train):
     model.train() if is_train else model.eval()
@@ -165,7 +165,7 @@ def run_epoch(model, processor, samples, optimizer, device, is_train):
     return total_loss / steps if steps > 0 else 0.0
 
 # ============================================================
-# 评估
+# Evaluation
 # ============================================================
 def parse_json(text):
     try:
@@ -244,12 +244,12 @@ def main():
     )
     processor = AutoProcessor.from_pretrained(MODEL_ID)
 
-    # LoRA 只作用于语言模型的 self-attention 和 cross-attention 层
-    # 跳过视觉编码器（vision_model），减少显存占用
+    # LoRA applied only to language model self-attention and cross-attention layers
+    # Skip the vision encoder (vision_model) to reduce VRAM usage
     lora_config = LoraConfig(
         r=LORA_R, lora_alpha=LORA_ALPHA, lora_dropout=LORA_DROPOUT,
         bias="none", task_type=TaskType.CAUSAL_LM,
-        target_modules=r"language_model.*\.(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)$",   # 跳过视觉编码器
+        target_modules=r"language_model.*\.(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)$",   # skip vision encoder
     )
     model = get_peft_model(model, lora_config)
     model.enable_input_require_grads()

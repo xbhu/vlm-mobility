@@ -7,7 +7,7 @@ IMG_BASE   = "/home/xzh5180/Research/vlm-mobility/datasets/drivelm"
 OUT_PATH   = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1C_zeroshot_llava_ov_drivelm.json"
 MODEL_NAME = "llava-hf/llava-onevision-qwen2-7b-ov-hf"
 
-# ── 固定评估子集：3 scenes × 3 frames × 5 questions = 45条 ──
+# ── Fixed evaluation subset: 3 scenes × 3 frames × 5 questions = 45 samples ──
 MAX_SCENES    = 3
 MAX_FRAMES    = 3
 MAX_QUESTIONS = 5

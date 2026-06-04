@@ -7,7 +7,7 @@ IMG_BASE   = "/home/xzh5180/Research/vlm-mobility/datasets/drivelm"
 OUT_PATH   = "/home/xzh5180/Research/vlm-mobility/outputs/usecase1A_zeroshot_qwen25_drivelm.json"
 MODEL_NAME = "Qwen/Qwen2.5-VL-7B-Instruct"
 
-# ── 固定评估子集：3 scenes × 3 frames × 5 questions = 45条 ──
+# ── Fixed evaluation subset: 3 scenes × 3 frames × 5 questions = 45 samples ──
 MAX_SCENES     = 3
 MAX_FRAMES     = 3
 MAX_QUESTIONS  = 5
