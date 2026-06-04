@@ -1,0 +1,272 @@
+{
+  "f0f120e4d4b0441da90ec53b16ee169d": {
+    "scene_description": "The ego vehicle proceeds through the intersection, continuing along the current roadway.",
+    "frame_tokens_used": [
+      "ffd1bdf020d145759224c629b501d2b2",
+      "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "4a0798f849ca477ab18009c3a20b7df2"
+    ],
+    "num_frames": 3,
+    "single_frame": {
+      "Q1_description": {
+        "question": "Describe what you see in this driving scene.",
+        "response": "The image depicts a rainy day at a railroad crossing. The road is wet, reflecting the traffic lights and other elements of the scene. There are multiple railroad crossing signals visible, with some showing green lights indicating that it is safe to proceed. The sky is overcast, suggesting ongoing or recent rainfall. The environment appears quiet, with no visible vehicles or pedestrians on the road. In the background, there are industrial buildings and some trees, indicating that this might be an area near a factory or warehouse complex. The overall atmosphere is calm but damp due to the rain.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 0,
+          "frame_references": 0,
+          "total_words": 99
+        }
+      },
+      "Q2_action": {
+        "question": "Based on the image sequence provided, what is the ego vehicle doing? Describe its behavior over time using temporal language such as initially, then, and finally.",
+        "response": "Initially, the ego vehicle is stopped at a railroad crossing. Then, it waits for the train to pass. Finally, once the train has passed, the vehicle continues driving forward.",
+        "lexical_analysis": {
+          "temporal_connectors": 3,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 0,
+          "frame_references": 0,
+          "total_words": 29
+        }
+      },
+      "Q4_prediction": {
+        "question": "Based on what you observe, what do you predict the ego vehicle will do next? Explain your reasoning.",
+        "response": "Based on the image, it appears to be a rainy day with wet roads and traffic lights indicating that the road is clear for vehicles to proceed. The presence of railroad crossing signals suggests that the ego vehicle might need to stop if a train approaches, but currently, there is no indication of an approaching train. Given these observations, the most likely prediction is that the ego vehicle will continue forward through the intersection once it is safe to do so, as there are no immediate obstacles or signals requiring it to stop.\n\nHowever, it's important to note that this is a prediction based on the current state of the environment. In real-world scenarios, additional factors such as the speed of the ego vehicle, the behavior of other vehicles, and the presence of pedestrians or cyclists could influence the decision-making process.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 1,
+          "frame_references": 0,
+          "total_words": 141
+        }
+      }
+    },
+    "multi_frame": {
+      "Q1_description": {
+        "question": "Describe what you see in this driving scene.",
+        "response": "The video frames depict a rainy day on a road with traffic lights and railroad crossing signals. The sky is overcast, and the wet pavement reflects the surroundings, indicating recent or ongoing rainfall. The traffic lights are green, allowing vehicles to proceed. There are no visible pedestrians or vehicles in the immediate vicinity of the camera's perspective. The environment appears quiet and deserted, possibly due to the weather conditions. The railroad crossing signals are also visible, suggesting that this might be an area where trains pass through. The overall atmosphere is calm and subdued, typical of a rainy day in an urban or suburban setting.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 0,
+          "frame_references": 0,
+          "total_words": 105
+        }
+      },
+      "Q2_action": {
+        "question": "Based on the image sequence provided, what is the ego vehicle doing? Describe its behavior over time using temporal language such as initially, then, and finally.",
+        "response": "Initially, the ego vehicle is stopped at a railroad crossing with traffic lights indicating it's safe to proceed. The vehicle remains stationary for a moment, observing the crossing. Then, the vehicle begins to move forward slowly, navigating through the intersection. Finally, the vehicle continues driving along the road, maintaining a steady pace as it progresses through the area.",
+        "lexical_analysis": {
+          "temporal_connectors": 3,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 0,
+          "frame_references": 0,
+          "total_words": 58
+        }
+      },
+      "Q3_change": {
+        "question": "What are the key differences between the first frame and the last frame of this sequence? Focus on changes in the scene, road conditions, or surrounding vehicles.",
+        "response": "The key differences between the first frame and the last frame of the sequence include:\n\n1. **Scene and Road Conditions**: \n   - In the first frame, the road appears to be wet with visible reflections from the traffic lights, suggesting recent rain.\n   - The last frame shows the same wet road but with less visible reflections, indicating that the rain may have stopped or slowed down.\n\n2. **Surrounding Vehicles**:\n   - The first frame does not show any vehicles approaching or crossing the intersection.\n   - The last frame includes a vehicle in the distance, which is approaching the intersection, indicating some activity has resumed after the initial calm period.\n\n3. **Visibility**:\n   - The first frame has a slightly foggy or misty atmosphere, which might be due to the rain or humidity.\n   - The last frame also has a misty appearance, but it seems more pronounced, possibly due to the ongoing or lingering effects of the rain.\n\n4. **Traffic Signals**:\n   - Both frames show green traffic signals, allowing vehicles to proceed through the intersection.\n   - However, the last frame captures a moment where the traffic signal is still green, whereas the first frame might have been taken just before the signal changed.\n\nThese observations suggest a progression from a quiet, rainy environment to one where traffic is beginning to move again, albeit slowly.",
+        "lexical_analysis": {
+          "temporal_connectors": 3,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 1,
+          "frame_references": 2,
+          "total_words": 220
+        }
+      },
+      "Q4_prediction": {
+        "question": "Based on what you observe, what do you predict the ego vehicle will do next? Explain your reasoning.",
+        "response": "The traffic lights in Frame 1 and Frame 2 indicate that the traffic light is green for the direction the ego vehicle is facing. The traffic signal remains green throughout these frames, suggesting that the ego vehicle has the right of way to proceed through the intersection.\n\nGiven this information, it is likely that the ego vehicle will continue moving forward through the intersection when the traffic light turns green again. The lack of any visible obstacles or pedestrians crossing the road also supports this prediction. However, it's important to note that the actual behavior of the ego vehicle would depend on factors not visible in the image, such as the driver's intentions, road conditions, and any potential hazards outside the frame.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 1,
+          "change_descriptors": 0,
+          "frame_references": 2,
+          "total_words": 122
+        }
+      }
+    }
+  },
+  "54cdaaae372d421fa4734d66f51a8c48": {
+    "scene_description": "The ego vehicle proceeds along the current road, coming to a halt at the traffic light intersection.",
+    "frame_tokens_used": [
+      "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "d5e16062410f4e329d31a881b28e5c1c"
+    ],
+    "num_frames": 3,
+    "single_frame": {
+      "Q1_description": {
+        "question": "Describe what you see in this driving scene.",
+        "response": "The image depicts an urban street intersection with several vehicles waiting at a traffic light. The traffic light is red, indicating that the vehicles must stop. There are cars visible on both sides of the intersection, and the road appears to be relatively clear apart from the stopped vehicles. The street is marked with white dashed lines indicating lanes and a solid yellow line marking the edge of the road. In the background, there are trees and some buildings, suggesting this is a part of a city or suburban area. The sky is partly cloudy, and the overall atmosphere seems calm.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 1,
+          "frame_references": 0,
+          "total_words": 101
+        }
+      },
+      "Q2_action": {
+        "question": "Based on the image sequence provided, what is the ego vehicle doing? Describe its behavior over time using temporal language such as initially, then, and finally.",
+        "response": "Initially, the ego vehicle is stopped at a red traffic light. Then, it begins to move forward as the light turns green. Finally, it continues driving through the intersection.",
+        "lexical_analysis": {
+          "temporal_connectors": 3,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 0,
+          "frame_references": 0,
+          "total_words": 29
+        }
+      },
+      "Q4_prediction": {
+        "question": "Based on what you observe, what do you predict the ego vehicle will do next? Explain your reasoning.",
+        "response": "Based on the image provided, it appears to be a traffic intersection with a red light for the ego vehicle (the vehicle from which the photo is taken). The ego vehicle is likely waiting at the stop line until the light turns green or until it is safe to proceed.\n\nHere's the reasoning:\n\n1. **Traffic Signal**: The traffic signal is red, indicating that vehicles must stop.\n2. **Position of Vehicles**: There are cars already in motion across the intersection, suggesting they have the right-of-way and are moving through the intersection.\n3. **Ego Vehicle's Position**: The ego vehicle is positioned behind the line where vehicles must stop, which is typical for vehicles waiting for their turn to proceed.\n4. **Safety Considerations**: The ego vehicle should wait until the light turns green or until it is safe to move forward without obstructing the path of other vehicles.\n\nGiven these observations, the most likely prediction is that the ego vehicle will remain stationary until the traffic light turns green, allowing it to proceed when it is safe to do so.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 1,
+          "change_descriptors": 1,
+          "frame_references": 0,
+          "total_words": 177
+        }
+      }
+    },
+    "multi_frame": {
+      "Q1_description": {
+        "question": "Describe what you see in this driving scene.",
+        "response": "In the sequence of frames, we observe a traffic intersection with several vehicles and pedestrians. Here's a detailed description:\n\n- **Frame 1**: The traffic light is red, indicating that vehicles should stop. There are cars waiting at the intersection, including a white car on the right side and a black car further ahead. The road appears to be relatively quiet, with no significant pedestrian activity visible.\n\n- **Frame 2**: The traffic light remains red, and the same vehicles are still present at the intersection. The white car continues to wait, while the black car moves slightly forward but does not proceed through the intersection yet.\n\n- **Frame 3**: The traffic light is still red, and the vehicles remain stationary. The white car has moved slightly closer to the intersection, and the black car is still positioned behind it. The environment around the intersection includes trees and a large building structure on the right side, suggesting an urban setting.\n\nOverall, the scene depicts a typical urban traffic scenario where vehicles are stopped at a red light, awaiting the signal to proceed.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 1,
+          "frame_references": 3,
+          "total_words": 180
+        }
+      },
+      "Q2_action": {
+        "question": "Based on the image sequence provided, what is the ego vehicle doing? Describe its behavior over time using temporal language such as initially, then, and finally.",
+        "response": "Initially, the ego vehicle is stopped at a red traffic light. Then, a white car drives past the intersection in front of the ego vehicle. Finally, another car approaches from the right side of the frame.",
+        "lexical_analysis": {
+          "temporal_connectors": 3,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 0,
+          "frame_references": 0,
+          "total_words": 36
+        }
+      },
+      "Q3_change": {
+        "question": "What are the key differences between the first frame and the last frame of this sequence? Focus on changes in the scene, road conditions, or surrounding vehicles.",
+        "response": "The key differences between the first frame and the last frame of the sequence are as follows:\n\n1. **Vehicles Moving**: In the first frame, there is a red car and a black car waiting at the intersection. By the last frame, the red car has moved forward, and a silver car has entered the intersection from the right side.\n\n2. **Traffic Light Changes**: The traffic light remains red throughout the frames, indicating that vehicles must stop at the intersection. However, the presence of the silver car entering the intersection suggests it might be turning or entering from a different lane.\n\n3. **Perspective Shift**: There appears to be a slight shift in perspective or camera angle between the first and last frames, which could affect the perception of the relative positions of the vehicles and the intersection.\n\n4. **Pedestrian Activity**: There is no visible pedestrian activity in the first frame, but by the last frame, there seems to be a pedestrian crossing the street, though they are not clearly visible due to the distance and resolution.\n\n5. **Background Elements**: The background elements remain consistent, with the same trees, building, and sky visible in both frames, suggesting that the primary focus is on the movement of vehicles rather than environmental changes.\n\nThese observations highlight the dynamic nature of the scene, particularly the movement of vehicles and the introduction of a pedestrian.",
+        "lexical_analysis": {
+          "temporal_connectors": 1,
+          "dynamic_descriptors": 2,
+          "change_descriptors": 3,
+          "frame_references": 2,
+          "total_words": 229
+        }
+      },
+      "Q4_prediction": {
+        "question": "Based on what you observe, what do you predict the ego vehicle will do next? Explain your reasoning.",
+        "response": "Based on the observations in the frames provided:\n\n- **Frame 1**: The traffic light is red, and there are cars waiting at the intersection.\n- **Frame 2**: The traffic light remains red, but the car that was initially waiting has moved forward slightly.\n- **Frame 3**: The traffic light is still red, and another car has entered the intersection from the right side.\n\nGiven these observations:\n- The traffic light is red, indicating that vehicles should stop.\n- There are cars already in motion or waiting to move through the intersection.\n- The presence of other cars entering the intersection suggests that the traffic flow is active and dynamic.\n\nConsidering the context:\n- The ego vehicle appears to be stopped at the intersection due to the red light.\n- The traffic signal is consistent with the red light, suggesting no immediate change in the traffic light status.\n\n**Prediction**: The ego vehicle will likely remain stationary until the traffic light turns green, allowing it to proceed when it's safe to do so. The presence of other vehicles already moving or waiting indicates that the intersection might not be completely clear for the ego vehicle to move forward immediately.",
+        "lexical_analysis": {
+          "temporal_connectors": 1,
+          "dynamic_descriptors": 1,
+          "change_descriptors": 1,
+          "frame_references": 3,
+          "total_words": 197
+        }
+      }
+    }
+  },
+  "1977a1c98a6c4eb79fbc2a6dc0da9b0f": {
+    "scene_description": "The ego vehicle is parked on the right side of the current road.",
+    "frame_tokens_used": [
+      "7903e67446c64958b0a660f10bdadf19",
+      "bd8a5e326b804b069d497d29dbf19c2b",
+      "b6bf5a2bcb094969ace1023f8fe0b9e2"
+    ],
+    "num_frames": 3,
+    "single_frame": {
+      "Q1_description": {
+        "question": "Describe what you see in this driving scene.",
+        "response": "The image depicts an urban street scene with several elements:\n\n1. **Vehicles**: There is a large white truck on the left side of the image, and another vehicle can be seen further down the street.\n2. **Pedestrians**: Two individuals are standing on the sidewalk near the curb. One appears to be holding a phone or device, while the other is looking in the direction of the street.\n3. **Buildings**: The street is lined with tall buildings, suggesting a dense urban environment.\n4. **Street Signs**: There are signs indicating parking restrictions and possibly transit information (e.g., \"T\" which might refer to a transit system like the Boston T).\n5. **Crosswalk**: A crosswalk is visible in the foreground, with a pedestrian signal indicating it is safe to cross.\n6. **Sky**: The sky is partly cloudy, suggesting it might be a sunny day.\n\nOverall, the scene captures a typical moment in a busy city street with both vehicular and pedestrian activity.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 1,
+          "frame_references": 0,
+          "total_words": 158
+        }
+      },
+      "Q2_action": {
+        "question": "Based on the image sequence provided, what is the ego vehicle doing? Describe its behavior over time using temporal language such as initially, then, and finally.",
+        "response": "Initially, the ego vehicle is driving down the street, passing by a large white truck. Then, it approaches a crosswalk where two pedestrians are standing. Finally, the ego vehicle stops at the crosswalk to allow the pedestrians to cross safely.",
+        "lexical_analysis": {
+          "temporal_connectors": 3,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 0,
+          "frame_references": 0,
+          "total_words": 40
+        }
+      },
+      "Q4_prediction": {
+        "question": "Based on what you observe, what do you predict the ego vehicle will do next? Explain your reasoning.",
+        "response": "Based on the image provided, it appears to be taken from the perspective of an ego vehicle (the vehicle whose perspective we are viewing from). The ego vehicle is likely stopped at a crosswalk, as there are pedestrians standing in the crosswalk and vehicles approaching from the opposite direction.\n\nHere's the reasoning for the prediction:\n\n1. **Pedestrian Activity**: There are two pedestrians in the crosswalk. One appears to be looking towards the approaching traffic, which suggests they might be waiting to cross or have just stopped. The other pedestrian seems to be engaged with their phone, possibly indicating they are not actively crossing at this moment.\n\n2. **Approaching Traffic**: A large truck is visible in the left lane, moving towards the ego vehicle. This truck is likely to continue its path unless there is a stop sign, traffic light, or another vehicle obstructing its way.\n\n3. **Crosswalk Markings**: The crosswalk markings indicate where pedestrians should wait to cross. Since the pedestrians are already in the crosswalk, the ego vehicle may need to yield to them if they intend to cross.\n\n4. **Traffic Signals**: There are no visible traffic signals in the immediate vicinity that would provide further guidance on the sequence of movements.\n\nGiven these observations, the most likely prediction is that the ego vehicle will remain stationary until the pedestrians have safely crossed the street or until the approaching truck has passed. If the pedestrians are waiting to cross, the ego vehicle should yield to them first. If the pedestrians are not crossing immediately, the ego vehicle can proceed once the truck has passed and it is safe to do so.",
+        "lexical_analysis": {
+          "temporal_connectors": 1,
+          "dynamic_descriptors": 1,
+          "change_descriptors": 2,
+          "frame_references": 0,
+          "total_words": 272
+        }
+      }
+    },
+    "multi_frame": {
+      "Q1_description": {
+        "question": "Describe what you see in this driving scene.",
+        "response": "In the sequence of frames, we observe a busy urban street scene. The first frame shows two individuals standing on the sidewalk near a crosswalk. A large white truck is driving past them, and there are other vehicles visible further down the street. The second frame captures the same scene with slight movement; one individual appears to be adjusting their cap while the other stands still. In the third frame, the individual who was adjusting their cap is now walking across the crosswalk, while the other person remains stationary on the sidewalk. The background includes tall buildings and a clear sky with some clouds. The overall environment suggests a typical day in a bustling city.",
+        "lexical_analysis": {
+          "temporal_connectors": 1,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 1,
+          "frame_references": 3,
+          "total_words": 115
+        }
+      },
+      "Q2_action": {
+        "question": "Based on the image sequence provided, what is the ego vehicle doing? Describe its behavior over time using temporal language such as initially, then, and finally.",
+        "response": "Initially, the ego vehicle is stationary at a crosswalk, waiting for the pedestrian to cross. Then, the pedestrian begins to walk across the street. Finally, the pedestrian has fully crossed the street, and the ego vehicle remains stationary until the pedestrian has completely passed through the crosswalk.",
+        "lexical_analysis": {
+          "temporal_connectors": 3,
+          "dynamic_descriptors": 0,
+          "change_descriptors": 0,
+          "frame_references": 0,
+          "total_words": 47
+        }
+      },
+      "Q3_change": {
+        "question": "What are the key differences between the first frame and the last frame of this sequence? Focus on changes in the scene, road conditions, or surrounding vehicles.",
+        "response": "In the sequence of frames provided:\n\n- **First Frame:** The scene shows two individuals standing near the sidewalk, with a large truck partially visible on the left side of the street. There is no significant activity in the background.\n\n- **Last Frame:** The individual on the left has started to walk across the crosswalk, while the individual on the right remains stationary. The truck that was initially partially visible is now fully in view, indicating it has moved closer to the camera's perspective. Additionally, there appears to be more activity in the background, including pedestrians walking along the sidewalk and possibly some vehicles moving further down the street.\n\nThe primary difference between the first and last frames is the movement of the individual crossing the street and the truck becoming more prominent in the foreground. The background activity also becomes more noticeable in the last frame.",
+        "lexical_analysis": {
+          "temporal_connectors": 2,
+          "dynamic_descriptors": 1,
+          "change_descriptors": 1,
+          "frame_references": 2,
+          "total_words": 146
+        }
+      },
+      "Q4_prediction": {
+        "question": "Based on what you observe, what do you predict the ego vehicle will do next? Explain your reasoning.",
+        "response": "Based on the observations in the frames provided:\n\n- In Frame 1, there is a large truck approaching from the left side of the image.\n- In Frame 2, the truck has moved closer to the center of the street.\n- In Frame 3, the truck continues its movement towards the center of the street.\n\nGiven that the truck is moving forward and there are no visible pedestrians or vehicles directly in front of the ego vehicle (the camera's perspective), it seems likely that the ego vehicle will continue to move forward as well. The presence of the truck suggests that the ego vehicle might need to be cautious about maintaining a safe distance to avoid any potential collision or obstruction.\n\nHowever, without additional context such as traffic signals, pedestrian crossings, or other vehicles, it is difficult to predict with certainty the exact action the ego vehicle will take. Generally, vehicles typically follow the rules of the road, which include yielding to larger vehicles like trucks when necessary. Therefore, the ego vehicle might stop if it needs to yield to the truck, but it would depend on the specific traffic regulations and signals present at this intersection.",
+        "lexical_analysis": {
+          "temporal_connectors": 0,
+          "dynamic_descriptors": 1,
+          "change_descriptors": 0,
+          "frame_references": 3,
+          "total_words": 197
+        }
+      }
+    }
+  }
+}
