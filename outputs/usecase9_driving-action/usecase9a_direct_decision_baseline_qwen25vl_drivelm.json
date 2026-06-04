@@ -1,0 +1,233 @@
+{
+  "experiment": "UC9a_direct_decision_baseline",
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "camera": "CAM_FRONT",
+  "prompt": "You are an autonomous vehicle decision system. Based on this front camera image, classify the vehicle's current driving behavior.\n\nOutput in this exact format only:\nSpeed: [fast/medium/slow/stop]\nDirection: [straight/turn_left/turn_right/lane_change_left/lane_change_right]",
+  "metrics": {
+    "total_frames": 9,
+    "parsable_count": 9,
+    "parsability_rate": 1.0,
+    "speed_accuracy": 0.2222,
+    "direction_accuracy": 0.4444,
+    "combined_accuracy": 0.1111,
+    "gt_speed_none_count": 0,
+    "gt_direction_none_count": 0,
+    "gt_speed_distribution": {
+      "fast": 1,
+      "medium": 0,
+      "slow": 3,
+      "stop": 5
+    },
+    "gt_direction_distribution": {
+      "straight": 9,
+      "turn_left": 0,
+      "turn_right": 0,
+      "lane_change_left": 0,
+      "lane_change_right": 0
+    },
+    "pred_speed_distribution": {
+      "fast": 0,
+      "medium": 1,
+      "slow": 7,
+      "stop": 1
+    },
+    "pred_direction_distribution": {
+      "straight": 4,
+      "turn_left": 5,
+      "turn_right": 0,
+      "lane_change_left": 0,
+      "lane_change_right": 0
+    }
+  },
+  "results": [
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "4a0798f849ca477ab18009c3a20b7df2",
+      "gt_speed": "fast",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is driving fast.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is driving fast."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291010612404.jpg",
+      "model_output": "Speed: slow\nDirection: straight",
+      "pred_speed": "slow",
+      "pred_direction": "straight",
+      "parsable": true,
+      "speed_correct": false,
+      "direction_correct": true,
+      "both_correct": false
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "ffd1bdf020d145759224c629b501d2b2",
+      "gt_speed": "slow",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is driving slowly."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291002262404.jpg",
+      "model_output": "Speed: slow\nDirection: straight",
+      "pred_speed": "slow",
+      "pred_direction": "straight",
+      "parsable": true,
+      "speed_correct": true,
+      "direction_correct": true,
+      "both_correct": true
+    },
+    {
+      "scene_id": "f0f120e4d4b0441da90ec53b16ee169d",
+      "frame_token": "d9075c2a5f864a2b8abf41e703f4cf1c",
+      "gt_speed": "slow",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is driving slowly."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-09-18-13-10-39-0400__CAM_FRONT__1537291005162404.jpg",
+      "model_output": "Speed: stop\nDirection: straight",
+      "pred_speed": "stop",
+      "pred_direction": "straight",
+      "parsable": true,
+      "speed_correct": false,
+      "direction_correct": true,
+      "both_correct": false
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "542eaf1fc9b34895a9e55fab57cb4cf4",
+      "gt_speed": "slow",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is driving slowly.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is driving slowly."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg",
+      "model_output": "Speed: slow\nDirection: turn_left",
+      "pred_speed": "slow",
+      "pred_direction": "turn_left",
+      "parsable": true,
+      "speed_correct": true,
+      "direction_correct": false,
+      "both_correct": false
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "1b45a97a0e5e49fe9cd345dd4bd729c3",
+      "gt_speed": "stop",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is not moving."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg",
+      "model_output": "Speed: slow\nDirection: turn_left",
+      "pred_speed": "slow",
+      "pred_direction": "turn_left",
+      "parsable": true,
+      "speed_correct": false,
+      "direction_correct": false,
+      "both_correct": false
+    },
+    {
+      "scene_id": "54cdaaae372d421fa4734d66f51a8c48",
+      "frame_token": "d5e16062410f4e329d31a881b28e5c1c",
+      "gt_speed": "stop",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is not moving."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg",
+      "model_output": "Speed: medium\nDirection: straight",
+      "pred_speed": "medium",
+      "pred_direction": "straight",
+      "parsable": true,
+      "speed_correct": false,
+      "direction_correct": true,
+      "both_correct": false
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "bd8a5e326b804b069d497d29dbf19c2b",
+      "gt_speed": "stop",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is not moving."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708670912404.jpg",
+      "model_output": "Speed: slow\nDirection: turn_left",
+      "pred_speed": "slow",
+      "pred_direction": "turn_left",
+      "parsable": true,
+      "speed_correct": false,
+      "direction_correct": false,
+      "both_correct": false
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "7903e67446c64958b0a660f10bdadf19",
+      "gt_speed": "stop",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is not moving."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708669412404.jpg",
+      "model_output": "Speed: slow\nDirection: turn_left",
+      "pred_speed": "slow",
+      "pred_direction": "turn_left",
+      "parsable": true,
+      "speed_correct": false,
+      "direction_correct": false,
+      "both_correct": false
+    },
+    {
+      "scene_id": "1977a1c98a6c4eb79fbc2a6dc0da9b0f",
+      "frame_token": "b6bf5a2bcb094969ace1023f8fe0b9e2",
+      "gt_speed": "stop",
+      "gt_direction": "straight",
+      "gt_text": "The ego vehicle is going straight. The ego vehicle is not moving.",
+      "gt_qa_pairs": [
+        {
+          "Q": "Predict the behavior of the ego vehicle.",
+          "A": "The ego vehicle is going straight. The ego vehicle is not moving."
+        }
+      ],
+      "image_path": "/home/xzh5180/Research/vlm-mobility/datasets/drivelm/nuscenes/samples/CAM_FRONT/n008-2018-07-27-12-07-38-0400__CAM_FRONT__1532708675412404.jpg",
+      "model_output": "Speed: slow\nDirection: turn_left",
+      "pred_speed": "slow",
+      "pred_direction": "turn_left",
+      "parsable": true,
+      "speed_correct": false,
+      "direction_correct": false,
+      "both_correct": false
+    }
+  ]
+}
