@@ -13,21 +13,69 @@ A hands-on learning project that explores **ten distinct roles** Vision-Language
 ```
 vlm-mobility/
 ├── datasets/
-│   └── drivelm/               # DriveLM-nuScenes (primary dataset for all use cases)
-│       ├── v1_1_train_nus.json
-│       ├── nuscenes/samples/  # 24,432 camera images (6 cameras × 4,072 frames)
-│       └── sample/            # Single-scene sample for quick testing
-├── sourcecode/                # Python scripts — one per use case
-│   ├── usecase1_*.py
-│   ├── usecase2_*.py
-│   └── ...
-└── outputs/                   # Predictions, evaluation results, and figures
-    ├── usecase1/
-    ├── usecase2/
-    └── ...
+│   ├── bdd100k_hf/            # BDD100K sample (UC1 baseline)
+│   └── drivelm-sample/        # DriveLM-nuScenes (primary dataset, UC2–UC10)
+│       ├── v1_1_train_nus.json       # Full train annotations (184 MB, git-ignored)
+│       ├── v1_1_val_nus_q_only.json  # Val annotations (questions only)
+│       ├── nuscenes/samples/         # Multi-camera images
+│       └── val_data/                 # Validation scene images
+├── sourcecode/
+│   ├── vlm_usecase1_traffic-scene-understanding/
+│   │   ├── vlm_usecase1_traffic-scene-understanding.md
+│   │   └── usecase1*.py
+│   ├── vlm_usecase2_fewshot-prompting/
+│   │   ├── vlm_usecase2_fewshot-prompting.md
+│   │   └── usecase2*.py
+│   ├── vlm_usecase3_spatial-grounding/
+│   │   └── vlm_usecase3_spatial-grounding.md
+│   ├── vlm_usecase4_reliability-hallucination/
+│   │   ├── vlm_usecase4_reliability-hallucination.md
+│   │   └── usecase4*.py
+│   ├── vlm_usecase5_geometric-reasoning/
+│   │   ├── vlm_usecase5_geometric-reasoning.md
+│   │   └── usecase5*.py
+│   ├── vlm_usecase6_annotation-tool/
+│   │   ├── vlm_usecase6_annotation-tool.md
+│   │   └── usecase6*.py
+│   ├── vlm_usecase7_multimodal-rag/
+│   │   ├── vlm_usecase7_multimodal-rag.md
+│   │   └── usecase7*.py
+│   ├── vlm_usecase8_video-understanding/
+│   │   ├── vlm_usecase8_video-understanding.md
+│   │   └── usecase8*.py
+│   ├── vlm_usecase9_driving-decision/
+│   │   ├── vlm_usecase9_driving-decision.md
+│   │   └── usecase9*.py
+│   └── vlm_usecase10_agentic-perception-decision/
+│       ├── vlm_usecase10_agentic-perception-decision.md
+│       └── usecase10*.py
+└── outputs/
+    ├── vlm_usecase1_traffic-scene-understanding/
+    │   ├── usecase1_zeroshot-bdd100k/
+    │   ├── usecase1_zeroshot-drivelm/
+    │   ├── usecase1_finetune-bdd100k/
+    │   └── usecase1_finetune-drivelm/
+    ├── vlm_usecase2_fewshot-prompting/
+    │   └── usecase2-fewshot-prompt/
+    ├── vlm_usecase3_spatial-grounding/
+    │   └── usecase3_grounding/
+    ├── vlm_usecase4_reliability-hallucination/
+    │   └── usecase4_reliability-hallucination-confidence/
+    ├── vlm_usecase5_geometric-reasoning/
+    │   └── usecase5_geometry-inference/
+    ├── vlm_usecase6_annotation-tool/
+    │   └── usecase6_automatic_annotation/
+    ├── vlm_usecase7_multimodal-rag/
+    │   └── usecase7_RAG/
+    ├── vlm_usecase8_video-understanding/
+    │   └── usecase8_multi-frame/
+    ├── vlm_usecase9_driving-decision/
+    │   └── usecase9_driving-action/
+    └── vlm_usecase10_agentic-perception-decision/
+        └── usecase10_agentic-vlm/
 ```
 
-Script naming convention: `usecase{N}_{descriptor}.py` — each script is self-contained and maps to a subfolder under `outputs/`.
+Each use case folder under `sourcecode/` contains a markdown design doc and the corresponding Python scripts. Output folders mirror the same naming.
 
 ---
 
